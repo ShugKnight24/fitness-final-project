@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Fitbit Friends</title>
+		<title>{{ user.name }}'s Fitbit Friend</title>
 		
 		<link type="text/css" rel="stylesheet" href="css/normalize.css"/>
 		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
@@ -17,6 +17,9 @@
 				<li><a href="#/recommendations">Recommendations</a></li>	
 			</ul>
 		</nav>
+		<h1>
+		<!-- 	{{ user.name }}'s  -->
+			Fitbit Friend</h1>
 
 		<ng-view></ng-view>
 
