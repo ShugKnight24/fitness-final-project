@@ -2,20 +2,20 @@ var app = angular.module('fitnessApp');
 
 app.config(function($routeProvider) {
 	$routeProvider
-	.when('/overview',
+	.when('/index.html',
 	{
 		templateUrl: 'views/overview.html',
-		controller: 'overviewCtrl.js'	
+		controller: 'overviewCtrl'	
 	})
 	.when ('/stats',
 	{
 		templateUrl: 'views/stats.html',
-		controller: 'statsCtrl.js'
+		controller: 'statsCtrl'
 	})
 	.when ('/recommendations',
 	{
 		templateUrl: 'views/recommendations.html',
-		controller: 'recommendationsCtrl.js'
+		controller: 'recommendationsCtrl'
 	})
-	.otherwise({ redirectTo: 'overview.html'})
+	.otherwise({ redirectTo: '/'})
 });
