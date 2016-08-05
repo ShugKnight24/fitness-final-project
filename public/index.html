@@ -9,11 +9,11 @@
 		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
 	</head>
 
-	<body>
+	<body ng-app="fitnessApp">
 		<nav class="main-nav">
 			<ul>
-				<li><a href="">About the project</a></li>
-				<li><a href="">About us</a></li>
+				<li><a href="#/project">About the project</a></li>
+				<li><a href="#/about">About us</a></li>
 			</ul>
 		</nav>
 
@@ -25,9 +25,14 @@
 		<footer>
 		</footer>
 
-		<script src="libs/angular-min.js"></script>
+		<script src="libs/angular.min.js"></script>
 		<script src="libs/angular-route.js"></script>
 		<script src="libs/d3.min.js"></script>
+
+				<script src="js/app.js"></script>
+		<script src="js/landingRoutes.js"></script>
+		<script src="js/controllers/projectCtrl.js"></script>
+		<script src="js/controllers/aboutCtrl.js"></script>
 	</body>
 
 </html>
