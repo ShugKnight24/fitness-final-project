@@ -1,0 +1,29 @@
+{
+  "name": "fitness-final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krenabeth/fitness-final-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krenabeth/fitness-final-project/issues"
+  },
+  "homepage": "https://github.com/krenabeth/fitness-final-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "jshint": "^2.9.2"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
