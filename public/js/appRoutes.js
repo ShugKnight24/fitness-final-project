@@ -29,13 +29,13 @@ app.config(function($routeProvider) {
 	})
 	.when ('/data',
 	{
-		templateUrl: 'views/compare.html',
-		controller: 'compareController'
+		templateUrl: 'views/data.html',
+		controller: 'dataController'
 	})
 	.when ('/feed',
 	{
-		templateUrl: 'views/compare.html',
-		controller: 'compareController'
+		templateUrl: 'views/feed.html',
+		controller: 'feedController'
 	})
 	.when ('/friends',
 	{
@@ -57,5 +57,5 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/recommendations.html',
 		controller: 'recommendationsController'
 	})
-	.otherwise({ redirectTo: 'views/404.html'})
+	.otherwise({ redirectTo: '/404'})
 });

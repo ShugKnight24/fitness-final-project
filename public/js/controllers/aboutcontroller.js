@@ -1,6 +1,6 @@
 var app = angular.module('fitnessApp');
 
-app.controller('aboutCtrl',["$scope", function($scope) {
+app.controller('aboutController',["$scope", function($scope) {
 	$scope.developers = [
 			{
 			name: "Shugmi Shumunov",

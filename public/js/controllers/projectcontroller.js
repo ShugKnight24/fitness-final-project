@@ -1,5 +1,5 @@
 var app = angular.module('fitnessApp');
 
-app.controller('projectCtrl', ["$scope", function($scope) {
+app.controller('projectController', ["$scope", function($scope) {
 
 }]);
