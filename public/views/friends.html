@@ -12,19 +12,21 @@
 
 <!-- here's the search box to search for friends -->
 <form ng-submit="findFriend"> 
-	<input type="text" name="search" ng-model="search" placeholder="find a friend..." />
-			
+	<input type="text" name="search" ng-model="friendName" placeholder="find a friend..." />
 	<button name="button" class="button" ng-click="findFriend()">search</button>
 </form>
 
 
 <!-- repeat this div for each of the friends information -->
-<!-- class 'friends' for styling div -->
-<div ng-repeat="friend in friends" class="friends">
-	<h2>{{ friend.name }}</h2>
+<!-- class 'friends' for styling, filter with search, alphabetical order -->
+<div ng-repeat="friend in friends | filter:friendName | orderBy:friend.name" class="friends">
+	<!-- friend's name in uppercase -->
+	<h2>{{ friend.name | uppercase }}</h2>
+	<!-- friend's photo and information -->
 	<img src="{{ friend.imagePath }}" alt-text="{{ friend.altText }}"/>
-	<p> {{ friend.info }}</p>
-	<a href="{{ friend.profilePath }}">detailed info on {{ friend.name }}</a>
+	<p> {{ friend.info }} <br />
+	<!-- link to full profile of friend -->
+	<a href="{{ friend.profilePath }}">detailed info on {{ friend.name }}</a><br />
 	<!-- remove friend button -->
-	<button class="deleteButton" name="delete" ng-click="deleteFriend()">x</button>
+	<button class="deleteButton" name="delete" ng-click="deleteFriend(item)">x</button> delete {{ friend.name }}</p>
 </div>
