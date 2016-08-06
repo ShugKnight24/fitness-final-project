@@ -1,1 +1,30 @@
-friends
+<!-- user info, for example... friends [
+	{ 
+		name: "John",
+		imagePath: "path/to/Johns/pic.jpg",
+		altText: "John at the gym",
+		info: "John walked 72,000 steps today.",
+		profilePath: "path/to/Johns/personal/page.html"
+	}
+] -->
+	
+
+
+<!-- here's the search box to search for friends -->
+<form ng-submit="findFriend"> 
+	<input type="text" name="search" ng-model="search" placeholder="find a friend..." />
+			
+	<button name="button" class="button" ng-click="findFriend()">search</button>
+</form>
+
+
+<!-- repeat this div for each of the friends information -->
+<!-- class 'friends' for styling div -->
+<div ng-repeat="friend in friends" class="friends">
+	<h2>{{ friend.name }}</h2>
+	<img src="{{ friend.imagePath }}" alt-text="{{ friend.altText }}"/>
+	<p> {{ friend.info }}</p>
+	<a href="{{ friend.profilePath }}">detailed info on {{ friend.name }}</a>
+	<!-- remove friend button -->
+	<button class="deleteButton" name="delete" ng-click="deleteFriend()">x</button>
+</div>
