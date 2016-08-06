@@ -1,4 +1,4 @@
-<!-- user info: friends [
+<!-- user info, for example... friends [
 	{ 
 		name: "John",
 		imagePath: "path/to/Johns/pic.jpg",
@@ -23,9 +23,7 @@
 <div ng-repeat="friend in friends" class="friends">
 	<h2>{{ friend.name }}</h2>
 	<img src="{{ friend.imagePath }}" alt-text="{{ friend.altText }}"/>
-
 	<p> {{ friend.info }}</p>
-
 	<a href="{{ friend.profilePath }}">detailed info on {{ friend.name }}</a>
 	<!-- remove friend button -->
 	<button class="deleteButton" name="delete" ng-click="deleteFriend()">x</button>
