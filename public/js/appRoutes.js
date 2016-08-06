@@ -2,10 +2,10 @@ var app = angular.module('fitnessApp');
 
 app.config(function($routeProvider) {
 	$routeProvider
-	.when('/index.html',
+	.when('/overview',
 	{
 		templateUrl: 'views/overview.html',
-		controller: 'overviewCtrl'	
+		controller: 'overviewCtrl'
 	})
 	.when ('/stats',
 	{
