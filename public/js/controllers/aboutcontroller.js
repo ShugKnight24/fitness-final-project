@@ -1,15 +1,15 @@
 var app = angular.module('fitnessApp');
 
-app.controller('aboutCtrl', function($scope) {
+app.controller('aboutCtrl',["$scope", function($scope) {
 	$scope.developers = [
 			{
-			name: "Shugmi Shumunov", 
-			motto: "Life long learner, aspiring web developer. Interested in all things VR.", 
+			name: "Shugmi Shumunov",
+			motto: "Life long learner, aspiring web developer. Interested in all things VR.",
 			image: {
 				path: "http://www.grandcircus.co/perch/resources/shugsphoto.jpg",
 				altText: "Shug at Grand Circus"
 				},
-			content: "A little more about Shug's motivation here.", 
+			content: "A little more about Shug's motivation here.",
 			comments: [
 				{
 				comment: "He really knows what he's doing!",
@@ -26,13 +26,13 @@ app.controller('aboutCtrl', function($scope) {
 				],
 			},
 			{
-			name: "Karen Langner", 
-			motto: "Front-end web developer looking for problems to solve.", 
+			name: "Karen Langner",
+			motto: "Front-end web developer looking for problems to solve.",
 			image: {
 				path: "http://www.grandcircus.co/perch/resources/img9584-1.jpg",
 				altText: "Karen at Grand Circus"
 				},
-			content: "", 
+			content: "",
 			comments: [
 				{
 				comment: "",
@@ -49,15 +49,15 @@ app.controller('aboutCtrl', function($scope) {
 				],
 			},
 			{
-			name: "Syed Rashid", 
-			motto: "Aspiring developer with a mathematics background.", 
+			name: "Syed Rashid",
+			motto: "Aspiring developer with a mathematics background.",
 			image: {
 				path: "http://www.grandcircus.co/perch/resources/img9593.jpg",
 				altText: "Syed at Grand Circus"
 				},
 			github: "",
 			linkedin: "",
-			content: "", 
+			content: "",
 			comments: [
 				{
 				comment: "",
@@ -72,6 +72,6 @@ app.controller('aboutCtrl', function($scope) {
 				commenter: ""
 				}
 				],
-			},		
+			},
 			]
-});
+}]);
