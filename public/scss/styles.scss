@@ -1,1 +1,28 @@
 @import 'formattingStyles';
+
+// navigation bar for landing and member pages
+.main-nav.ul.li {
+	display: inline-block;
+}
+// end navigation sytling
+
+// about.html page, profiles of web developers
+div.profile {
+	background-color: yellow;
+	display: inline-block;
+	margin: 20px;
+	padding: 10px;
+	vertical-align: top;
+	width: 25%;
+	height: 500px;
+}
+.dogeMotto {
+	font-style: italic;
+}
+.dogeContent {
+	
+}
+.comments {
+	
+}
+// end about developer styling
