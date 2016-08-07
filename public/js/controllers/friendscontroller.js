@@ -8,7 +8,10 @@ app.controller('friendsController', ["$scope", function($scope) {
 			imagePath: "http://www.becauseimacat.com/wp-content/uploads/2015/11/Cats-Gone-Crazy-22.jpg",
 			altText: "Samantha enjoys karate",
 			info: "Samantha's heart rate is 100 bpm",
-			profilePath: "http://thefw.com/karate-cats/"	
+			profilePath: "http://thefw.com/karate-cats/"
+			steps: "2000",
+			heartrate: "100",
+			weight: "12"
 		},
 		{
 			name: "John",
@@ -16,6 +19,9 @@ app.controller('friendsController', ["$scope", function($scope) {
 			altText: "John's game face",
 			info: "John chased his tail 72,000 times today.",
 			profilePath: "http://www.funnydogsite.com/"	
+			steps: "3000",
+			heartrate: "100",
+			weight: "45"
 		}
 	];
 // search for friend- typing friend's name sorts and brings friend to top of list, submit takes to friends page(?) if match
@@ -25,9 +31,14 @@ $scope.findFriend = function() {
 
 // delete button removes friend from friends list
 
-$scope.deleteFriend = function() {
-	// deletes first friend? want it to delete selected
-	$scope.friends.shift($scope.friend);   
+// $scope.deleteFriend = function() {
+// 	// deletes first friend? want it to delete selected
+// 	$scope.friends.shift($scope.friend);   
+// };
+
+
+$scope.deleteFriend = function(friends, index){
+    friends.splice(index, 1);
 };
 
 // this is still not deleting the selected friend
