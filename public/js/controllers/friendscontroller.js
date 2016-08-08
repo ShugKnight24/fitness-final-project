@@ -8,7 +8,7 @@ app.controller('friendsController', ["$scope", function($scope) {
 			imagePath: "http://www.becauseimacat.com/wp-content/uploads/2015/11/Cats-Gone-Crazy-22.jpg",
 			altText: "Samantha enjoys karate",
 			info: "Samantha's heart rate is 100 bpm",
-			profilePath: "http://thefw.com/karate-cats/"
+			profilePath: "http://thefw.com/karate-cats/",
 			steps: "2000",
 			heartrate: "100",
 			weight: "12"
@@ -18,7 +18,7 @@ app.controller('friendsController', ["$scope", function($scope) {
 			imagePath: "http://i720.photobucket.com/albums/ww206/skim4life21/sillydog.jpg",
 			altText: "John's game face",
 			info: "John chased his tail 72,000 times today.",
-			profilePath: "http://www.funnydogsite.com/"	
+			profilePath: "http://www.funnydogsite.com/",
 			steps: "3000",
 			heartrate: "100",
 			weight: "45"
@@ -33,7 +33,7 @@ $scope.findFriend = function() {
 
 // $scope.deleteFriend = function() {
 // 	// deletes first friend? want it to delete selected
-// 	$scope.friends.shift($scope.friend);   
+// 	$scope.friends.shift($scope.friend);
 // };
 
 
@@ -44,7 +44,7 @@ $scope.deleteFriend = function(friends, index){
 // this is still not deleting the selected friend
 // $scope.deleteFriend = function(item) {
 //   var index = $scope.friends.indexOf(item);
-//   $scope.friends.splice(index, 1);  
+//   $scope.friends.splice(index, 1);
 // };
 
 }]);
