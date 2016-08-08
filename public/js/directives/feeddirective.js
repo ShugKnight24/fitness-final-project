@@ -6,4 +6,4 @@ app.directive("post", function(){
     templateUrl: "templates/post.html",
     replace: false
   };
-});
+}); 
