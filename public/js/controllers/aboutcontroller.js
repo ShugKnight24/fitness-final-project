@@ -9,21 +9,9 @@ app.controller('aboutController',["$scope", function($scope) {
 				path: "http://www.grandcircus.co/perch/resources/shugsphoto.jpg",
 				altText: "Shug at Grand Circus"
 				},
+			github: "",
+			linkedin: "",
 			content: "A little more about Shug's motivation here.",
-			comments: [
-				{
-				comment: "He really knows what he's doing!",
-				commenter: "Karen"
-				},
-				{
-				comment: "",
-				commenter: ""
-				},
-				{
-				comment: "",
-				commenter: ""
-				}
-				],
 			},
 			{
 			name: "Karen Langner",
@@ -32,21 +20,9 @@ app.controller('aboutController',["$scope", function($scope) {
 				path: "http://www.grandcircus.co/perch/resources/img9584-1.jpg",
 				altText: "Karen at Grand Circus"
 				},
-			content: "",
-			comments: [
-				{
-				comment: "",
-				commenter: ""
-				},
-				{
-				comment: "",
-				commenter: ""
-				},
-				{
-				comment: "",
-				commenter: ""
-				}
-				],
+			github: "",
+			linkedin: "",
+			content: "A little more about Karen's motivation here.",	
 			},
 			{
 			name: "Syed Rashid",
@@ -57,21 +33,7 @@ app.controller('aboutController',["$scope", function($scope) {
 				},
 			github: "",
 			linkedin: "",
-			content: "",
-			comments: [
-				{
-				comment: "",
-				commenter: ""
-				},
-				{
-				comment: "",
-				commenter: ""
-				},
-				{
-				comment: "",
-				commenter: ""
-				}
-				],
-			},
+			content: "A little more about Syed's motivation here.",
+			}
 			]
 }]);

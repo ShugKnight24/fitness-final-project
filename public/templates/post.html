@@ -1,0 +1,10 @@
+<h2>{{post.title}}</h2>
+<h3>{{post.author}}</h3>
+<img class="icon" ng-src="{{post.image.path}}" alt="{{post.image.alt}}">
+<ul>
+  <li ng-repeat="imageComment in post.image.imageComments">{{imageComment}}</li>
+</ul>
+<p>{{post.text}}</p>
+<ul>
+  <li ng-repeat="comment in post.comments">{{comment}}</li>
+</ul>
