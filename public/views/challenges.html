@@ -1,7 +1,24 @@
-<!-- from to create a new challenge -->
+<!-- separate view for creating new challenge is in challengeForm.html -->
 
-<!-- search for challenge? -->
+
+<!-- search for challenge -->
+<form ng-submit="findChallenge"> 
+	<input type="text" name="search" ng-model="challengeName" placeholder="find a challenge..." />
+	<button name="button" class="button" ng-click="findChallenge()">search</button>
+</form>
 
 <!-- list of challenges -->
+<!-- repeat this div for each of the pre-defined challenges -->
+
+<div ng-repeat="challenge in challenges | filter:challengeName | orderBy:challenge.name">
+	<h2>{{ challenge.title }}</h2>
+	<p> {{ challenge.description }} <br />
+		This challenge is targeting: {{ challenge.focus }}
+
+<!-- list of friends participating in challenge and where they are in the challenge -->
 
 <!-- button to delete a challenge -->
+	<button class="deleteButton" name="delete" ng-click="deleteChallenge()">x</button> delete {{ challenge.name }}</p>
+</div>
+
+
