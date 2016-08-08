@@ -1,1 +1,29 @@
-friends
+<!-- user info, for example... friends [
+	{ 
+		name: "John",
+		imagePath: "http://i720.photobucket.com/albums/ww206/skim4life21/sillydog.jpg",
+		altText: "John's game face",
+		info: "John chased his tail 72,000 steps today.",
+		profilePath: "http://www.funnydogsite.com/"
+	}
+] -->
+	
+<!-- here's the search box to search for friends -->
+<form ng-submit="findFriend"> 
+	<input type="text" name="search" ng-model="friendName" placeholder="find a friend..." />
+	<button name="button" class="button" ng-click="findFriend()">search</button>
+</form>
+
+<!-- repeat this div for each of the friends information -->
+<!-- class 'friends' for styling, filter with search, alphabetical order -->
+<div ng-repeat="friend in friends | filter:friendName | orderBy:friend.name" class="friends"><a ng-click="deleteFriend(friends, $index)">x</a>
+	<!-- friend's name in uppercase -->
+	<h2>{{ friend.name | uppercase }}</h2>
+	<!-- friend's photo and information -->
+	<img src="{{ friend.imagePath }}" alt-text="{{ friend.altText }}"/>
+	<p> {{ friend.info }} <br />
+	<!-- link to full profile of friend -->
+	<a href="{{ friend.profilePath }}">detailed info on {{ friend.name }}</a><br />
+	<!-- remove friend button, see link above, working? -->
+	<!-- <button class="deleteButton" name="delete" ng-click="deleteFriend(item)">x</button> delete {{ friend.name }}</p> -->
+</div>
