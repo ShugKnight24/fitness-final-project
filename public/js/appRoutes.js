@@ -7,6 +7,11 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/motivation.html',
 		controller: 'motivationController'
 	})
+	.when('/motivation',
+	{
+		templateUrl: 'views/motivation.html',
+		controller: 'motivationController'
+	})
 	.when('/feed',
 	{
 		templateUrl: 'views/feed.html',
