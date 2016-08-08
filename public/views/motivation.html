@@ -1,2 +1,4 @@
 motivation
-<h1>{{user.age}}</h1>
+<h1 ng-bind="user.fullName"></h1>
+<img ng-src="{{user.avatar}}" alt="{{user.fullName}}'s photo">
+<p ng-bind="user.averageDailySteps"></p>
