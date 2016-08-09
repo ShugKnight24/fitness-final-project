@@ -9,7 +9,7 @@
 		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
 	</head>
 
-	<body ng-app="fitnessApp">
+	<body ng-app="fitnessApp" ng-controller="motivationController">
 
 		<input type="text" ng-model="searchText">
 		<nav class="main-nav">
@@ -33,6 +33,23 @@
 		<footer>
 <!-- 			<span>{{ randomQuote }}</span> -->
 		</footer>
+		<script>
+		  var fragmentString = location.hash.substr(1);
+			//Create an empty object to store user properties and values from URL fragment
+	    var fragment = {};
+	    var fragmentItemStrings = fragmentString.split('&');
+			//Example: fragmentItemStrings = [_scope=nutrition, user_id=338TCN]
+			for (var i = 0; i < fragmentItemStrings.length; i++) {
+				var fragmentItem = fragmentItemStrings[i].split('=');
+				//Example: fragmentItem === [user_id, 338TCN]
+				if (fragmentItem.length !== 2) {
+					//if there isn't both a property and a value skip and go on to the next element in fragmentItemStrings array
+	        continue;
+	      }
+				//Assign this property to its corresponding value in fragment object
+				fragment[fragmentItem[0]] = fragmentItem[1];
+			}
+		</script>
 		<!-- Lib JS files-->
 		<script src="libs/angular.min.js"></script>
 		<script src="libs/angular-route.js"></script>
