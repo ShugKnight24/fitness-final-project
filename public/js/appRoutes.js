@@ -7,6 +7,11 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/motivation.html',
 		controller: 'motivationController'
 	})
+	.when('/bodymap',
+	{
+		templateUrl: 'views/bodymap.html',
+		controller: 'bodyMapController'
+	})
 	.when('/motivation',
 	{
 		templateUrl: 'views/motivation.html',
