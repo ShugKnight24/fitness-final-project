@@ -31,33 +31,34 @@ app.controller('motivationController', function($scope, dataService) {
 	];
 
   $scope.randomMotivationalQuote = $scope.quotes[Math.floor(Math.random()*$scope.quotes.length)];
-
+	
+	// $scope.motivationalMsg = 'howdy do';
+	
 	dataService.getData(function(response) {
 		$scope.user = response.data.user;
+		var msg = " Hello, " + $scope.user.displayName + ", ";
+    // change the user's walking stride from centimeters to feet and
+    // calculate how many miles per day
+  		var miles = ($scope.user.strideLengthWalking/0.39370)/12*($scope.user.averageDailySteps)/5280;
+  		console.log(miles);
+  		if ($scope.user.averageDailySteps >= 10000) {
+    		msg +=  "you've walked 10,000 steps per day on average! ";
+  		}
+  		if (miles > 6) {
+			msg += "You're a walking machine!";
+			$scope.changingImg = "http://i.dailymail.co.uk/i/pix/2015/06/09/16/03BB5E5A0000044D-3117010-image-a-25_1433862086692.jpg";
+
+  		} else if (miles <= 6) {
+			msg += " Doing great! Try taking a walk around the block after dinner.";
+			$scope.changingImg = "http://unisci24.com/data_images/wlls/31/279303-lynx.jpg";
+
+  		} else if (miles <= 1) {
+  			msg += " take a walk on your lunch break. You can do it!";	
+			$scope.changingImg = "http://www.pic.cx/img65/bczyghemnzdaozqgufev.jpg";	
+  		}
+	// variable message that will depend on steps
+	$scope.motivationalMsg = msg;
 	});
 
 
-// $scope.motivationalMsg = function () {
-// 	var msg = " Hello, " + $scope.user.displayName +
-//     // change the user's walking stride from centimeters to feet
-  	
-//     // calculate how many miles per day
-//   	var miles = ($scope.user.strideLengthWalking/0.39370)/12*$scope.user.averageDailySteps)/5280;
-//   	if ($scope.user.averageDailySteps >= 10000) {
-//     	msg +=  ", you've walked 10,000 miles per day!";
-//   	}
-//   	if (miles < 1) {
-// //     encourage small steps to get moving more
-// 		msg += " Take a walk on your lunch break."
-//   	} else if (miles < 4) {
-// //     doing pretty well, but give a challenge
-// 		msg += " Doing great! Try taking a walk around the block after dinner."
-//   	} else if (miles < 6) {
-//      	msg += "You're a walking machine!"
-//   }
-// 	// variable message that will depend on steps
-// 	$scope.motivationalMsg = msg;
-// }; // close function
-
-
-});
+}); 
