@@ -35,4 +35,29 @@ app.controller('motivationController', function($scope, dataService) {
 	dataService.getData(function(response) {
 		$scope.user = response.data.user;
 	});
+
+
+// $scope.motivationalMsg = function () {
+// 	var msg = " Hello, " + $scope.user.displayName +
+//     // change the user's walking stride from centimeters to feet
+  	
+//     // calculate how many miles per day
+//   	var miles = ($scope.user.strideLengthWalking/0.39370)/12*$scope.user.averageDailySteps)/5280;
+//   	if ($scope.user.averageDailySteps >= 10000) {
+//     	msg +=  ", you've walked 10,000 miles per day!";
+//   	}
+//   	if (miles < 1) {
+// //     encourage small steps to get moving more
+// 		msg += " Take a walk on your lunch break."
+//   	} else if (miles < 4) {
+// //     doing pretty well, but give a challenge
+// 		msg += " Doing great! Try taking a walk around the block after dinner."
+//   	} else if (miles < 6) {
+//      	msg += "You're a walking machine!"
+//   }
+// 	// variable message that will depend on steps
+// 	$scope.motivationalMsg = msg;
+// }; // close function
+
+
 });

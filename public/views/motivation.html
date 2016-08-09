@@ -1,7 +1,11 @@
 motivation
 <h1 ng-bind="user.fullName"></h1>
-<img ng-src="{{user.avatar}}" alt="{{user.fullName}}'s photo">
-<p ng-bind="user.averageDailySteps"></p>
+<img ng-src="{{user.avatar}}" alt="{{user.fullName}}'s photo"><br />
+Your average daily steps:<p ng-bind="user.averageDailySteps"></p>Way to go {{user.displayName}}!
+
+Your stride length is <span ng-bind="user.strideLengthWalking"></span>
+
+<h2>{{ motivationalMsg }}</h2>
 
 <h3>{{randomMotivationalQuote}}</h3>
 
