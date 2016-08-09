@@ -13,7 +13,7 @@ app.service('dataService', function($http) {
  // 	});
  // };
  
- function errorCallback() {
+ this.errorCallback = function() {
 	 console.log(response.statusText);
 	 $http.get('mock/shugdata.json')
 	 .then(callback);
@@ -29,7 +29,7 @@ app.service('dataService', function($http) {
  
  this.getData = function(callback) {
 	 console.log('Bearer ' + fragment['access_token']);
-	 $http(req).then(callback, errorCallBack);
+	 $http(req).then(callback, this.errorCallBack);
  };
  
 });
