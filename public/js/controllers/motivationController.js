@@ -32,39 +32,6 @@ app.controller('motivationController', function($scope, dataService) {
 
   $scope.randomMotivationalQuote = $scope.quotes[Math.floor(Math.random()*$scope.quotes.length)];
 
-	$scope.videos = [
-		"https://www.youtube.com/watch?v=vH0nP4NzS9M",
-		"https://www.youtube.com/watch?v=mDxDMaZW5bw",
-		"https://www.youtube.com/watch?v=BzOw7xb7uRo",
-		"https://www.youtube.com/watch?v=g-jwWYX7Jlo",
-		"https://www.youtube.com/watch?v=mgmVOuLgFB0",
-		"https://www.youtube.com/watch?v=Sk56VxaeqEQ",
-		"https://www.youtube.com/watch?v=r3MxMfzWfbE",
-		"https://www.youtube.com/watch?v=V6xLYt265ZM",
-		"https://www.youtube.com/watch?v=2vj-ZmYTGAw",
-		"https://www.youtube.com/watch?v=CMm6tDavSXg",
-		"https://www.youtube.com/watch?v=9o6F_cRW5W0",
-		"https://www.youtube.com/watch?v=NS95suaHc18",
-		"https://www.youtube.com/watch?v=_pi7oqZ6ioU",
-		"https://www.youtube.com/watch?v=FhzNSPiqO0M",
-		"https://www.youtube.com/watch?v=r5IMO0RohL4",
-		"https://www.youtube.com/watch?v=8JSmbM1z54k",
-		"https://www.youtube.com/watch?v=q5nVqeVhgQE",
-		"https://www.youtube.com/watch?v=lsSC2vx7zFQ",
-		"https://www.youtube.com/watch?v=M0uZnhAovBc",
-		"https://www.youtube.com/watch?v=R9CD7uj2TL0",
-		"https://www.youtube.com/watch?v=RC6sMFbL288",
-		"https://www.youtube.com/watch?v=UfjRcGDBvMQ",
-		"https://www.youtube.com/watch?v=Z0ZrkBCnfxw",
-		"https://www.youtube.com/watch?v=zIOi-B0uOqA",
-		"https://www.youtube.com/watch?v=u9psXavuegk",
-		"https://www.youtube.com/watch?v=JNy-XytidOU",
-		"https://www.youtube.com/watch?v=guRp6usVYaQ",
-		"https://www.youtube.com/watch?v=bAwXAFz6cmA"
-	];
-
-	$scope.randomMotivationalVideo = $scope.videos[Math.floor(Math.random()*$scope.videos.length)];
-
 	dataService.getData(function(response) {
 		$scope.user = response.data.user;
 	});
