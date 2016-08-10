@@ -34,3 +34,16 @@ h2.about {
 	text-align: center;
 }
 // end about developer styling
+
+.delete {
+	float: right;
+	background-color: #ccc;
+	padding: 1px;
+}
+
+.friends {
+	border: 1px solid black;
+	width: 225px;
+	display: inline-block;
+	margin: 10px;
+}
