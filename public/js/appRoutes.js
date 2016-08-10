@@ -2,20 +2,80 @@ var app = angular.module('fitnessApp');
 
 app.config(function($routeProvider) {
 	$routeProvider
-	.when('/overview',
+	.when('/',
 	{
-		templateUrl: 'views/overview.html',
-		controller: 'overviewCtrl'
+		templateUrl: 'views/motivation.html',
+		controller: 'motivationController'
 	})
-	.when ('/stats',
+	.when ('/404',
 	{
-		templateUrl: 'views/stats.html',
-		controller: 'statsCtrl'
+		templateUrl: 'views/404.html',
+		controller: '404Controller'
+	})
+	.when('/bodymap',
+	{
+		templateUrl: 'views/bodymap.html',
+		controller: 'bodyMapController'
+	})
+	.when('/feed',
+	{
+		templateUrl: 'views/feed.html',
+		controller: 'feedController'
+	})
+	.when('/about',
+	{
+		templateUrl: 'views/about.html',
+		controller: 'aboutController'
+	})
+	.when ('/challenges',
+	{
+		templateUrl: 'views/challenges.html',
+		controller: 'challengesController'
+	})
+	.when ('/compare',
+	{
+		templateUrl: 'views/compare.html',
+		controller: 'compareController'
+	})
+	.when ('/data',
+	{
+		templateUrl: 'views/data.html',
+		controller: 'dataController'
+	})
+	.when ('/feed',
+	{
+		templateUrl: 'views/feed.html',
+		controller: 'feedController'
+	})
+	.when ('/friends',
+	{
+		templateUrl: 'views/friends.html',
+		controller: 'friendsController'
+	})
+	.when ('/leaderboard',
+	{
+		templateUrl: 'views/leaderboard.html',
+		controller: 'leaderboardController'
+	})
+	.when('/motivation',
+	{
+		templateUrl: 'views/motivation.html',
+		controller: 'motivationController'
+	})
+	.when ('/project',
+	{
+		templateUrl: 'views/project.html',
+		controller: 'projectController'
 	})
 	.when ('/recommendations',
 	{
 		templateUrl: 'views/recommendations.html',
-		controller: 'recommendationsCtrl'
+		controller: 'recommendationsController'
 	})
-	.otherwise({ redirectTo: '/'})
+	.when('/routine',
+	{
+		templateUrl: 'views/routine.html',
+		controller: 'routineController'
+	})
+	.otherwise({ redirectTo: '/404'})
 });

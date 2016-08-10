@@ -3,18 +3,37 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+<<<<<<< HEAD
 		<title>{{ user.name }}'s Fitbit Friend</title>
+=======
+		<title>{{user.name}}'s FitKnit</title>
+>>>>>>> master
 
 		<link type="text/css" rel="stylesheet" href="css/normalize.css"/>
 		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
 	</head>
 
 	<body ng-app="fitnessApp">
+
+		<input type="text" ng-model="searchText">
 		<nav class="main-nav">
 			<ul>
+<<<<<<< HEAD
 				<li><a href="#/overview">Overview</a></li>
 				<li><a href="#/stats">Detailed Stats</a></li>
 				<li><a href="#/recommendations">Recommendations</a></li>
+=======
+				<li><a href="#/bodymap">Bodymap</a></li>
+				<li><a href="#/challenges">Challenges</a></li>
+				<li><a href="#/compare">Compare</a></li>
+				<li><a href="#/data">Data</a></li>
+				<li><a href="#/feed">Feed</a></li>
+				<li><a href="#/friends">Friends</a></li>
+				<li><a href="#/leaderboard">Leaderboard</a></li>
+				<li><a href="#/motivation">Motivation</a></li>
+				<li><a href="#/recommendations">Recommendations</a></li>
+				<li><a href="#/routine">Routine</a></li>
+>>>>>>> master
 			</ul>
 		</nav>
 		<h1>
@@ -24,17 +43,52 @@
 		<ng-view></ng-view>
 
 		<footer>
+<!-- 			<span>{{ randomQuote }}</span> -->
 		</footer>
-
+		<script>
+		  var fragmentString = location.hash.substr(1);
+			//Create an empty object to store user properties and values from URL fragment
+	    var fragment = {};
+	    var fragmentItemStrings = fragmentString.split('&');
+			//Example: fragmentItemStrings = [_scope=nutrition, user_id=338TCN]
+			for (var i = 0; i < fragmentItemStrings.length; i++) {
+				var fragmentItem = fragmentItemStrings[i].split('=');
+				//Example: fragmentItem === [user_id, 338TCN]
+				if (fragmentItem.length !== 2) {
+					//if there isn't both a property and a value skip and go on to the next element in fragmentItemStrings array
+	        continue;
+	      }
+				//Assign this property to its corresponding value in fragment object
+				fragment[fragmentItem[0]] = fragmentItem[1];
+			}
+		</script>
+		<!-- Lib JS files-->
 		<script src="libs/angular.min.js"></script>
 		<script src="libs/angular-route.js"></script>
 		<script src="libs/d3.min.js"></script>
-
+		<!-- App/Module JS files-->
 		<script src="js/app.js"></script>
+		<!-- Routing JS files-->
 		<script src="js/appRoutes.js"></script>
-		<script src="js/controllers/overviewCtrl.js"></script>
-		<script src="js/controllers/statsCtrl.js"></script>
-		<script src="js/controllers/recommendationsCtrl.js"></script>
+		<!-- service -->
+		<script src="js/services/dataservice.js"></script>
+
+		<!--Controller JS files-->
+		<script src="js/controllers/404controller.js"></script>
+		<script src="js/controllers/bodymapcontroller.js"></script>
+		<script src="js/controllers/motivationcontroller.js"></script>
+		<script src="js/controllers/challengescontroller.js"></script>
+		<script src="js/controllers/comparecontroller.js"></script>
+		<script src="js/controllers/datacontroller.js"></script>
+		<script src="js/controllers/feedcontroller.js"></script>
+		<script src="js/controllers/friendscontroller.js"></script>
+		<script src="js/controllers/leaderboardcontroller.js"></script>
+		<script src="js/controllers/recommendationscontroller.js"></script>
+		<script src="js/controllers/routinecontroller.js"></script>
+		<script src="js/controllers/searchcontroller.js"></script>
+		<!--Directives JS files -->
+		<script src="js/directives/feeddirective.js"></script>
+		<script src="js/directives/youtubedirective.js"></script>
 
 	</body>
 

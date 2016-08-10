@@ -1,7 +1,7 @@
 var app = angular.module('fitnessApp');
 
 
-app.controller('aboutCtrl', function($scope) {
+app.controller('recommendationsController', ["$scope", function($scope) {
 	$scope.recommendations = [
 			{
 				source: "Mayo Clinic",
@@ -15,4 +15,4 @@ app.controller('aboutCtrl', function($scope) {
 			},
 
 	]
-});
+}]);
