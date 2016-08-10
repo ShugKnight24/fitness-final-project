@@ -1,54 +1,53 @@
-
-
 {
-  "userID": "565LAN",
-  "fullName": "Landon Borrego",
-  "friends": ["888TRF", "656JOH", "767MRC", "444GRT", "220RAY", "323CHE"],
-  "posts": [      
-      {
-        "dateUploaded": "2016-02-27T02:15:12.356Z",
-        "author": "Landon Borrego",
-        "image": "http://www.gannett-cdn.com/-mm-/8c09f32502ab6976dba9d73b1bec6cc57242cfcf/c=201-0-3349-2367&r=x404&c=534x401/local/-/media/2016/08/08/DetroitFreePress/DetroitFreePress/636062428969462626-GTY-AFP-E29PP.jpg",
-        "content": "Go Pistons! http://www.freep.com/story/sports/olympics/rio-2016/2016/08/08/rio-olympics-mens-basketball/88387026/",
-        "likes": "12",
-        "comments": "[{}, {}, {}]"
-      }, {}, {}],
+  "userID": "323CHE",
+  "fullName": "Chelsea Miles",
+  "friends": ["565LAN", "888TRF", "444GRT"],
+  "posts": [
+    {
+        "dateUploaded": "2016-04-01T02:15:12.356Z",
+        "author": "Chelsea Miles",
+        "image": "http://cdn.metroparent.com/wp-content/uploads/Best-Places-to-Go-Hiking-in-Southeast-Michigan.jpg",
+        "content": "beautiful day for a hike!",
+        "likes": 12,
+        "comments": []
+    }],
+
   "challenges": {
     "activeChallenges": [{}, {}, {}],
     "inActiveChallenges": [{}, {}]
   },
   "data": {
       "user": {
-          "age": 16,
-          "avatar": "../images/landon_100.jpg",
-          "avatar150": "../images/landon_150.jpg",
-          "averageDailySteps": 7000,
+          "age": 26,
+          "avatar": "../images/chelsea_miles_100.jpg",
+          "avatar150": "../images/chelsea_miles__150.jpg",
+          "averageDailySteps": 8000,
           "city": "Detroit",
           "clockTimeDisplayFormat": "12hour",
           "corporate": false,
           "corporateAdmin": false,
           "country": "US",
-          "dateOfBirth": "2000-04-01",
-          "displayName": "Landon",
+          "dateOfBirth": "1990-04-01",
+          "displayName": "Chelsea",
           "distanceUnit": "en_US",
-          "encodedId": "565LAN",
+          "encodedId": "323CHE",
           "features": {
-              "exerciseGoal": true
+              "exerciseGoal": false
           },
           "foodsLocale": "en_US",
-          "fullName": "Landon Borrego",
-          "gender": "MALE",
+          "fullName": "Chelsea Miles",
+          "gender": "FEMALE",
           "glucoseUnit": "en_US",
-          "height": 175,
+          "height": 170,
           "heightUnit": "en_US",
           "locale": "en_US",
           "memberSince": "2014-12-26",
           "offsetFromUTCMillis": -14400000,
           "startDayOfWeek": "SUNDAY",
           "state": "MI",
-          "strideLengthRunning": 88.6,
+          "strideLengthRunning": 70,
           "strideLengthRunningType": "manual",
-          "strideLengthWalking": 70.7,
+          "strideLengthWalking": 65,
           "strideLengthWalkingType": "manual",
           "timezone": "America/New_York",
           "topBadges": [
@@ -156,7 +155,7 @@
           ],
           "waterUnit": "en_US",
           "waterUnitName": "fl oz",
-          "weight": 95.6,
+          "weight": 40,
           "weightUnit": "en_US"
       }
   }

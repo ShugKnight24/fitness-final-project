@@ -1,54 +1,61 @@
-
-
 {
-  "userID": "565LAN",
-  "fullName": "Landon Borrego",
-  "friends": ["888TRF", "656JOH", "767MRC", "444GRT", "220RAY", "323CHE"],
-  "posts": [      
-      {
+  "userID": "444GRT",
+  "fullName": "Grant Chirpus",
+  "friends": ["565LAN", "888TRF", "220RAY", "323CHE", "656JOH", "767MRC"],
+  "posts": [
+    {
         "dateUploaded": "2016-02-27T02:15:12.356Z",
-        "author": "Landon Borrego",
-        "image": "http://www.gannett-cdn.com/-mm-/8c09f32502ab6976dba9d73b1bec6cc57242cfcf/c=201-0-3349-2367&r=x404&c=534x401/local/-/media/2016/08/08/DetroitFreePress/DetroitFreePress/636062428969462626-GTY-AFP-E29PP.jpg",
-        "content": "Go Pistons! http://www.freep.com/story/sports/olympics/rio-2016/2016/08/08/rio-olympics-mens-basketball/88387026/",
-        "likes": "12",
-        "comments": "[{}, {}, {}]"
-      }, {}, {}],
+        "author": "Grant Chirpus",
+        "image": "../images/foam_roller.jpg",
+        "content": "This is really painful. I want to go back to looking out the window. Someone please carry me.",
+        "likes": 0,
+        "comments": [{"comment":"You can do it Grant!","author":"Selena"}, {"comment":"nope, I really can't.","author":"Grant Chirpus"}]
+    }, 
+    {
+        "dateUploaded": "2016-02-27T02:15:12.356Z",
+        "author": "Grant Chirpus",
+        "image": "",
+        "content": "Massages this week. Boy, do I need one.",
+        "likes": 21,
+        "comments": []
+    }],
+
   "challenges": {
     "activeChallenges": [{}, {}, {}],
     "inActiveChallenges": [{}, {}]
   },
   "data": {
       "user": {
-          "age": 16,
-          "avatar": "../images/landon_100.jpg",
-          "avatar150": "../images/landon_150.jpg",
-          "averageDailySteps": 7000,
+          "age": 5,
+          "avatar": "../images/grant_100.jpg",
+          "avatar150": "../images/grant_150.jpg",
+          "averageDailySteps": 2,
           "city": "Detroit",
           "clockTimeDisplayFormat": "12hour",
           "corporate": false,
           "corporateAdmin": false,
           "country": "US",
-          "dateOfBirth": "2000-04-01",
-          "displayName": "Landon",
+          "dateOfBirth": "2011-04-01",
+          "displayName": "Grant Chirpus",
           "distanceUnit": "en_US",
-          "encodedId": "565LAN",
+          "encodedId": "444GRT",
           "features": {
-              "exerciseGoal": true
+              "exerciseGoal": false
           },
           "foodsLocale": "en_US",
-          "fullName": "Landon Borrego",
+          "fullName": "Grant Chirpus",
           "gender": "MALE",
           "glucoseUnit": "en_US",
-          "height": 175,
+          "height": 40,
           "heightUnit": "en_US",
           "locale": "en_US",
           "memberSince": "2014-12-26",
           "offsetFromUTCMillis": -14400000,
           "startDayOfWeek": "SUNDAY",
           "state": "MI",
-          "strideLengthRunning": 88.6,
+          "strideLengthRunning": 0.1,
           "strideLengthRunningType": "manual",
-          "strideLengthWalking": 70.7,
+          "strideLengthWalking": 0.5,
           "strideLengthWalkingType": "manual",
           "timezone": "America/New_York",
           "topBadges": [
@@ -156,7 +163,7 @@
           ],
           "waterUnit": "en_US",
           "waterUnitName": "fl oz",
-          "weight": 95.6,
+          "weight": 3,
           "weightUnit": "en_US"
       }
   }
