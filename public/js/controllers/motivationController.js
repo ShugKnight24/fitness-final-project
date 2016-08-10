@@ -31,7 +31,6 @@ app.controller('motivationController', function($scope, dataService) {
 	];
 
   $scope.randomMotivationalQuote = $scope.quotes[Math.floor(Math.random()*$scope.quotes.length)];
-
 	dataService.getData(function(response) {
 		$scope.user = response.data.user;
 	});
