@@ -8,3 +8,41 @@
 <ul>
   <li ng-repeat="comment in post.comments">{{comment}}</li>
 </ul>
+
+//Text field for entering post
+//Add post button
+//Upload image input
+
+//Post content
+//Post date (time since)
+//Posted by (image and name of user)
+//Number of Likes
+//Like post
+//Number of comments
+//Expandable comments
+//Comments made by (image and name of user)
+//Add comments
+
+//Posts include all posts by friends and user
+//Posts sorted chronologically from latest to earliest post
+//Limit number of posts shown (scrolling down shows earlier posts)
+
+/* --data structure for users--
+{
+  userID: string,
+  fullName: string,
+  friends: array of userIDs,
+  posts: array of post objects (see above for post properties),
+  data: Object (pulled from fitbit),
+  challenges: array of objects
+}
+*/
+
+/* feed controller */
+/* --strategy to order posts-- 
+1. Get users friends posts array
+2. Concat friends posts arrays and users post array
+3. ng Repeat
+4. ng OrderBy date
+5. Reverse
+*/
