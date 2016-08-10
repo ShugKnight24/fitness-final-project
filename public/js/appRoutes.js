@@ -4,13 +4,23 @@ app.config(function($routeProvider) {
 	$routeProvider
 	.when('/',
 	{
-		templateUrl: 'views/feed.html',
-		controller: 'feedController'
+		templateUrl: 'views/motivation.html',
+		controller: 'motivationController'
 	})
 	.when ('/404',
 	{
 		templateUrl: 'views/404.html',
 		controller: '404Controller'
+	})
+	.when('/bodymap',
+	{
+		templateUrl: 'views/bodymap.html',
+		controller: 'bodyMapController'
+	})
+	.when('/feed',
+	{
+		templateUrl: 'views/feed.html',
+		controller: 'feedController'
 	})
 	.when('/about',
 	{
@@ -47,6 +57,11 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/leaderboard.html',
 		controller: 'leaderboardController'
 	})
+	.when('/motivation',
+	{
+		templateUrl: 'views/motivation.html',
+		controller: 'motivationController'
+	})
 	.when ('/project',
 	{
 		templateUrl: 'views/project.html',
@@ -56,6 +71,11 @@ app.config(function($routeProvider) {
 	{
 		templateUrl: 'views/recommendations.html',
 		controller: 'recommendationsController'
+	})
+	.when('/routine',
+	{
+		templateUrl: 'views/routine.html',
+		controller: 'routineController'
 	})
 	.otherwise({ redirectTo: '/404'})
 });
