@@ -3,8 +3,33 @@
 {
   "userID": "656JOH",
   "fullName": "John Beckius",
-  "friends": [],
-  "posts": [{}, {}, {}],
+  "friends": ["565LAN", "888TRF"],
+  "posts": [
+    {
+        "dateUploaded": "2016-02-27T02:15:12.356Z",
+        "author": "John Beckius",
+        "image": "https://www.mountainproject.com/images/54/64/107035464_medium_ecd2b9.jpg",
+        "content": "Norwick Ledge!",
+        "likes": "7",
+        "comments": "[{comment:'wow, that looks cold',author:'Bob'}]"
+    }, 
+    {
+        "dateUploaded": "2016-06-23T10:15:12.356Z",
+        "author": "John Beckius",
+        "image": "",
+        "content": "Who's up for a bike ride around Belle Isle this weekend?",
+        "likes": "27",
+        "comments": "[{comment:'I'm in for Saturday',author:'Bob'}, {comment:'sounds good', author: 'Chelsea'}]"
+    }, 
+    {
+        "dateUploaded": "2016-08-08T04:12:08.356Z",
+        "author": "John Beckius",
+        "image": "",
+        "content": "Slow roll on Aug 15 http://slowroll.bike",
+        "likes": "2",
+        "comments": "[]"
+    },],
+
   "challenges": {
     "activeChallenges": [{}, {}, {}],
     "inActiveChallenges": [{}, {}]
