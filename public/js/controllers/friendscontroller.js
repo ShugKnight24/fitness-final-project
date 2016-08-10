@@ -4,8 +4,8 @@ app.controller('friendsController', ["$scope", function($scope) {
 // fake friends
 	$scope.friends = [
 		{
-			fullName: "Samantha Cat",
-			avatar: "http://www.becauseimacat.com/wp-content/uploads/2015/11/Cats-Gone-Crazy-22.jpg",
+			fullName: "Gil Daniels",
+			avatar: "../images/gil.jpeg",
 			displayName: "Sammie",
 			strideLengthWalking: 20.60000000000001,
 			averageDailySteps: "2000",
