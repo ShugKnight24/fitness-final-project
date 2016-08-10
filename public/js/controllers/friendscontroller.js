@@ -11,6 +11,10 @@ app.controller('friendsController', ["$scope", function($scope) {
 $scope.findFriend = function() {
 	// code goes here
 };
+// search for friend
+$scope.compare = function() {
+	// send user to compare with friend selected
+};
 // delete button removes friend from friends list
 $scope.deleteFriend = function(friends, index){
     friends.splice(index, 1);

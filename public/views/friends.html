@@ -7,6 +7,7 @@
 
 <!-- repeat this div for each of the friend's information -->
 <div ng-repeat="friend in friends | filter:friendName | orderBy:friend.name" class="friends"><a class="delete" ng-click="deleteFriend(friends, $index)">x</a>
+	<a class="compare" ng-click="compare(friends, $index)">x</a>
 	<!-- friend's name in uppercase -->
 	<h2>{{ friend.fullName | uppercase }}</h2>
 	<!-- friend's photo and information -->
