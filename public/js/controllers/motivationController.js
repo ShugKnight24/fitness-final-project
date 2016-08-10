@@ -24,7 +24,7 @@ app.controller('motivationController', function($scope, dataService) {
 	" 'Run like you stole something.' ",
 	" 'We are what we repeatedly do. Excellence, therefore, is not an act but a habit.' — Aristotle",
 	" 'Your future is created by what you do today, not tomorrow' — Robert T. Kiyosaki",
-	" 'Don&#8217;t count the days; make the days count' — Muhammad Ali",
+	" 'Don't count the days; make the days count' — Muhammad Ali",
 	" 'I used to jog but the ice cubes kept falling out of my glass.' - David Lee Roth",
 	" 'Never eat more than you can lift.' - Miss Piggy",
 	" 'A bear, however hard he tries, grows tubby without exercise.' - A.A. Milne "
