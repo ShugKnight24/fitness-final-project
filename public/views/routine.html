@@ -1,0 +1,23 @@
+<h1>Your New Routine</h1>
+  <p>Stay accountable by keeping track of the exercises you want to complete. Enter an exercise you want to do, or choose from our exercise library. You can sort the list by exercise or body part.</p>
+    <form class="form" name="exerciseForm" ng-submit="addNewExercise()">
+      <input type="text" name="newExercise" ng-model="newExercise" placeholder="New Excercise" required>
+      <button ng-disabled="exerciseForm.$invalid">Add Exercise</button>
+      <input type="text" ng-model="searchExercises" placeholder="Search Different Exercises">
+    </form>
+    <button ng-click="addSelected()">Add Selected Exercises to your routine</button>
+          <ul>
+            <li ng-repeat="exercise in exercises">
+              <input type="checkbox" ng-model="exercise.selected">
+              <span ng-class="{'selected':exercise.selected}">{{exercise.exerciseName}}</span>
+              <span ng-class="{'selected':exercise.selected}">{{exercise.exerciseDescription}}</span>
+            </li>
+          </ul>
+          <div class="completedExerciseList">
+            <h1>Your Customized Exercise Routine!</h1>
+            <p>Filter your routine to make sure you have all the exercises you want!</p>
+            <input type="text" ng-model="searchSelectedExercises" placeholder="Filter your selected exercises">
+            <ul>
+              <li class="complete" ng-repeat="exercise in selectedExercises | filter:searchSelectedExercises | orderBy:'exerciseName'">
+                <span class="checkmark">&#10004</span> {{exercise.exerciseName}}
+              </li>

@@ -1,7 +1,7 @@
 .main-nav ul li {
   display: inline-block;
   margin-right: 25px;
-  float: right; }
+  float: left; }
 
 a {
   text-decoration: none; }
@@ -23,3 +23,14 @@ div.profile {
 
 h2.about {
   text-align: center; }
+
+.delete {
+  float: right;
+  background-color: #ccc;
+  padding: 1px; }
+
+.friends {
+  border: 1px solid black;
+  width: 225px;
+  display: inline-block;
+  margin: 10px; }

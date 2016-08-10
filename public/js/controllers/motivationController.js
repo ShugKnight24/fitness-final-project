@@ -31,9 +31,7 @@ app.controller('motivationController', function($scope, dataService) {
 	];
 
   $scope.randomMotivationalQuote = $scope.quotes[Math.floor(Math.random()*$scope.quotes.length)];
-	
-	// $scope.motivationalMsg = 'howdy do';
-	
+
 	dataService.getData(function(response) {
 		$scope.user = response.data.user;
 		var msg = " Hello, " + $scope.user.displayName + ", ";
@@ -53,12 +51,12 @@ app.controller('motivationController', function($scope, dataService) {
 			$scope.changingImg = "http://unisci24.com/data_images/wlls/31/279303-lynx.jpg";
 
   		} else if (miles <= 1) {
-  			msg += " take a walk on your lunch break. You can do it!";	
-			$scope.changingImg = "http://www.pic.cx/img65/bczyghemnzdaozqgufev.jpg";	
+  			msg += " take a walk on your lunch break. You can do it!";
+			$scope.changingImg = "http://www.pic.cx/img65/bczyghemnzdaozqgufev.jpg";
   		}
 	// variable message that will depend on steps
 	$scope.motivationalMsg = msg;
 	});
 
 
-}); 
+});
