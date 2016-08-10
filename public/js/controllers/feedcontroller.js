@@ -20,6 +20,8 @@ app.controller('feedController', ["$scope", function($scope) {
       comments: []
     }
     
+//new comment 
+    
   $scope.addPost = function() {
     var newPost = new Post(currentUser, "", $scope.newPostContent);
     //unshift to user posts array
