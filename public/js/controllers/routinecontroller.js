@@ -50,6 +50,11 @@ $scope.exercises =[
     "selected":false
   },
   {
+    "bodypart":"Lower Back",
+    "exerciseName":"Deadlift",
+    "selected":false
+  },
+  {
     "bodypart":"Quads",
     "exerciseName":"Squats",
     "selected":false
@@ -61,7 +66,7 @@ $scope.exercises =[
   },
   {
     "bodypart":"Quads",
-    "exerciseName":"Leg Extensions",
+    "exerciseName":"Leg Press",
     "selected":false
   },
   {
@@ -101,7 +106,7 @@ $scope.exercises =[
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Up Right Row",
+    "exerciseName":"Upright Row",
     "selected":false
   },
   {
@@ -111,7 +116,7 @@ $scope.exercises =[
   },
   {
     "bodypart":"Biceps",
-    "exerciseName":"Standing Bar Curl",
+    "exerciseName":"Barbell Curl",
     "selected":false
   },
   {
@@ -126,7 +131,7 @@ $scope.exercises =[
   },
   {
     "bodypart":"Triceps",
-    "exerciseName":"Rope Pushdown",
+    "exerciseName":"Tricep Pushdown",
     "selected":false
   },
   {
@@ -142,6 +147,11 @@ $scope.exercises =[
   {
     "bodypart":"Abs",
     "exerciseName":"Crunch",
+    "selected":false
+  },
+  {
+    "bodypart":"Abs",
+    "exerciseName":"Rope Crunch",
     "selected":false
   },
   {

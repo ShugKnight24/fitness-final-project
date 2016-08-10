@@ -19,5 +19,6 @@
             <input type="text" ng-model="searchSelectedExercises" placeholder="Filter your selected exercises">
             <ul>
               <li class="completedExercises" ng-repeat="exercise in selectedExercises | filter:searchSelectedExercises | orderBy:'exerciseName'">
-                <span class="checkmark">&#10004</span> {{exercise.exerciseName}}
+                <span class="checkmark">&#x1F3CB</span> {{exercise.exerciseName}}
               </li>
+              <p>Do 4 sets of 8 to 12 reps of your exercises</p>
