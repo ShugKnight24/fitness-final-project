@@ -8,7 +8,7 @@ app.controller('motivationController', function($scope, dataService) {
 	" 'Walking is the best possible exercise. Habituate yourself to walk very far.' - Thomas Jefferson",
 	" 'Take care of your body. It's the only place you have to live.' - Jim Rohn",
 	" 'We do not stop exercising because we grow old – we grow old because we stop exercising.' - Dr. Kenneth Cooper",
-	" 'If something stands between you and your success, move it. Never be denied.' - Dwayne &lsquo;The Rock&rsquo; Johnson",
+	" 'If something stands between you and your success, move it. Never be denied.' - Dwayne 'The Rock' Johnson",
 	" 'Don't be afraid of failure. This is the way to succeed.' - LeBron James",
 	" 'When you have a clear vision of your goal, it's easier to take the first step toward it.' - L.L. Cool J.",
 	" 'People often say that motivation doesnt last. Well, neither does bathing-- that's why we recommend it daily.' - Zig Ziglar",
