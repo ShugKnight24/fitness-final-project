@@ -1,13 +1,5 @@
-.main-nav ul li {
-  display: inline-block;
-  margin-right: 25px;
-  float: left; }
-
-a {
-  text-decoration: none; }
-
-h1 {
-  text-align: center; }
+.main-nav.ul.li {
+  display: inline-block; }
 
 div.profile {
   background-color: yellow;
@@ -16,21 +8,7 @@ div.profile {
   padding: 10px;
   vertical-align: top;
   width: 25%;
-  height: 450px; }
+  height: 500px; }
 
 .dogeMotto {
   font-style: italic; }
-
-h2.about {
-  text-align: center; }
-
-.delete {
-  float: right;
-  background-color: #ccc;
-  padding: 1px; }
-
-.friends {
-  border: 1px solid black;
-  width: 225px;
-  display: inline-block;
-  margin: 10px; }
