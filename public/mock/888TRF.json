@@ -10,16 +10,16 @@
         "author": "Gil Daniels",
         "image": "",
         "content": "Lost my fitbit. Anybody see it on the 4th floor?",
-        "likes": "1",
-        "comments": "[{comment:'nope',author:'Adam'}, {comment:'This isn't really a likeable post, it's a sadface thing', author:'Gil'}]"
+        "likes": 1,
+        "comments": [{"comment":"nope", "author":"Adam"}, {"comment":"This isn't really a likeable post, it's a sadface thing", "author":"Gil"}]
       }, 
       {
         "dateUploaded": "2016-08-05T03:25:12.356Z",
         "author": "Gil Daniels",
         "image": "",
         "content": "I'm not walking anywhere til I find my fitbit",
-        "likes": "0",
-        "comments": "[{}]"
+        "likes": 0,
+        "comments": [{}]
       },       
       {
         "dateUploaded": "2016-08-05T03:55:12.356Z",
@@ -27,7 +27,7 @@
         "image": "",
         "content": "Found my fitbit!!!!!",
         "likes": "27",
-        "comments": "[{comment:'grrreat', author:'Adam'}]"
+        "comments": [{"comment":"grrreat", "author":"Adam"}]
       }],
   "challenges": {
     "activeChallenges": [{}, {}, {}],

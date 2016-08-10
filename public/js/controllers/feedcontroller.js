@@ -1,6 +1,6 @@
 var app = angular.module('fitnessApp');
 
-app.controller('feedController', ["$scope", function($scope, dataService, friendProfileService) {
+app.controller('feedController', ["$scope", "dataService", "friendProfileService", function($scope, dataService, friendProfileService) {
   /* --strategy to order posts-- 
   1. Get users friends posts array
   2. Concat friends posts arrays and users post array
@@ -12,31 +12,37 @@ app.controller('feedController', ["$scope", function($scope, dataService, friend
   //define currentUser
   
   dataService.getData(function(response) {
-		$scope.user = response.data.user;
+		$scope.user = response.data;
     $scope.posts = $scope.user.posts;
     $scope.friendProfiles = friendProfileService.getFriendProfiles($scope.user.friends);
+    setTimeout(getPosts, 5000);
+	});
+  
+  function getPosts() {
     for (var i = 0; i < $scope.friendProfiles.length; i++) {
-      $scope.posts = $scope.posts.concat(friendProfiles[i].posts);
+      $scope.posts = $scope.posts.concat($scope.friendProfiles[i].posts);
     }
     console.log($scope.user);
     console.log($scope.posts);
-	});
+  }
   
-  var Post = function(author, image, content) {
-      dateUploaded: new Date()
-      author: author,
-      image: image,
-      content: content,
-      likes: 0,
-      comments: []
-    }
+  
+  
+  // var Post = function(author, image, content) {
+  //     dateUploaded: new Date(),
+  //     author: author,
+  //     image: image,
+  //     content: content,
+  //     likes: 0,
+  //     comments: []
+  //   };
     
 //new comment 
     
-  $scope.addPost = function() {
-    var newPost = new Post(currentUser, "", $scope.newPostContent);
-    //unshift to user posts array
-  };
+  // $scope.addPost = function() {
+  //   var newPost = new Post(currentUser, "", $scope.newPostContent);
+  //   //unshift to user posts array
+  // };
   
   //$scope.addComment
   
