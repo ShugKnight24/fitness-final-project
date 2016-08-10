@@ -1,54 +1,54 @@
 
 
 {
-  "userID": "767MRC",
-  "fullName": "Maurice Tedder",
-  "friends": ["565LAN"],
-  "posts": [
+  "userID": "565LAN",
+  "fullName": "Landon Borrego",
+  "friends": ["888TRF", "656JOH", "767MRC"],
+  "posts": [      
       {
-        "dateUploaded": "2016-08-02T12:56:12.356Z",
-        "author": "Maurice Tedder",
-        "image": "https://static.wixstatic.com/media/cae8a3_b9475ea0f211495b8b6cbfe7990943bf.jpg/v1/fill/w_677,h_506,al_c,q_90,usm_0.66_1.00_0.01/cae8a3_b9475ea0f211495b8b6cbfe7990943bf.jpg",
-        "content": "Saddle up now available in yellow",
-        "likes": "772",
-        "comments": "[{comment:'that looks like canary to me',author:'John'}, {comment:'how much does one of these cost?', author:'Ian'}, {'Will a 27‑inch iMac fit in there?', author:'Tobias'}, {'I like the green better, but with the stripey flap. not being picky or anything', author:'Karen'}]"
-      }],
+        "dateUploaded": "2016-02-27T02:15:12.356Z",
+        "author": "Landon Borrego",
+        "image": "http://www.gannett-cdn.com/-mm-/8c09f32502ab6976dba9d73b1bec6cc57242cfcf/c=201-0-3349-2367&r=x404&c=534x401/local/-/media/2016/08/08/DetroitFreePress/DetroitFreePress/636062428969462626-GTY-AFP-E29PP.jpg",
+        "content": "Go Pistons! http://www.freep.com/story/sports/olympics/rio-2016/2016/08/08/rio-olympics-mens-basketball/88387026/",
+        "likes": "12",
+        "comments": "[{}, {}, {}]"
+      }, {}, {}],
   "challenges": {
     "activeChallenges": [{}, {}, {}],
     "inActiveChallenges": [{}, {}]
   },
   "data": {
       "user": {
-          "age": 30,
-          "avatar": "../images/maurice_100.jpg",
-          "avatar150": "../images/maurice_150.jpg",
-          "averageDailySteps": 6565,
+          "age": 16,
+          "avatar": "../images/landon_100.jpg",
+          "avatar150": "../images/landon_150.jpg",
+          "averageDailySteps": 7000,
           "city": "Detroit",
           "clockTimeDisplayFormat": "12hour",
           "corporate": false,
           "corporateAdmin": false,
           "country": "US",
-          "dateOfBirth": "1986-04-01",
-          "displayName": "Maurice",
+          "dateOfBirth": "2000-04-01",
+          "displayName": "Landon",
           "distanceUnit": "en_US",
-          "encodedId": "767MRC",
+          "encodedId": "565LAN",
           "features": {
               "exerciseGoal": true
           },
           "foodsLocale": "en_US",
-          "fullName": "Maurice Tedder",
+          "fullName": "Landon Borrego",
           "gender": "MALE",
           "glucoseUnit": "en_US",
-          "height": 171,
+          "height": 175,
           "heightUnit": "en_US",
           "locale": "en_US",
           "memberSince": "2014-12-26",
           "offsetFromUTCMillis": -14400000,
           "startDayOfWeek": "SUNDAY",
           "state": "MI",
-          "strideLengthRunning": 87,
+          "strideLengthRunning": 88.6,
           "strideLengthRunningType": "manual",
-          "strideLengthWalking": 79,
+          "strideLengthWalking": 70.7,
           "strideLengthWalkingType": "manual",
           "timezone": "America/New_York",
           "topBadges": [
@@ -156,7 +156,7 @@
           ],
           "waterUnit": "en_US",
           "waterUnitName": "fl oz",
-          "weight": 90,
+          "weight": 95.6,
           "weightUnit": "en_US"
       }
   }
