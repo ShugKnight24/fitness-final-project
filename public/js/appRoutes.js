@@ -77,5 +77,5 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/routine.html',
 		controller: 'routineController'
 	})
-	.otherwise({ redirectTo: '/404'})
+	.otherwise({ redirectTo: '/'})
 });

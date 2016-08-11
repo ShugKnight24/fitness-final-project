@@ -1,10 +1,10 @@
-<h1>Your New Routine</h1>
+<h1>{{ user.fullName }}'s New Routine</h1>
   <p>Stay accountable by keeping track of the exercises you want to complete. Enter an exercise you want to do, or choose from our exercise library. You can sort the list by exercise or body part.</p>
   <p>If you want to learn more about a particular exercise, head over to our <a href="#/exerciselibrary">exercise library</a> for a more detailed description of how to perform the exercise.</p>
     <form class="form" name="exerciseForm" ng-submit="addNewExercise()">
       <input type="text" name="newExercise" ng-model="newExercise" placeholder="New Excercise" required>
       <button ng-disabled="exerciseForm.$invalid">Add Exercise</button>
-      <input type="text" ng-model="searchExercises" placeholder="Search Different Exercises">
+     <!--  <input type="text" ng-model="searchExercises" placeholder="Search Different Exercises"> -->
     </form>
     <button ng-click="addSelected()">Add Selected Exercises to your routine</button>
           <ul>
