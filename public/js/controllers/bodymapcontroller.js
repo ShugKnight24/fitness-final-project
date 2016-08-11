@@ -1,7 +1,9 @@
 var app = angular.module('fitnessApp');
 
 app.controller("bodyMapController",["$scope", function($scope){
-// Selected Excercises Array
+// Empty Selected Bodymap Excercises Array
+$scope.selectedBodyMapExercises = [];
+//Empty Bodypap Exercises array
 $scope.bodyMapExercises = [];
 // Array for objects of exercises the user can add
 $scope.chestExercises =[
@@ -239,24 +241,28 @@ $scope.gluteExercises =[
     "selected":false
   }
 ];
-  // Add new exercise to the list
-    $scope.addNewExercise = function(){
-      $scope.exercises.push({"exerciseName": $scope.newExercise, "selected":false});
-      $scope.newExercise = "";
-    };
-  // When clear selected button is pressed
-    $scope.addSelected = function(){
-      for (var i=0; i<$scope.exercises.length;i++){
-        if ($scope.exercises[i].selected){
-        // First push selected exercises to another array
-        $scope.selectedExercises.push($scope.exercises[i]);
-        // Check if array is being filled by the object
-        console.log($scope.selectedExercises);
-      };
-    }
-      // Then remove them from the list
-      $scope.exercises = $scope.exercises.filter(function(item){
-        return !item.selected;
-      });
-    };
+//If chest is pressed
+$scope.addChest = function(){
+  $scope.chestExercises.forEach(function(item, index){
+    $scope.bodyMapExercises.push(item);
+  });
+};
+  // $scope.bodyMapExercises.push($scope.chestExercises);
+
+
+  // // When bodymap button is pressed
+  //   $scope.addBodyMap = function(){
+  //     for (var i=0; i<$scope.bodyMapExercises.length;i++){
+  //       if ($scope.bodyMapExercises[i].selected){
+  //       // First push selected exercises to another array
+  //       $scope.selectedBodyMapExercises.push($scope.bodyMapExercises[i]);
+  //       // Check if array is being filled by the object
+  //       console.log($scope.selectedBodyMapExercises);
+  //     };
+  //   }
+  //     // Then remove them from the list
+  //     $scope.bodyMapExercises = $scope.bodyMapExercises.filter(function(item){
+  //       return !item.selected;
+  //     });
+  //   };
 }]);
