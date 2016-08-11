@@ -1,7 +1,13 @@
+section {
+  border: 1px solid black;
+  padding: 20px;
+  width: 50%;
+  margin: auto; }
+
 .main-nav ul li {
   display: inline-block;
   margin-right: 25px;
-  float: left; }
+  float: right; }
 
 a {
   text-decoration: none; }
