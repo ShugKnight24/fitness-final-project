@@ -5,13 +5,11 @@ app.controller("routineController",["$scope", function($scope){
 $scope.selectedExercises = [];
 // Bodypart Array
 $scope.bodyparts = [];
-// Exercise description array
-$scope.exerciseDescription = [];
 // Array for objects of exercises the user can add
 $scope.exercises =[
   {
     "bodypart":"Chest",
-    "exerciseName":"Bench Press",
+    "exerciseName":"Barbell Bench Press",
     "selected":false
   },
   {
@@ -21,7 +19,7 @@ $scope.exercises =[
   },
   {
     "bodypart":"Chest",
-    "exerciseName":"Dumbbell Press",
+    "exerciseName":"Dumbbell Bench Press",
     "selected":false
   },
   {
@@ -31,17 +29,17 @@ $scope.exercises =[
   },
   {
     "bodypart":"Back",
-    "exerciseName":"Barbell Rows",
+    "exerciseName":"Barbell Bent Over Row",
     "selected":false
   },
   {
     "bodypart":"Back",
-    "exerciseName":"One-Arm Row",
+    "exerciseName":"Dumbbell One-Arm Row",
     "selected":false
   },
   {
     "bodypart":"Back",
-    "exerciseName":"Pull Ups",
+    "exerciseName":"Wide Grip Pull Ups",
     "selected":false
   },
   {
@@ -51,12 +49,17 @@ $scope.exercises =[
   },
   {
     "bodypart":"Lower Back",
-    "exerciseName":"Deadlift",
+    "exerciseName":"Barbell Deadlift",
+    "selected":false
+  },
+  {
+    "bodypart":"Lower Back",
+    "exerciseName":"Body Weight Hyperextensions",
     "selected":false
   },
   {
     "bodypart":"Quads",
-    "exerciseName":"Squats",
+    "exerciseName":"Barbell Squats",
     "selected":false
   },
   {
@@ -86,32 +89,32 @@ $scope.exercises =[
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Over Head Press",
+    "exerciseName":"Barbell Over Head Press / Military Press",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Side Laterals",
+    "exerciseName":"Dumbbell Side Laterals",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Rear delt fly",
+    "exerciseName":"Dumbbell Rear Delt fly",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Front Raise",
+    "exerciseName":"Dumbbell Front Raise",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Upright Row",
+    "exerciseName":"Barbell Upright Row",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Face Pull",
+    "exerciseName":"Rope Face Pull",
     "selected":false
   },
   {
@@ -126,7 +129,7 @@ $scope.exercises =[
   },
   {
     "bodypart":"Biceps",
-    "exerciseName":"Hammer Curls",
+    "exerciseName":"Dumbbell Hammer Curls",
     "selected":false
   },
   {
@@ -136,12 +139,12 @@ $scope.exercises =[
   },
   {
     "bodypart":"Triceps",
-    "exerciseName":"Skull Crushers",
+    "exerciseName":"Barbell Skull Crushers",
     "selected":false
   },
   {
     "bodypart":"Triceps",
-    "exerciseName":"Tricep Extensions",
+    "exerciseName":"Dumbbell Tricep Kickback",
     "selected":false
   },
   {
@@ -161,7 +164,7 @@ $scope.exercises =[
   },
   {
     "bodypart":"Obliques",
-    "exerciseName":"Bicycle",
+    "exerciseName":"Twisting Incline Sit-Up",
     "selected":false
   },
   {
@@ -176,7 +179,7 @@ $scope.exercises =[
   },
   {
     "bodypart":"Calves",
-    "exerciseName":"Standing Calf Raise",
+    "exerciseName":"Machine Standing Calf Raise",
     "selected":false
   },
   {
@@ -191,12 +194,12 @@ $scope.exercises =[
   },
   {
     "bodypart":"Forearms",
-    "exerciseName":"Wrist Curls",
+    "exerciseName":"Barbell Wrist Curls",
     "selected":false
   },
   {
     "bodypart":"Forearms",
-    "exerciseName":"Farmers Carrys",
+    "exerciseName":"Farmer's Walk",
     "selected":false
   },
   {

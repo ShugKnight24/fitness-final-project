@@ -1,5 +1,8 @@
-<h1>Your One Stop Shop For Exercises</h1>
-<div ng-repeat="">
-  <p></p>
-  <p></p>
+<h1>Your One Stop Shop For Exercise Needs</h1>
+<div ng-repeat="exerciseDescription in exerciseDescriptions">
+  <p>{{exerciseDescription.bodypart}}</p>
+  <p>{{exerciseDescription.exerciseName}}</p>
+  <p>{{exerciseDescription.exerciseDescription}}</p>
+  <!-- <iframe ng-src="{{exerciseDescription.exerciseVideo}}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+  <img src="{{exerciseDescription.exerciseGif}}" alt="{{exerciseDescription.exerciseName}}" />
 </div>
