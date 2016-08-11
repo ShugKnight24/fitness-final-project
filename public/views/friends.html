@@ -4,11 +4,9 @@
 	<input type="text" name="search" ng-model="fullName" placeholder="find a friend..." />
 	<button name="button" class="button" ng-click="findFriend()">search</button>
 </form>
-
-
 <!-- repeat this div for each of the friend's information -->
 <div ng-repeat="friend in friendProfiles" class="friends"><a class="delete" ng-click="deleteFriend(friendProfiles, $index)">x</a>
-	<a class="compare" ng-click="compare(friends, $index)">compare</a>
+	<!-- <a class="compare" ng-click="compare(friends, $index)">compare</a> -->
 	<!-- friend's name in uppercase -->
 	<h2>{{ friend.fullName }}</h2>
 	<!-- friend's photo and information -->
