@@ -12,12 +12,12 @@ app.controller('friendsController', function($scope, dataService, $http) {
 	// code goes here
 	};
 	// send user to compare with friend selected
-	$scope.compare = function(friends, index) {
+	$scope.compare = function(friendsProfiles, index) {
 		$location.path('compare');
 	};
 	// delete button removes friend from friends list
-	$scope.deleteFriend = function(friends, index){
-    	friends.splice(index, 1);
+	$scope.deleteFriend = function(friendProfiles, index){
+    	friendProfiles.splice(index, 1);
 	};
 
 $scope.friendProfiles = [];
