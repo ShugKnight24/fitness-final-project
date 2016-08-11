@@ -7,7 +7,7 @@ section {
 .main-nav ul li {
   display: inline-block;
   margin-right: 25px;
-  float: right; }
+  float: left; }
 
 a {
   text-decoration: none; }
