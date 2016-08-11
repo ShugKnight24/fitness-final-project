@@ -42,11 +42,6 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/data.html',
 		controller: 'dataController'
 	})
-	.when ('/feed',
-	{
-		templateUrl: 'views/feed.html',
-		controller: 'feedController'
-	})
 	.when ('/friends',
 	{
 		templateUrl: 'views/friends.html',
