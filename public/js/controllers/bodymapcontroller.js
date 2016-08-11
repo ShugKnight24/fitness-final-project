@@ -284,7 +284,7 @@ $scope.addShoulders = function(){
   });
 };
 //if rear delts are pressed
-$scope.addReadDelts = function(){
+$scope.addRearDelts = function(){
   $scope.rearDeltExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item.exerciseName);
     console.log($scope.bodyMapExercises);
@@ -298,7 +298,7 @@ $scope.addBiceps = function(){
   });
 };
 //if triceps are pressed
-$scope.addTricepss = function(){
+$scope.addTriceps = function(){
   $scope.tricepExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item.exerciseName);
     console.log($scope.bodyMapExercises);
