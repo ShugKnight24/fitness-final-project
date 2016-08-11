@@ -1,54 +1,61 @@
-
-
 {
-  "userID": "767MRC",
-  "fullName": "Maurice Tedder",
-  "friends": ["565LAN", "444GRT", "323CHE"],
+  "userID": "444GRT",
+  "fullName": "Grant Chirpus",
+  "friends": ["565LAN", "888TRF", "220RAY", "323CHE", "656JOH", "767MRC"],
   "posts": [
-      {
-        "dateUploaded": "2016-08-02T12:56:12.356Z",
-        "author": "Maurice Tedder",
-        "image": "https://static.wixstatic.com/media/cae8a3_b9475ea0f211495b8b6cbfe7990943bf.jpg/v1/fill/w_677,h_506,al_c,q_90,usm_0.66_1.00_0.01/cae8a3_b9475ea0f211495b8b6cbfe7990943bf.jpg",
-        "content": "Saddle up now available in yellow",
-        "likes": 772,
-        "comments": [{"comment":"that looks like canary to me","author":"John"}, {"comment":"how much does one of these cost?", "author":"Ian"}, {"comment": "Will a 27‑inch iMac fit in there?", "author":"Tobias"}, {"comment":"I like the green better, but with the stripey flap. not being picky or anything", "author":"Karen"}]
-      }],
+    {
+        "dateUploaded": "2016-02-27T02:15:12.356Z",
+        "author": "Grant Chirpus",
+        "image": "../images/foam_roller.jpg",
+        "content": "This is really painful. I want to go back to looking out the window. Someone please carry me.",
+        "likes": 0,
+        "comments": [{"comment":"You can do it Grant!","author":"Selena"}, {"comment":"nope, I really can't.","author":"Grant Chirpus"}]
+    }, 
+    {
+        "dateUploaded": "2016-02-27T02:15:12.356Z",
+        "author": "Grant Chirpus",
+        "image": "",
+        "content": "Massages this week. Boy, do I need one.",
+        "likes": 21,
+        "comments": []
+    }],
+
   "challenges": {
     "activeChallenges": [{}, {}, {}],
     "inActiveChallenges": [{}, {}]
   },
   "data": {
       "user": {
-          "age": 30,
-          "avatar": "../images/maurice_100.jpg",
-          "avatar150": "../images/maurice_150.jpg",
-          "averageDailySteps": 6565,
+          "age": 5,
+          "avatar": "../images/grant_100.jpg",
+          "avatar150": "../images/grant_150.jpg",
+          "averageDailySteps": 2,
           "city": "Detroit",
           "clockTimeDisplayFormat": "12hour",
           "corporate": false,
           "corporateAdmin": false,
           "country": "US",
-          "dateOfBirth": "1986-04-01",
-          "displayName": "Maurice",
+          "dateOfBirth": "2011-04-01",
+          "displayName": "Grant Chirpus",
           "distanceUnit": "en_US",
-          "encodedId": "767MRC",
+          "encodedId": "444GRT",
           "features": {
-              "exerciseGoal": true
+              "exerciseGoal": false
           },
           "foodsLocale": "en_US",
-          "fullName": "Maurice Tedder",
+          "fullName": "Grant Chirpus",
           "gender": "MALE",
           "glucoseUnit": "en_US",
-          "height": 171,
+          "height": 40,
           "heightUnit": "en_US",
           "locale": "en_US",
           "memberSince": "2014-12-26",
           "offsetFromUTCMillis": -14400000,
           "startDayOfWeek": "SUNDAY",
           "state": "MI",
-          "strideLengthRunning": 87,
+          "strideLengthRunning": 0.1,
           "strideLengthRunningType": "manual",
-          "strideLengthWalking": 79,
+          "strideLengthWalking": 0.5,
           "strideLengthWalkingType": "manual",
           "timezone": "America/New_York",
           "topBadges": [
@@ -156,7 +163,7 @@
           ],
           "waterUnit": "en_US",
           "waterUnitName": "fl oz",
-          "weight": 90,
+          "weight": 3,
           "weightUnit": "en_US"
       }
   }

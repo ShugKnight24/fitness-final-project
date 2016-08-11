@@ -6,11 +6,12 @@
 </form>
 
 <!-- repeat this div for each of the friend's information -->
-<div ng-repeat="friend in friends | filter:friendName | orderBy:friend.name" class="friends"><a class="delete" ng-click="deleteFriend(friends, $index)">x</a>
+<div ng-repeat="friend in friends" class="friends"><a class="delete" ng-click="deleteFriend(friends, $index)">x</a>
+	<a class="compare" ng-click="compare(friends, $index)">x</a>
 	<!-- friend's name in uppercase -->
 	<h2>{{ friend.fullName | uppercase }}</h2>
 	<!-- friend's photo and information -->
-	<img src="{{ friend.avatar150 }}" alt-text="{{ friend.displayName }}" width="150" height="150"/>
+<!-- 	<img src="{{ friend.avatar150 }}" alt-text="{{ friend.displayName }}" width="150" height="150"/> -->
 	<p>{{ friend.displayName }}'s average daily steps: {{ friend.averageDailySteps }}</p>
 
 </div>

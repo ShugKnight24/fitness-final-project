@@ -1,54 +1,53 @@
-
-
 {
-  "userID": "767MRC",
-  "fullName": "Maurice Tedder",
-  "friends": ["565LAN", "444GRT", "323CHE"],
+  "userID": "323CHE",
+  "fullName": "Chelsea Miles",
+  "friends": ["565LAN", "888TRF", "444GRT"],
   "posts": [
-      {
-        "dateUploaded": "2016-08-02T12:56:12.356Z",
-        "author": "Maurice Tedder",
-        "image": "https://static.wixstatic.com/media/cae8a3_b9475ea0f211495b8b6cbfe7990943bf.jpg/v1/fill/w_677,h_506,al_c,q_90,usm_0.66_1.00_0.01/cae8a3_b9475ea0f211495b8b6cbfe7990943bf.jpg",
-        "content": "Saddle up now available in yellow",
-        "likes": 772,
-        "comments": [{"comment":"that looks like canary to me","author":"John"}, {"comment":"how much does one of these cost?", "author":"Ian"}, {"comment": "Will a 27‑inch iMac fit in there?", "author":"Tobias"}, {"comment":"I like the green better, but with the stripey flap. not being picky or anything", "author":"Karen"}]
-      }],
+    {
+        "dateUploaded": "2016-04-01T02:15:12.356Z",
+        "author": "Chelsea Miles",
+        "image": "http://cdn.metroparent.com/wp-content/uploads/Best-Places-to-Go-Hiking-in-Southeast-Michigan.jpg",
+        "content": "beautiful day for a hike!",
+        "likes": 12,
+        "comments": []
+    }],
+
   "challenges": {
     "activeChallenges": [{}, {}, {}],
     "inActiveChallenges": [{}, {}]
   },
   "data": {
       "user": {
-          "age": 30,
-          "avatar": "../images/maurice_100.jpg",
-          "avatar150": "../images/maurice_150.jpg",
-          "averageDailySteps": 6565,
+          "age": 26,
+          "avatar": "../images/chelsea_miles_100.jpg",
+          "avatar150": "../images/chelsea_miles__150.jpg",
+          "averageDailySteps": 8000,
           "city": "Detroit",
           "clockTimeDisplayFormat": "12hour",
           "corporate": false,
           "corporateAdmin": false,
           "country": "US",
-          "dateOfBirth": "1986-04-01",
-          "displayName": "Maurice",
+          "dateOfBirth": "1990-04-01",
+          "displayName": "Chelsea",
           "distanceUnit": "en_US",
-          "encodedId": "767MRC",
+          "encodedId": "323CHE",
           "features": {
-              "exerciseGoal": true
+              "exerciseGoal": false
           },
           "foodsLocale": "en_US",
-          "fullName": "Maurice Tedder",
-          "gender": "MALE",
+          "fullName": "Chelsea Miles",
+          "gender": "FEMALE",
           "glucoseUnit": "en_US",
-          "height": 171,
+          "height": 170,
           "heightUnit": "en_US",
           "locale": "en_US",
           "memberSince": "2014-12-26",
           "offsetFromUTCMillis": -14400000,
           "startDayOfWeek": "SUNDAY",
           "state": "MI",
-          "strideLengthRunning": 87,
+          "strideLengthRunning": 70,
           "strideLengthRunningType": "manual",
-          "strideLengthWalking": 79,
+          "strideLengthWalking": 65,
           "strideLengthWalkingType": "manual",
           "timezone": "America/New_York",
           "topBadges": [
@@ -156,7 +155,7 @@
           ],
           "waterUnit": "en_US",
           "waterUnitName": "fl oz",
-          "weight": 90,
+          "weight": 40,
           "weightUnit": "en_US"
       }
   }
