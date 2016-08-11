@@ -218,7 +218,7 @@ $scope.exercises =[
       $scope.exercises.push({"exerciseName": $scope.newExercise, "selected":false});
       $scope.newExercise = "";
     };
-  // When clear selected button is pressed
+  // When add selected button is pressed
     $scope.addSelected = function(){
       for (var i=0; i<$scope.exercises.length;i++){
         if ($scope.exercises[i].selected){
