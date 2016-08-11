@@ -1,42 +1,43 @@
 var app = angular.module('fitnessApp');
 
-app.controller('feedController', ["$scope", function($scope, dataService, friendProfileService) {
-  /* --strategy to order posts-- 
-  1. Get users friends posts array
-  2. Concat friends posts arrays and users post array
-  3. ng Repeat
-  4. ng OrderBy date
-  5. Reverse
-  */
+app.controller('feedController', ["$scope", "dataService", "friendProfileService", "$http", function($scope, dataService, friendProfileService, $http) {
   
-  //define currentUser
-  
+  $scope.friendProfiles = [];
+
   dataService.getData(function(response) {
-		$scope.user = response.data.user;
+		$scope.user = response.data;
     $scope.posts = $scope.user.posts;
-    $scope.friendProfiles = friendProfileService.getFriendProfiles($scope.user.friends);
-    for (var i = 0; i < $scope.friendProfiles.length; i++) {
-      $scope.posts = $scope.posts.concat(friendProfiles[i].posts);
-    }
-    console.log($scope.user);
-    console.log($scope.posts);
+    recursiveRequest($scope.user.friends.length - 1);
 	});
   
-  var Post = function(author, image, content) {
-      dateUploaded: new Date()
-      author: author,
-      image: image,
-      content: content,
-      likes: 0,
-      comments: []
+  function recursiveRequest(i) {
+    if(i >= 0) {
+      $http.get('mock/' + $scope.user.friends[i] + '.json').then(function(response) {
+        $scope.friendProfiles.push(response.data);
+        $scope.posts = $scope.posts.concat(response.data.posts);
+        recursiveRequest(i-1);
+      });
     }
+  }
+  
+  
+  
+  
+  // var Post = function(author, image, content) {
+  //     dateUploaded: new Date(),
+  //     author: author,
+  //     image: image,
+  //     content: content,
+  //     likes: 0,
+  //     comments: []
+  //   };
     
 //new comment 
     
-  $scope.addPost = function() {
-    var newPost = new Post(currentUser, "", $scope.newPostContent);
-    //unshift to user posts array
-  };
+  // $scope.addPost = function() {
+  //   var newPost = new Post(currentUser, "", $scope.newPostContent);
+  //   //unshift to user posts array
+  // };
   
   //$scope.addComment
   

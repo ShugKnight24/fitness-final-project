@@ -1,20 +1,20 @@
 <div>
-  <p>{{post.date - current date}} {{units}} ago</p> //time since posted 
-  <h3>{{post.author}}</h3>  //name of poster
-  <img ng-src="{{post.image.path}}" alt="{{post.image.alt}}"> //image of poster
+  <p>{{post.dateUploaded | date : 'mediumDate'}}</p>
+  <h3>{{post.author}}</h3>
+  <img ng-src="{{post.image}}" alt="{{post.image}}" ng-show="{{post.image}}">
   <div>
-    <img ng-src="{{}}" alt=""> //if image was uploaded display image
-    <p>{{post.content}}</p> //post content 
+    <img ng-src="{{post.image}}" alt="" ng-show="{{post.image}}">
+    <p>{{post.content}}</p> 
   </div>
-  <p>{{post.likes}}</p> //current likes of post 
+  <p>{{post.likes}}</p>
   <ul>
-    <li ng-repeat="comment in post.comments">{{comment}}</li> //post comments
+    <li ng-repeat="comment in post.comments">{{comment}}</li>
   </ul>
-  <input> //enter new comment field
-  <button> //add comment
+  <!-- <input> 
+  <button> -->
 </div>
 
-//Text field for entering post
+<!-- //Text field for entering post
 //Add post button
 //Upload image input
 
@@ -33,7 +33,7 @@
 //Posts sorted chronologically from latest to earliest post
 //Limit number of posts shown (scrolling down shows earlier posts)
 
-/* --data structure for post--
+/* data structure for post
 
 {
   dateUploaded: 
@@ -44,11 +44,11 @@
   comments: [{}, {}, {}]
 }
 
-  /* --data structure for comment--
+  /* data structure for comment
     {
       content:
       author: 
       date:
     }
   */
-*/
+*/ -->
