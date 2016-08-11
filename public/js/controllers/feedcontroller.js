@@ -1,30 +1,25 @@
 var app = angular.module('fitnessApp');
 
-app.controller('feedController', ["$scope", "dataService", "friendProfileService", function($scope, dataService, friendProfileService) {
-  /* --strategy to order posts-- 
-  1. Get users friends posts array
-  2. Concat friends posts arrays and users post array
-  3. ng Repeat
-  4. ng OrderBy date
-  5. Reverse
-  */
+app.controller('feedController', ["$scope", "dataService", "friendProfileService", "$http", function($scope, dataService, friendProfileService, $http) {
   
-  //define currentUser
-  
+  $scope.friendProfiles = [];
+
   dataService.getData(function(response) {
 		$scope.user = response.data;
     $scope.posts = $scope.user.posts;
-    $scope.friendProfiles = friendProfileService.getFriendProfiles($scope.user.friends);
-    setTimeout(getPosts, 5000);
+    recursiveRequest($scope.user.friends.length - 1);
 	});
   
-  function getPosts() {
-    for (var i = 0; i < $scope.friendProfiles.length; i++) {
-      $scope.posts = $scope.posts.concat($scope.friendProfiles[i].posts);
+  function recursiveRequest(i) {
+    if(i >= 0) {
+      $http.get('mock/' + $scope.user.friends[i] + '.json').then(function(response) {
+        $scope.friendProfiles.push(response.data);
+        $scope.posts = $scope.posts.concat(response.data.posts);
+        recursiveRequest(i-1);
+      });
     }
-    console.log($scope.user);
-    console.log($scope.posts);
   }
+  
   
   
   
