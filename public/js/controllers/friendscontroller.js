@@ -1,6 +1,6 @@
 var app = angular.module('fitnessApp');
 
-app.controller('friendsController', function($scope) {
+app.controller('friendsController', function($scope, dataService, $http) {
 // app.controller('friendsController', ["$scope", "friendProfileService",
 // 	function($scope, friendProfileService) {
 // 	var myFriends = new friendProfileService();
