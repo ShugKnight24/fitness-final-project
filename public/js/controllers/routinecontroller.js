@@ -5,236 +5,211 @@ app.controller("routineController",["$scope", function($scope){
 $scope.selectedExercises = [];
 // Bodypart Array
 $scope.bodyparts = [];
-// Exercise description array
-$scope.exerciseDescription = [];
 // Array for objects of exercises the user can add
 $scope.exercises =[
   {
     "bodypart":"Chest",
-    "exerciseName":"Bench Press",
-    "exerciseDescription": "Description",
+    "exerciseName":"Barbell Bench Press",
     "selected":false
   },
   {
     "bodypart":"Chest",
     "exerciseName":"Incline Bench Press",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Chest",
-    "exerciseName":"Dumbbell Press",
-    "exerciseDescription": "Description",
+    "exerciseName":"Dumbbell Bench Press",
     "selected":false
   },
   {
     "bodypart":"Chest",
     "exerciseName":"Cable Crossover",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Back",
-    "exerciseName":"Barbell Rows",
-    "exerciseDescription": "Description",
+    "exerciseName":"Barbell Bent Over Row",
     "selected":false
   },
   {
     "bodypart":"Back",
-    "exerciseName":"One-Arm Row",
-    "exerciseDescription": "Description",
+    "exerciseName":"Dumbbell One-Arm Row",
     "selected":false
   },
   {
     "bodypart":"Back",
-    "exerciseName":"Pull Ups",
-    "exerciseDescription": "Description",
+    "exerciseName":"Wide Grip Pull Ups",
     "selected":false
   },
   {
     "bodypart":"Back",
     "exerciseName":"Lat Pull Down",
-    "exerciseDescription": "Description",
+    "selected":false
+  },
+  {
+    "bodypart":"Lower Back",
+    "exerciseName":"Barbell Deadlift",
+    "selected":false
+  },
+  {
+    "bodypart":"Lower Back",
+    "exerciseName":"Body Weight Hyperextensions",
     "selected":false
   },
   {
     "bodypart":"Quads",
-    "exerciseName":"Squats",
-    "exerciseDescription": "Description",
+    "exerciseName":"Barbell Squats",
     "selected":false
   },
   {
     "bodypart":"Quads",
     "exerciseName":"Leg Extensions",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Quads",
-    "exerciseName":"Leg Extensions",
-    "exerciseDescription": "Description",
+    "exerciseName":"Leg Press",
     "selected":false
   },
   {
     "bodypart":"Hamstrings",
     "exerciseName":"Good Morning",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Hamstrings",
     "exerciseName":"Lying Leg Curl",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Hamstrings",
     "exerciseName":"Seated Leg Curl",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Over Head Press",
-    "exerciseDescription": "Description",
+    "exerciseName":"Barbell Over Head Press / Military Press",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Side Laterals",
-    "exerciseDescription": "Description",
+    "exerciseName":"Dumbbell Side Laterals",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Rear delt fly",
-    "exerciseDescription": "Description",
+    "exerciseName":"Dumbbell Rear Delt fly",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Front Raise",
-    "exerciseDescription": "Description",
+    "exerciseName":"Dumbbell Front Raise",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Up Right Row",
-    "exerciseDescription": "Description",
+    "exerciseName":"Barbell Upright Row",
     "selected":false
   },
   {
     "bodypart":"Shoulders",
-    "exerciseName":"Face Pull",
-    "exerciseDescription": "Description",
+    "exerciseName":"Rope Face Pull",
     "selected":false
   },
   {
     "bodypart":"Biceps",
-    "exerciseName":"Standing Bar Curl",
-    "exerciseDescription": "Description",
+    "exerciseName":"Barbell Curl",
     "selected":false
   },
   {
     "bodypart":"Biceps",
     "exerciseName":"Supinated Dumbbell Curl",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Biceps",
-    "exerciseName":"Hammer Curls",
-    "exerciseDescription": "Description",
+    "exerciseName":"Dumbbell Hammer Curls",
     "selected":false
   },
   {
     "bodypart":"Triceps",
-    "exerciseName":"Rope Pushdown",
-    "exerciseDescription": "Description",
+    "exerciseName":"Tricep Pushdown",
     "selected":false
   },
   {
     "bodypart":"Triceps",
-    "exerciseName":"Skull Crushers",
-    "exerciseDescription": "Description",
+    "exerciseName":"Barbell Skull Crushers",
     "selected":false
   },
   {
     "bodypart":"Triceps",
-    "exerciseName":"Tricep Extensions",
-    "exerciseDescription": "Description",
+    "exerciseName":"Dumbbell Tricep Kickback",
     "selected":false
   },
   {
     "bodypart":"Abs",
     "exerciseName":"Crunch",
-    "exerciseDescription": "Description",
+    "selected":false
+  },
+  {
+    "bodypart":"Abs",
+    "exerciseName":"Rope Crunch",
     "selected":false
   },
   {
     "bodypart":"Abs",
     "exerciseName":"Plank",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Obliques",
-    "exerciseName":"Bicycle",
-    "exerciseDescription": "Description",
+    "exerciseName":"Twisting Incline Sit-Up",
     "selected":false
   },
   {
     "bodypart":"Obliques",
     "exerciseName":"Russian Twist",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Calves",
     "exerciseName":"Seated Calf Raise",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Calves",
-    "exerciseName":"Standing Calf Raise",
-    "exerciseDescription": "Description",
+    "exerciseName":"Machine Standing Calf Raise",
     "selected":false
   },
   {
     "bodypart":"Traps",
     "exerciseName":"Barbell Shrugs",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Traps",
     "exerciseName":"Dumbbell Shrugs",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Forearms",
-    "exerciseName":"Wrist Curls",
-    "exerciseDescription": "Description",
+    "exerciseName":"Barbell Wrist Curls",
     "selected":false
   },
   {
     "bodypart":"Forearms",
-    "exerciseName":"Farmers Carrys",
-    "exerciseDescription": "Description",
+    "exerciseName":"Farmer's Walk",
     "selected":false
   },
   {
     "bodypart":"Glutes",
     "exerciseName":"Glute Bridge",
-    "exerciseDescription": "Description",
     "selected":false
   },
   {
     "bodypart":"Glutes",
     "exerciseName":"Barbell Glute Bridge",
-    "exerciseDescription": "Description",
     "selected":false
   }
 ];
@@ -246,7 +221,7 @@ $scope.exercises =[
   // When clear selected button is pressed
     $scope.addSelected = function(){
       for (var i=0; i<$scope.exercises.length;i++){
-        if ($scope.exercises[i].completed){
+        if ($scope.exercises[i].selected){
         // First push selected exercises to another array
         $scope.selectedExercises.push($scope.exercises[i]);
         // Check if array is being filled by the object
