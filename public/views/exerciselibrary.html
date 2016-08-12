@@ -1,8 +1,11 @@
 <h1>Your One Stop Shop For Exercise Needs</h1>
-<div ng-repeat="exerciseDescription in exerciseDescriptions">
+	
+	<label>Search by exercise name or body part: <input ng-model="exerciseDescription.exerciseName"></label>
+
+<div ng-repeat="exerciseDescription in exerciseDescriptions | filter:exerciseDescription.exerciseName">
   <p>{{exerciseDescription.bodypart}}</p>
   <p>{{exerciseDescription.exerciseName}}</p>
   <p>{{exerciseDescription.exerciseDescription}}</p>
   <!-- <iframe ng-src="{{exerciseDescription.exerciseVideo}}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-  <img src="{{exerciseDescription.exerciseGif}}" alt="{{exerciseDescription.exerciseName}}" />
+  <img ng-src="{{exerciseDescription.exerciseGif}}" alt="{{exerciseDescription.exerciseName}}" />
 </div>
