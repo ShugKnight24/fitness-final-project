@@ -1,8 +1,8 @@
 <h1>Your One Stop Shop For Exercise Needs</h1>
 	
-	<label>Search by exercise name or body part: <input ng-model="exerciseDescription.exerciseName"></label>
+	<label>Search by exercise name or body part: <input ng-model="exerciseDescription"></label>
 
-<div ng-repeat="exerciseDescription in exerciseDescriptions | filter:exerciseDescription.exerciseName">
+<div ng-repeat="exerciseDescription in exerciseDescriptions | filter:exerciseDescription | orderBy: 'exerciseDescription.bodypart'">
   <p>{{exerciseDescription.bodypart}}</p>
   <p>{{exerciseDescription.exerciseName}}</p>
   <p>{{exerciseDescription.exerciseDescription}}</p>
