@@ -4,9 +4,11 @@
 </div>
 
 <div>
-	<section ng-animate="'animate'" ng-repeat="slide in slides"><h2>{{ title }}</h2>
-    <p>{{ content }}</p>
-    <img ng-src="{{ image.path }}" alt="{{ image.alt }}"/>
+	<section ng-animate="'animate'" ng-repeat="slide in slides"><h2>{{ slide.title }}</h2>
+	<p>{{ slide.content1 }}</p>
+	<span><em>{{ slide.span1 }}</em></span>
+    <p>{{ slide.content }}</p>
+    <img ng-src="{{ slide.image.path }}" alt="{{ slide.image.alt }}"/>
     </section>
 
 <!--     <a class="btn btn-primary" href="#" ng-click="first = !first" ng-class="{ active: first }">First</a>

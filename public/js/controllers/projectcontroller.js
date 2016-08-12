@@ -14,7 +14,9 @@ $scope.slides = [
 	},
 	{
 		title: "How it Works",
-        content: "FitKnit knits together your fitbit statistics and motivational psychology, primarily: Self-monitoring: viewing how many steps you're taking in an average day",
+        content1: "FitKnit knits together your fitbit statistics and motivational psychology, primarily:",
+        span1: "Self-monitoring:", 
+        content:"viewing how many steps you're taking in an average day",
         image: {
         	path: "images/two_step_grant.jpg",
         	alt: "Only two steps today? I better get moving! Grant Chirpus says."
@@ -22,7 +24,8 @@ $scope.slides = [
 	},
 	{
 		title: "",
-        content: "<em>Cognitive restructuring</em>: self-talk in the style of: 'I can do this!' instead of 'wow, I'm sick of exercising, and I feel like a big blob and all my steps are between the couch and the bathroom.'",
+		span1: "Cognitive restructuring:",
+        content: "self-talk in the style of: 'I can do this!' instead of 'wow, I'm sick of exercising, and I feel like a big blob and all my steps are between the couch and the bathroom.'",
         image: {
         	path: "images/positivelyGrant.jpg",
         	alt: "Grant Chirpus says, My thighs are killing me from all those stairs yesterday. Let's do it again!"
@@ -30,7 +33,8 @@ $scope.slides = [
 	},
 	{
 		title: "",
-        content: "<em>Modeling</em>: learning by watching another person perform the healthy behaviors you aspire to",
+		span1: "Modeling:",
+        content: "learning by watching another person perform the healthy behaviors you aspire to",
         image: {
         	path: "images/like_ray_grant.jpg",
         	alt: "Grant Chirpus is working on his arms today - he wants to look like Ray."
@@ -38,7 +42,8 @@ $scope.slides = [
 	},
 	{
 		title: "",
-        content: "<em>Goal-setting</em> - developing concrete, specific steps to take toward a goal",
+		span1: "Goal-setting:",
+        content: "developing concrete, specific steps to take toward a goal",
         image: {
         	path: "images/grants_plan.jpg",
         	alt: "Grant Chirpus has an exercise plan."
@@ -56,11 +61,11 @@ $scope.slides = [
 ];
 
   // set the default states for all slides
-  $scope.first = true;
-  $scope.second = false;
-  $scope.third = false;
-  $scope.fourth = false;
-  $scope.fifth = false;
-  $scope.sixth = false;
+  // $scope.first = true;
+  // $scope.second = false;
+  // $scope.third = false;
+  // $scope.fourth = false;
+  // $scope.fifth = false;
+  // $scope.sixth = false;
 
 });
