@@ -1,6 +1,6 @@
 var app = angular.module('fitnessApp');
 
-app.controller('feedController', ["$scope", "dataService", "friendProfileService", "$http", function($scope, dataService, friendProfileService, $http) {
+app.controller('feedController', ["$scope", "dataService", "friendProfileService", "$http", "$filter", function($scope, dataService, friendProfileService, $http, $filter) {
   
   $scope.friendProfiles = [];
 
@@ -20,26 +20,22 @@ app.controller('feedController', ["$scope", "dataService", "friendProfileService
     }
   }
   
-  
-  
-  
-  // var Post = function(author, image, content) {
-  //     dateUploaded: new Date(),
-  //     author: author,
-  //     image: image,
-  //     content: content,
-  //     likes: 0,
-  //     comments: []
-  //   };
+  var Post = function(author, image, content) {
+      this.dateUploaded = new Date();
+      this.author = author;
+      this.image = image;
+      this.content = content;
+      this.likes = 0;
+      this.comments = [];
+    };
     
-//new comment 
-    
-  // $scope.addPost = function() {
-  //   var newPost = new Post(currentUser, "", $scope.newPostContent);
-  //   //unshift to user posts array
-  // };
+  $scope.addPost = function() {
+    $scope.newPost = new Post($scope.user.fullName, "", $scope.newPostContent);
+    $scope.posts.push($scope.newPost);
+    $scope.newPostContent = "";
+  };
   
-  //$scope.addComment
+  // $scope.addComment
   
   
   
