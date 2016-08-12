@@ -1,0 +1,124 @@
+
+  "userID": "4TNYXG",
+  "fullName": "Shugmi Shumunov",
+  "displayName": "Shugmi",
+  "avatar": "https://static0.fitbit.com/images/profile/defaultProfile_100_male.gif",
+  "avatar150": "https://static0.fitbit.com/images/profile/defaultProfile_150_male.gif",
+  "friends": ["565LAN", "656JOH", "767MRC", "888TRF", "444GRT", "323CHE"],
+  "posts": [      
+      {
+        "dateUploaded": "2016-08-05T03:15:12.356Z",
+        "author": "wejlkjfoiew",
+        "image": "",
+        "content": "sdfadfiowueir",
+        "likes": "1",
+        "comments": "[{comment:'nope',author:'Adam'}, {comment:'This isn't really a likeable post, it's a sadface thing', author:'Gil'}]"
+      }, 
+      {
+        "dateUploaded": "2016-08-05T03:25:12.356Z",
+        "author": "kjir30",
+        "image": "",
+        "content": "I'm not walking anywhere til I find my fitbit",
+        "likes": "0",
+        "comments": "[{}]"
+      },       
+      {
+        "dateUploaded": "2016-08-05T03:55:12.356Z",
+        "author": "r90r39r0239",
+        "image": "",
+        "content": "Found miojfiwitbit!!!!!",
+        "likes": "27",
+        "comments": "[{comment:'grrreat', author:'Adam'}]"
+      }],
+  "challenges": {
+    "activeChallenges": [{}, {}, {}],
+    "inActiveChallenges": [{}, {}]
+  },
+  "data": {
+    "user": {
+        "age": 26,
+        "avatar": "https://static0.fitbit.com/images/profile/defaultProfile_100_male.gif",
+        "avatar150": "https://static0.fitbit.com/images/profile/defaultProfile_150_male.gif",
+        "averageDailySteps": 7978,
+        "clockTimeDisplayFormat": "12hour",
+        "corporate": false,
+        "corporateAdmin": false,
+        "dateOfBirth": "1990-06-18",
+        "displayName": "Shugmi",
+        "distanceUnit": "en_US",
+        "encodedId": "4TNYXG",
+        "features": {
+            "exerciseGoal": true
+        },
+        "fullName": "Shugmi Shumunov",
+        "gender": "MALE",
+        "glucoseUnit": "en_US",
+        "height": 170.10000000000002,
+        "heightUnit": "en_US",
+        "locale": "en_US",
+        "memberSince": "2016-08-05",
+        "offsetFromUTCMillis": -14400000,
+        "startDayOfWeek": "SUNDAY",
+        "strideLengthRunning": 86.5,
+        "strideLengthRunningType": "default",
+        "strideLengthWalking": 70.60000000000001,
+        "strideLengthWalkingType": "default",
+        "timezone": "America/New_York",
+        "topBadges": [
+            {
+                "badgeGradientEndColor": "FF677C",
+                "badgeGradientStartColor": "D24958",
+                "badgeType": "DAILY_STEPS",
+                "category": "Daily Steps",
+                "cheers": [],
+                "dateTime": "2016-08-06",
+                "description": "10,000 steps in a day",
+                "earnedMessage": "Congrats on earning your first Sneakers badge!",
+                "encodedId": "228TQB",
+                "image100px": "http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps10k.png",
+                "image125px": "http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps10k.png",
+                "image300px": "http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps10k.png",
+                "image50px": "http://static0.fitbit.com/images/badges_new/badge_daily_steps10k.png",
+                "image75px": "http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps10k.png",
+                "marketingDescription": "You've walked 10,000 steps  And earned the Sneaker badge!",
+                "mobileDescription": "You stepped up your game and just reached the recommended number of steps per day.",
+                "name": "Sneakers (10,000 steps in a day)",
+                "shareImage640px": "http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps10k.png",
+                "shareText": "I took 10,000 steps and earned the Sneakers badge! #Fitbit",
+                "shortDescription": "10,000 steps",
+                "shortName": "Sneakers",
+                "timesAchieved": 1,
+                "value": 10000
+            },
+            {
+                "badgeGradientEndColor": "00D3D6",
+                "badgeGradientStartColor": "007273",
+                "badgeType": "DAILY_FLOORS",
+                "category": "Daily Climb",
+                "cheers": [],
+                "dateTime": "2016-08-07",
+                "description": "10 floors in a day",
+                "earnedMessage": "Congrats on earning your first Happy Hill badge!",
+                "encodedId": "228TTM",
+                "image100px": "http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors10.png",
+                "image125px": "http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors10.png",
+                "image300px": "http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors10.png",
+                "image50px": "http://static0.fitbit.com/images/badges_new/badge_daily_floors10.png",
+                "image75px": "http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors10.png",
+                "marketingDescription": "You've climbed 10 floors to earn the Happy Hill badge!",
+                "mobileDescription": "You're taking yourself to new heights and taking home the first badge!",
+                "name": "Happy Hill (10 floors in a day)",
+                "shareImage640px": "http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors10.png",
+                "shareText": "I climbed 10 flights of stairs and earned the Happy Hill badge! #Fitbit",
+                "shortDescription": "10 floors",
+                "shortName": "Happy Hill",
+                "timesAchieved": 2,
+                "value": 10
+            }
+        ],
+        "weight": 0,
+        "weightUnit": "en_US"
+    }
+  }
+    
+}

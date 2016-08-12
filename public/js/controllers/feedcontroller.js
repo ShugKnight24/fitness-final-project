@@ -34,10 +34,27 @@ app.controller('feedController', ["$scope", "dataService", "friendProfileService
     $scope.posts.push($scope.newPost);
     $scope.newPostContent = "";
   };
-
-  $scope.$watch('$scope.posts', function (newVal, oldVal) { /*...*/ }, true);
   
   $scope.friendProfiles = dataStore.getFriendProfiles();
+  
+  // $scope.filterByDate = function() {
+  //   $filter('orderBy')($scope.posts, 'dateUploaded', true);
+  // };
+
+  // $scope.$watch('$scope.posts', function (newVal, oldVal) { /*...*/ }, true);
+  //   $filter('orderBy')($scope.posts, 'dateUploaded', true);
+  
+  
+  // $scope.propertyName = 'dateuploaded';
+  // $scope.reverse = true;
+  // $scope.posts = orderBy(posts, $scope.propertyName, $scope.reverse);
+  // 
+  // $scope.sortBy = function(propertyName) {
+  //   $scope.reverse = (propertyName !== null && $scope.propertyName === propertyName)
+  //       ? !$scope.reverse : false;
+  //   $scope.propertyName = propertyName;
+  //   $scope.posts = orderBy(posts, $scope.propertyName, $scope.reverse);
+  // };
   
   // $scope.collectPosts = function() {
   //   $scope.posts = dataStore.getUserProfile().posts;
