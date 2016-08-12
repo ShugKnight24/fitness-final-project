@@ -1,7 +1,7 @@
 
 <h1 ng-bind="user.fullName"></h1>
-<img ng-src="{{user.avatar}}" alt="{{user.fullName}}'s photo">
-<p ng-bind="user.displayName">'s average daily steps: <span ng-bind="user.averageDailySteps"></span></p>
+<img ng-src="{{user.avatar}}" alt="{{user.displayName}}'s photo">
+<p>Your average daily steps: <span ng-bind="{{user.averageDailySteps}}"></span></p>
 
 <h3>{{randomMotivationalQuote}}</h3>
 
