@@ -3,20 +3,20 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>{{user.name}}'s FitKnit</title>
+		<title>FitKnit</title>
 
 		<link type="text/css" rel="stylesheet" href="css/normalize.css"/>
 		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
 	</head>
 
-	<body ng-app="fitnessApp">
+	<body ng-app="fitnessApp" ng-controller="mainController">
 
-		<input type="text" ng-model="searchText">
+		<!-- <input type="text" ng-model="searchText"> -->
 		<nav class="main-nav">
 			<ul>
 				<li><a href="#/bodymap">Bodymap</a></li>
 				<!-- <li><a href="#/challenges">Challenges</a></li> -->
-				<li><a href="#/compare">Compare</a></li>
+				<!-- <li><a href="#/compare">Compare</a></li> -->
 				<!-- <li><a href="#/data">Data</a></li> -->
 				<li><a href="#/exerciselibrary">Exercise Library</a></li>
 				<li><a href="#/feed">Feed</a></li>
@@ -63,8 +63,10 @@
 		<script src="js/appRoutes.js"></script>
 		<!-- service -->
 		<script src="js/services/dataservice.js"></script>
+		<script src="js/services/datastore.js"></script>
 		<script src="js/services/friendprofileservice.js"></script>
 		<!--Controller JS files-->
+		<script src="js/controllers/maincontroller.js"></script>
 		<script src="js/controllers/404controller.js"></script>
 		<script src="js/controllers/bodymapcontroller.js"></script>
 		<script src="js/controllers/motivationcontroller.js"></script>
