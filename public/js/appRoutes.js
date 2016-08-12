@@ -37,15 +37,20 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/compare.html',
 		controller: 'compareController'
 	})
-	.when ('/exerciselibrary',
-	{
-		templateUrl: 'views/exerciselibrary.html',
-		controller: 'exerciseLibraryController'
-	})
 	.when ('/data',
 	{
 		templateUrl: 'views/data.html',
 		controller: 'dataController'
+	})
+	.when ('/exercise',
+	{
+		templateUrl: 'views/exercise.html',
+		controller: 'exerciseController'
+	})
+	.when ('/exerciselibrary',
+	{
+		templateUrl: 'views/exerciselibrary.html',
+		controller: 'exerciseLibraryController'
 	})
 	.when ('/friends',
 	{
