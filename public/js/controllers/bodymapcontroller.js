@@ -392,7 +392,7 @@ $scope.addGlutes = function(){
   });
 };
 
-  // When bodymap button is pressed
+  // When Add Exercises button is pressed
     $scope.addBodyMap = function(){
       for (var i=0; i<$scope.bodyMapExercises.length;i++){
         if ($scope.bodyMapExercises[i].selected){
@@ -403,7 +403,7 @@ $scope.addGlutes = function(){
       };
     }
       // Then remove them from the list
-      $scope.bodyMapExercises = $scope.bodyMapExercises.filter(function(item){
+      $scope.selectedBodyMapExercises = $scope.selectedBodyMapExercises.filter(function(item){
         return !item.selected;
       });
     };
