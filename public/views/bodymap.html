@@ -34,16 +34,16 @@
     <ul>
       <li ng-repeat="bodyMapExercise in bodyMapExercises track by $index">
         <input type="checkbox" ng-model="bodyMapExercises.selected">
-        <span ng-class="{'selected':bodyMapExercises.selected}">{{bodyMapExercise.exerciseName}}</span>
+        <span ng-class="{'selected':selectedBodyMapExercises.selected}">{{bodyMapExercise.exerciseName}}</span>
       </li>
     </ul>
     <div class="completedBodyMapList">
       <h1>Your Customized Exercise Routine!</h1>
       <p>Filter your routine to make sure you have all the exercises you want!</p>
-      <input type="text" ng-model="searchBodyMapExercises" placeholder="Filter your selected exercises">
+      <input type="text" ng-model="searchselectedBodyMapExercises" placeholder="Filter your selected exercises">
       <p>Do 3-4 sets of 8 to 12 reps of each exercises</p>
       <ul>
-        <li class="selectedBodyMapExercises" ng-repeat="bodyMapExercise in selectedBodyMapExercise | filter:searchBodyMapExercises | orderBy:'exerciseName'">
-          <span class="checkmark">&#x1F3CB</span> {{bodyMapExercise.exerciseName}}
+        <li class="selectedBodyMapExercises" ng-repeat="selectedBodyMapExercise in selectedBodyMapExercises | filter:searchselectedBodyMapExercises | orderBy:'exerciseName'">
+          <span class="checkmark">&#x1F3CB</span> {{selectedBodyMapExercise.exerciseName}}
         </li>
     </div>
