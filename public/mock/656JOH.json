@@ -15,7 +15,7 @@
         "content": "Norwick Ledge!",
         "likes": 7,
         "comments": [{"comment":"wow", "comment":"that looks cold","author":"Bob"}]
-    }, 
+    },
     {
         "dateUploaded": "2016-06-23T10:15:12.356Z",
         "author": "John Beckius",
@@ -23,7 +23,7 @@
         "content": "Who's up for a bike ride around Belle Isle this weekend?",
         "likes": 27,
         "comments": [{"comment":"I'm in for Saturday", "author":"Bob"}, {"comment":"sounds good", "author": "Chelsea"}]
-    }, 
+    },
     {
         "dateUploaded": "2016-08-08T04:12:08.356Z",
         "author": "John Beckius",
