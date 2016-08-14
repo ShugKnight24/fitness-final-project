@@ -3,12 +3,18 @@
 	<h3>All you knit is Fitness</h3>
 </div>
 
-<section ng-repeat="slide in slides">
-	<h4>{{ slide.title }}</h4>
-	<p>{{ slide.content1 }}</p>
-	<span><em>{{ slide.span1 }}</em></span>
-    <p>{{ slide.content }}</p>
-    <img ng-src="{{ slide.image.path }}" alt="{{ slide.image.alt }}"/>
-</section>
-	
-<footer>&copy; 2016 Kreative Software Solutions</footer>
+<div class="row" ng-repeat="slide in slides">
+ 	<div class="col s6 offset-s3">
+    	<h3 class="header">{{ slide.title }}</h3>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img ng-src="{{ slide.image.path }}" alt="{{ slide.image.alt }}" >
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p class="flow-text">{{ slide.content1 }}<em>{{ slide.span1 }}</em>{{ slide.content }}</p>
+        </div>
+      </div>
+    </div>
+</div>
+</div>

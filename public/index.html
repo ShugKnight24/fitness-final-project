@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 
 <html lang="en">
 	<head>
@@ -11,23 +11,26 @@
 	</head>
 
 	<body ng-app="fitnessApp">
-		<nav class="main-nav">
-			<ul>
-				<li><a href="#/project">About the project</a></li>
-				<li><a href="#/about">About us</a></li>
-				<li><a href="#/thankyou">Thank You!</a></li>
-			</ul>
-		</nav>
-		<h1>FitKnit</h1>
 
-		<button>Login</button>
+  <nav>
+    <div class="nav-wrapper">
+
+      <a href="#" class="brand-logo">FitKnit</a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		<li><a href="#/project">About the project</a></li>
+		<li><a href="#/about">About us</a></li>
+		<li><a href="#/thankyou">Thank You!</a></li>
+      </ul>
+    </div>
+  </nav>
+  <button class="waves-effect waves-light btn">Login</button>
 		<!-- temporary link to member page for testing -->
 		<!-- <a href="member.html">member page</a> -->
 
 		<ng-view></ng-view>
 
-		<footer>
-		</footer>
+		<footer class="page-footer">&copy; 2016 Kreative Software Solutions</footer>
 		<!--Lib files-->
 		
 		
