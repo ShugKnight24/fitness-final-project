@@ -30,13 +30,15 @@
 </map>
 
 <div class="bodyMapWorkout">
+  <form action="#">
   <button ng-click="addBodyMap()">Add all your exercises to your routine</button>
     <ul>
       <li ng-repeat="bodyMapExercise in bodyMapExercises track by $index">
-        <input type="checkbox" ng-model="bodyMapExercises.selected">
-        <span ng-class="{'selected':selectedBodyMapExercises.selected}">{{bodyMapExercise.exerciseName}}</span>
+        <input type="checkbox" id="{{bodyMapExercise}}" ng-model="bodyMapExercises.selected">
+        <label for="{{bodyMapExercise}}" ng-class="{'selected':selectedBodyMapExercises.selected}">{{bodyMapExercise.exerciseName}}</label>
       </li>
     </ul>
+  </form>
     <div class="completedBodyMapList">
       <h1>Your Customized Exercise Routine!</h1>
       <p>Filter your routine to make sure you have all the exercises you want!</p>
