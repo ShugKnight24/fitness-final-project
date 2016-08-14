@@ -1,20 +1,20 @@
 <div>
-	<h1>About the Fitknit project</h1>
-	<p>All you knit is Fitness</p>
-</div>
-<div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-
-	<section uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-
-
-    </section>
-
-
-
-<!--     <a class="btn btn-primary" href="#" ng-click="first = !first" ng-class="{ active: first }">First</a>
-
-	<a class="btn btn-success" href="#" ng-click="second = !second" ng-class="{ active: second }">Second</a> -->
+	<h2>About the Fitknit project</h2>
+	<h3>All you knit is Fitness</h3>
 </div>
 
-	
-	<footer>Kreative Software Solutions</footer>
+<div class="row" ng-repeat="slide in slides">
+ 	<div class="col s6 offset-s3">
+    	<h3 class="header">{{ slide.title }}</h3>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img ng-src="{{ slide.image.path }}" alt="{{ slide.image.alt }}" >
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p class="flow-text">{{ slide.content1 }}<em>{{ slide.span1 }}</em>{{ slide.content }}</p>
+        </div>
+      </div>
+    </div>
+</div>
+</div>

@@ -1,3 +1,2 @@
-var app = angular.module('fitnessApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
+var app = angular.module('fitnessApp', ['ngRoute']);
 
-// ngAnimate is for the 'about the project' page

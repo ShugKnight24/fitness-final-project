@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 
 <html lang="en">
 	<head>
@@ -6,33 +6,37 @@
 		<title>FitKnit</title>
 
 		<link type="text/css" rel="stylesheet" href="css/normalize.css"/>
-<!-- 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
 	</head>
 
 	<body ng-app="fitnessApp">
-		<nav class="main-nav">
-			<ul>
-				<li><a href="#/project">About the project</a></li>
-				<li><a href="#/about">About us</a></li>
-				<li><a href="#/thankyou">Thank You!</a></li>
-			</ul>
-		</nav>
-		<h1>FitKnit</h1>
 
-		<button>Login</button>
+  <nav>
+    <div class="nav-wrapper">
+
+      <a href="#" class="brand-logo">FitKnit</a>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		<li><a href="#/project">About the project</a></li>
+		<li><a href="#/about">About us</a></li>
+		<li><a href="#/thankyou">Thank You!</a></li>
+      </ul>
+    </div>
+  </nav>
+  <button class="waves-effect waves-light btn">Login</button>
 		<!-- temporary link to member page for testing -->
 		<!-- <a href="member.html">member page</a> -->
 
 		<ng-view></ng-view>
 
-		<footer>
-		</footer>
+		<footer class="page-footer">&copy; 2016 Kreative Software Solutions</footer>
 		<!--Lib files-->
+		
+		
 		<script src="libs/angular.min.js"></script>
 		<script src="libs/angular-route.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
-		<script src="libs/ui-bootstrap-tpls-2.0.1.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
 		<script src="libs/d3.min.js"></script>
 		<!--App/Module JS files-->
@@ -43,6 +47,7 @@
 		<script src="js/controllers/aboutcontroller.js"></script>
 		<script src="js/controllers/projectcontroller.js"></script>
 		<script src="js/controllers/thankyoucontroller.js"></script>
+		
 	</body>
 
 </html>
