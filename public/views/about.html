@@ -1,11 +1,11 @@
 <h2 class="about">The FitKnit Team</h2>
 
-      <div class="row" ng-repeat="developer in developers">
-        <div class="col s12 m6 l3">
+      <div class="row" >
+         <div ng-repeat="developer in developers" class="col s4">
           <div class="card">
             <div class="card-image">
               <img ng-src="{{developer.image.path}}" alt-text="{{developer.image.altText}}"/>
-              <span class="card-title">{{developer.name}}</span>
+              <span class="card-title {{developer.style}}">{{developer.name}}</span>
             </div>
             <div class="card-content">
               <p>{{developer.motto}}</p><p>{{developer.content}}</p>
@@ -17,3 +17,4 @@
           </div>
         </div>
       </div>
+

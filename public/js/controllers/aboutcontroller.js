@@ -21,6 +21,7 @@ app.controller('aboutController',["$scope", function($scope) {
 			},
 			{
 				name: "Karen Langner",
+				style: "karen",
 				motto: "Front-end web developer looking for problems to solve.",
 				image: {
 					path: "http://www.grandcircus.co/perch/resources/img9584-1.jpg",
