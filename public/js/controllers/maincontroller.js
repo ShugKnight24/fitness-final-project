@@ -36,8 +36,10 @@ app.controller('mainController', function($scope, $http, dataService, dataStore)
       $scope.user = response.data;
       recursiveRequest($scope.allUsers.length - 1);
     }
-    dataStore.storeUserProfile($scope.user);  
+    dataStore.storeUserProfile($scope.user);
 	});
+  
+  
   
   
   dataStore.storeUserProfile($scope.user);
