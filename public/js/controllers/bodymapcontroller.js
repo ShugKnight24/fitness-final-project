@@ -243,29 +243,35 @@ $scope.gluteExercises =[
 ];
 //If chest is pressed
 $scope.addChest = function(){
+  Materialize.toast("A big chest to be better than the rest.", 4000);
   $scope.chestExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addChest = function(){
+      Materialize.toast("You already selected chest, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //If back is pressed
 $scope.addBack = function(){
+  Materialize.toast("You'll be able to carry more people now!", 4000);
   $scope.backExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addBack = function(){
+      Materialize.toast("You already selected back, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if lower back is pressed
 $scope.addLowerBack = function(){
+  Materialize.toast("I see you are in the market for a Christmas tree", 4000);
   $scope.lowerBackExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
+    Materialize.toast("You already selected lower Back, choose a different muscle group.", 4000);
     $scope.addLowerBack = function(){
       return false;
     }
@@ -273,120 +279,144 @@ $scope.addLowerBack = function(){
 };
 //if quads are pressed
 $scope.addQuads = function(){
+  Materialize.toast("Big Quads so you don't have Grant Chirpus legs.", 4000);
   $scope.quadExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addQuads = function(){
+      Materialize.toast("You already selected quads, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if hamstrings are pressed
 $scope.addHams = function(){
+  Materialize.toast("Not your typical ham sandwich.", 4000);
   $scope.hamstringExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addHams = function(){
+      Materialize.toast("You already selected hamstrings, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if shoulders are pressed
 $scope.addShoulders = function(){
+  Materialize.toast("You'll have shoulders that look like boulders.", 4000);
   $scope.shoulderExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addShoulders = function(){
+      Materialize.toast("You already selected shoulders, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if rear delts are pressed
 $scope.addRearDelts = function(){
+  Materialize.toast("Rear delts are often overlooked, they are part of a healthy shoulder routine. (We had to be serious for at least one muscle group.)", 4000);
   $scope.rearDeltExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addRearDelts = function(){
+      Materialize.toast("You already selected rear delts, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if biceps are pressed
 $scope.addBiceps = function(){
+  Materialize.toast("Buying tickets to the gun show?", 4000);
   $scope.bicepExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addBiceps = function(){
+      Materialize.toast("You already selected biceps, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if triceps are pressed
 $scope.addTriceps = function(){
+  Materialize.toast("We won't be able to stop you, but we can still tri! (We'll show ourselves out now.)", 4000);
   $scope.tricepExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addTriceps = function(){
+      Materialize.toast("You already selected triceps, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if abs are pressed
 $scope.addAbs = function(){
+  Materialize.toast("Washboard abs so you clean your clothes on them.", 4000);
   $scope.abExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addAbs = function(){
+      Materialize.toast("You already selected abs, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if obliques are pressed
 $scope.addObliques = function(){
+  Materialize.toast("They won't be love handles for long!", 4000);
   $scope.obliqueExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addObliques = function(){
+      Materialize.toast("You already selected obliques, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if calves are pressed
 $scope.addCalves = function(){
+  Materialize.toast("Make those baby cows grow!", 4000);
   $scope.calfExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addCalves = function(){
+      Materialize.toast("You already selected calves, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if traps are pressed
 $scope.addTraps = function(){
+  Materialize.toast("Untrap your traps.", 4000);
   $scope.trapExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addTraps = function(){
+      Materialize.toast("You already selected traps, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if forearms are pressed
 $scope.addForearms = function(){
+  Materialize.toast("You'll be able to carry all of your groceries in one trip.", 4000);
   $scope.forearmExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addForearms = function(){
+      Materialize.toast("You already selected forearms, choose a different muscle group.", 4000);
       return false;
     }
   });
 };
 //if glutes are pressed
 $scope.addGlutes = function(){
+  Materialize.toast("Our lawyers advised us not to make any jokes here.", 4000);
   $scope.gluteExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
     $scope.addGlutes = function(){
+      Materialize.toast("You already selected glutes, choose a different muscle group.", 4000);
       return false;
     }
   });

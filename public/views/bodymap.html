@@ -44,8 +44,8 @@
   <form action="#">
     <ul>
       <li ng-repeat="bodyMapExercise in bodyMapExercises track by $index">
-        <input type="checkbox" id="{{bodyMapExercise}}" ng-model="bodyMapExercises.selected"/>
-        <label for="{{bodyMapExercise}}" ng-class="{'selected':BodyMapExercises.selected}">{{bodyMapExercise.exerciseName}}</label>
+        <input type="checkbox" id="{{bodyMapExercise.exerciseName}}" ng-model="bodyMapExercises.selected">
+        <label for="{{bodyMapExercise.exerciseName}}" ng-class="{'selected':BodyMapExercises.selected}">{{bodyMapExercise.exerciseName}}</label>
       </li>
     </ul>
   </form>
