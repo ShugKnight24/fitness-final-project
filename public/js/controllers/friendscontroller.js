@@ -37,4 +37,5 @@ app.controller('friendsController', function($scope, dataService, $http, dataSto
 // }
 $scope.friendProfiles = dataStore.getFriendProfiles();
 
+
 });
