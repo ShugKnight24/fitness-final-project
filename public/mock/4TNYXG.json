@@ -2,7 +2,7 @@
   "userID": "4TNYXG",
   "fullName": "Shugmi Shumunov",
   "friends": ["565LAN", "656JOH", "767MRC", "888TRF", "444GRT", "323CHE"],
-  "posts": [      
+  "posts": [
       {
         "dateUploaded": "2016-08-05T03:15:12.356Z",
         "author": "Shug",
@@ -10,7 +10,7 @@
         "content": "I feel like you're ignoring me",
         "likes": "1",
         "comments": "[{comment:'nope',author:'Adam'}, {comment:'This isn't really a likeable post, it's a sadface thing', author:'Gil'}]"
-      }]
+      }],
   "challenges": {
     "activeChallenges": [{}, {}, {}],
     "inActiveChallenges": [{}, {}]
@@ -1583,4 +1583,3 @@
       }
   }
 }
-
