@@ -363,7 +363,7 @@ $scope.addAbs = function(){
 };
 //if obliques are pressed
 $scope.addObliques = function(){
-  Materialize.toast("They won't be love handles when you're through with them.", 4000);
+  Materialize.toast("They won't be love handles for long!", 4000);
   $scope.obliqueExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
@@ -375,7 +375,7 @@ $scope.addObliques = function(){
 };
 //if calves are pressed
 $scope.addCalves = function(){
-  Materialize.toast("Work those baby cows", 4000);
+  Materialize.toast("Make those baby cows grow!", 4000);
   $scope.calfExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
