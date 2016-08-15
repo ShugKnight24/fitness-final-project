@@ -37,7 +37,7 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
     $scope.date = $filter('date')($scope.date, "mediumDate");
     $scope.newPost = new Post($scope.user.fullName, $scope.user.data.user.avatar150 ,"", $scope.newPostContent, $scope.date);
     $scope.user.posts.push($scope.newPost);
-    $scope.newPostContent = "";
+    $scope.newPostContent = ""; //clear
     dataStore.storeUserProfile($scope.user);
     $scope.getPosts();
   };
@@ -46,6 +46,7 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
     $scope.date = new Date();
     $scope.date = $filter('date')($scope.date, "mediumDate");
     $scope.newComment = new Comment($scope.user.fullName, $scope.user.data.user.avatar150 ,"", $scope.newCommentContent, $scope.date);
+    $scope.newCommentContent = ""; //clear
     for (var i = 0; i < $scope.user.posts.length; i++) {
       if (angular.equals(post, $scope.user.posts[i])) {
         $scope.user.posts[i].comments.push($scope.newComment);
