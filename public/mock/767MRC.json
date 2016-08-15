@@ -1,24 +1,4 @@
 {
-  "userID": "",
-  "fullName": "",
-  "displayName": "Maurice",
-  "friends": ,
-  "age": 30,
-  "avatar": "",
-  "avatar150": "",
-  "averageDailySteps": 6565,
-  "city": "Detroit",
-  "posts": 
-}
- /*--data structure for users--
-Activities GET request - https://api.fitbit.com/1/user/4TNYXG/activities/date/2016-08-10.json
-Heartrate GET request - https://api.fitbit.com/1/user/4TNYXG/activities/heart/date/2016-08-10/1d.json
-Sleep GET request - https://api.fitbit.com/1/user/4TNYXG/sleep/date/2016-08-10.json 
-*/
-
-
-
-{
   "userID": "767MRC",
   "fullName": "Maurice Tedder",
   "friends": ["565LAN", "444GRT", "323CHE", "4VKLDW"],
