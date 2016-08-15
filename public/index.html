@@ -13,18 +13,19 @@
 
 	<body ng-app="fitnessApp">
 
-  <nav>
+  <nav ng-controller="navController">
     <div class="nav-wrapper #f57c00 orange darken-2">
 
-      <a href="#" class="brand-logo">FitKnit</a>
+      <a href="#/project" class="brand-logo">FitKnit</a>
 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-		<li><a href="#/project">About the project</a></li>
-		<li><a href="#/about">About us</a></li>
-		<li><a href="#/thankyou">Thank You!</a></li>
+		<li ng-class="{active: isActive('/project')}"><a href="#/project">About the project</a></li>
+		<li ng-class="{active: isActive('/about')}"><a href="#/about">About us</a></li>
+		<li ng-class="{active: isActive('/thankyou')}"><a href="#/thankyou">Thank You!</a></li>
       </ul>
     </div>
   </nav>
+
   <button class="waves-effect waves-light btn">Login</button>
 
 		<!-- temporary link to member page for testing -->
@@ -47,6 +48,7 @@
 		<!-- Routing JS files-->
 		<script src="js/landingRoutes.js"></script>
 		<!--Controller JS files-->
+		<script src="js/controllers/navcontroller.js"></script>
 		<script src="js/controllers/aboutcontroller.js"></script>
 		<script src="js/controllers/projectcontroller.js"></script>
 		<script src="js/controllers/thankyoucontroller.js"></script>
