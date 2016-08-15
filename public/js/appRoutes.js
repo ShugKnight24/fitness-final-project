@@ -27,6 +27,11 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/about.html',
 		controller: 'aboutController'
 	})
+	.when('/beginner',
+	{
+		templateUrl: 'views/beginner.html',
+		controller: 'beginnerController'
+	})
 	.when ('/challenges',
 	{
 		templateUrl: 'views/challenges.html',
@@ -37,20 +42,30 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/compare.html',
 		controller: 'compareController'
 	})
-	.when ('/exerciselibrary',
-	{
-		templateUrl: 'views/exerciselibrary.html',
-		controller: 'exerciseLibraryController'
-	})
 	.when ('/data',
 	{
 		templateUrl: 'views/data.html',
 		controller: 'dataController'
 	})
+	.when ('/exercise',
+	{
+		templateUrl: 'views/exercise.html',
+		controller: 'exerciseController'
+	})
+	.when ('/exerciselibrary',
+	{
+		templateUrl: 'views/exerciselibrary.html',
+		controller: 'exerciseLibraryController'
+	})
 	.when ('/friends',
 	{
 		templateUrl: 'views/friends.html',
 		controller: 'friendsController'
+	})
+	.when('/intermediate',
+	{
+		templateUrl: 'views/intermediate.html',
+		controller: 'intermediateController'
 	})
 	.when ('/leaderboard',
 	{

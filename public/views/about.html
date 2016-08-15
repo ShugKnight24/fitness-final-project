@@ -1,11 +1,20 @@
 <h2 class="about">The FitKnit Team</h2>
 
-<div ng-repeat="developer in developers" class="profile">
-	<div class="center"><h3>{{developer.name}}</h3>
-	<img ng-src="{{developer.image.path}}" alt-text="{{developer.image.altText}}"/>
-	<br /><span class="dogeMotto">{{developer.motto}}</span>
-</div>
-	<p class="dogeContent">
-	{{developer.content}}
-	</p>
-</div>
+      <div class="row" >
+         <div ng-repeat="developer in developers" class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img ng-src="{{developer.image.path}}" alt-text="{{developer.image.altText}}"/>
+              <span class="card-title {{developer.style}}">{{developer.name}}</span>
+            </div>
+            <div class="card-content">
+              <p>{{developer.motto}}</p><p>{{developer.content}}</p>
+            </div>
+            <div class="card-action">
+              <a href="{{developer.github.path}}" target="_blank"><img src="images/github.png" alt="{{developer.github.altText}}" width="25"></a>
+              <a href="{{developer.linkedin.path}}" target="_blank"><img src="images/linkedin.png" alt="{{developer.linkedin.altText}}" width="25"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+

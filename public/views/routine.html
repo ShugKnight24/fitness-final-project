@@ -1,19 +1,33 @@
+<ul>
+  <li><a href="#/beginner">Beginner</a></li>
+  <li><a href="#/bodymap">Bodymap</a></li>
+  <li><a href="#/exerciselibrary">Exercise Library</a></li>
+  <li><a href="#/intermediate">Intermediate</a></li>
+  <li><a href="#/routine">Routine</a></li>
+</ul>
 <h1>{{ user.fullName }}'s New Routine</h1>
   <p>Stay accountable by keeping track of the exercises you want to complete. Enter an exercise you want to do, or choose from our exercise library. You can sort the list by exercise or body part.</p>
   <p>If you want to learn more about a particular exercise, head over to our <a href="#/exerciselibrary">exercise library</a> for a more detailed description of how to perform the exercise.</p>
+  <div class="row">
+    <div class="input-field col s6">
     <form class="form" name="exerciseForm" ng-submit="addNewExercise()">
+
       <input type="text" name="newExercise" ng-model="newExercise" placeholder="New Excercise" required>
       <button ng-disabled="exerciseForm.$invalid">Add Exercise</button>
      <!--  <input type="text" ng-model="searchExercises" placeholder="Search Different Exercises"> -->
     </form>
+
     <button ng-click="addSelected()">Add Selected Exercises to your routine</button>
+      <form action="#">
           <ul>
             <li ng-repeat="exercise in exercises">
-              <input type="checkbox" ng-model="exercise.selected">
-              <span ng-class="{'selected':exercise.selected}">{{exercise.exerciseName}}</span>
+              <input type="checkbox" id="{{exercise.exerciseName}}" ng-model="exercise.selected">
+              <label for="{{exercise.exerciseName}}" ng-class="{'selected':exercise.selected}">{{exercise.exerciseName}}</label>
             </li>
           </ul>
-          <div class="completedExerciseList">
+        </form>
+      </div>
+          <div class="completedExerciseList input-field col s6">
             <h1>Your Customized Exercise Routine!</h1>
             <p>Filter your routine to make sure you have all the exercises you want!</p>
             <input type="text" ng-model="searchSelectedExercises" placeholder="Filter your selected exercises">
@@ -22,3 +36,5 @@
               <li class="selectedExercises" ng-repeat="exercise in selectedExercises | filter:searchSelectedExercises | orderBy:'exerciseName'">
                 <span class="checkmark">&#x1F3CB</span> {{exercise.exerciseName}}
               </li>
+            </div>
+          </div>

@@ -244,112 +244,155 @@ $scope.gluteExercises =[
 //If chest is pressed
 $scope.addChest = function(){
   $scope.chestExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addChest = function(){
+      return false;
+    }
   });
 };
 //If back is pressed
 $scope.addBack = function(){
   $scope.backExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addBack = function(){
+      return false;
+    }
   });
 };
 //if lower back is pressed
 $scope.addLowerBack = function(){
   $scope.lowerBackExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addLowerBack = function(){
+      return false;
+    }
   });
 };
 //if quads are pressed
 $scope.addQuads = function(){
   $scope.quadExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addQuads = function(){
+      return false;
+    }
   });
 };
 //if hamstrings are pressed
 $scope.addHams = function(){
   $scope.hamstringExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addHams = function(){
+      return false;
+    }
   });
 };
 //if shoulders are pressed
 $scope.addShoulders = function(){
   $scope.shoulderExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addShoulders = function(){
+      return false;
+    }
   });
 };
 //if rear delts are pressed
 $scope.addRearDelts = function(){
   $scope.rearDeltExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addRearDelts = function(){
+      return false;
+    }
   });
 };
 //if biceps are pressed
 $scope.addBiceps = function(){
   $scope.bicepExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addBiceps = function(){
+      return false;
+    }
   });
 };
 //if triceps are pressed
 $scope.addTriceps = function(){
   $scope.tricepExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addTriceps = function(){
+      return false;
+    }
   });
 };
 //if abs are pressed
 $scope.addAbs = function(){
   $scope.abExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addAbs = function(){
+      return false;
+    }
   });
 };
 //if obliques are pressed
 $scope.addObliques = function(){
   $scope.obliqueExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addObliques = function(){
+      return false;
+    }
   });
 };
 //if calves are pressed
 $scope.addCalves = function(){
   $scope.calfExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addCalves = function(){
+      return false;
+    }
   });
 };
 //if traps are pressed
 $scope.addTraps = function(){
   $scope.trapExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addTraps = function(){
+      return false;
+    }
   });
 };
 //if forearms are pressed
 $scope.addForearms = function(){
   $scope.forearmExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addForearms = function(){
+      return false;
+    }
   });
 };
 //if glutes are pressed
 $scope.addGlutes = function(){
   $scope.gluteExercises.forEach(function(item){
-    $scope.bodyMapExercises.push(item.exerciseName);
-    console.log($scope.bodyMapExercises);
+    $scope.bodyMapExercises.push(item);
+    //disable double click
+    $scope.addGlutes = function(){
+      return false;
+    }
   });
 };
-  // $scope.bodyMapExercises.push($scope.chestExercises);
 
-
-  // When bodymap button is pressed
+  // When Add Exercises button is pressed
     $scope.addBodyMap = function(){
       for (var i=0; i<$scope.bodyMapExercises.length;i++){
         if ($scope.bodyMapExercises[i].selected){
@@ -360,7 +403,7 @@ $scope.addGlutes = function(){
       };
     }
       // Then remove them from the list
-      $scope.bodyMapExercises = $scope.bodyMapExercises.filter(function(item){
+      $scope.selectedBodyMapExercises = $scope.selectedBodyMapExercises.filter(function(item){
         return !item.selected;
       });
     };
