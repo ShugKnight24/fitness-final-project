@@ -16,3 +16,7 @@
 .fitbit {
 	float: left;
 }
+
+.active {
+	border-bottom: 3px solid white;
+}
