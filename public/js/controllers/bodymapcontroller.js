@@ -271,8 +271,8 @@ $scope.addLowerBack = function(){
   $scope.lowerBackExercises.forEach(function(item){
     $scope.bodyMapExercises.push(item);
     //disable double click
-    Materialize.toast("You already selected lower Back, choose a different muscle group.", 4000);
     $scope.addLowerBack = function(){
+      Materialize.toast("You already selected lower Back, choose a different muscle group.", 4000);
       return false;
     }
   });
@@ -433,7 +433,7 @@ $scope.addGlutes = function(){
       };
     }
       // Then remove them from the list
-      $scope.selectedBodyMapExercises = $scope.selectedBodyMapExercises.filter(function(item){
+      $scope.bodyMapExercises = $scope.bodyMapExercises.filter(function(item){
         return !item.selected;
       });
     };
