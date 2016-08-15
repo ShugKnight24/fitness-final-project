@@ -1,7 +1,9 @@
 (function($){
   $(function(){
 
-   $('.slider').slider();
+    $('.slider').slider();
+
+    $('ul.tabs').tabs();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space 
