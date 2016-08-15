@@ -19,12 +19,13 @@
       <a href="#" class="brand-logo">FitKnit</a>
 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-		<li><a href="#/project">About the project</a></li>
-		<li><a href="#/about">About us</a></li>
-		<li><a href="#/thankyou">Thank You!</a></li>
+		<li ng-class="{active: isActive('/')}"><a href="#/project">About the project</a></li>
+		<li ng-class="{active: isActive('/about')}"><a href="#/about">About us</a></li>
+		<li ng-class="{active: isActive('/thankyou')}"><a href="#/thankyou">Thank You!</a></li>
       </ul>
     </div>
   </nav>
+
   <button class="waves-effect waves-light btn">Login</button>
 
 		<!-- temporary link to member page for testing -->

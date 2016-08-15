@@ -1,6 +1,8 @@
 (function($){
   $(function(){
-
+    
+    $('select').material_select();
+    
     $('.slider').slider();
 
     $('ul.tabs').tabs();

@@ -4,6 +4,7 @@ app.controller('aboutController',["$scope", function($scope) {
 	$scope.developers = [
 			{
 				name: "Shugmi Shumunov",
+				style: "shug",
 				motto: "Life long learner, aspiring web developer. Interested in all things VR.",
 				image: {
 					path: "http://www.grandcircus.co/perch/resources/shugsphoto.jpg",
@@ -39,6 +40,7 @@ app.controller('aboutController',["$scope", function($scope) {
 			},
 			{
 				name: "Syed Rashid",
+				style: "syed",
 				motto: "Aspiring developer with a mathematics background.",
 				image: {
 					path: "http://www.grandcircus.co/perch/resources/img9593.jpg",
