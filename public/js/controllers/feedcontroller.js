@@ -19,6 +19,6 @@ app.controller('feedController', ["$scope", "dataService", "friendProfileService
     $scope.newPostContent = "";
   };
   
-  $scope.friendProfiles = dataStore.getFriendProfiles();
+  $scope.posts = dataStore.getPosts();
   
 }]);

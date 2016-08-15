@@ -3,6 +3,7 @@ var app = angular.module('fitnessApp');
 app.factory('dataStore', function() {
   var userProfile;
   var friendProfiles;
+  var posts;
   
   var storeUserProfile = function(profile) {
     userProfile = profile;
@@ -20,11 +21,20 @@ app.factory('dataStore', function() {
     return friendProfiles;
   };
   
+  var getPosts = function() {
+    posts = userProfile.posts;
+    for (var i = 0; i < friendProfiles.length; i++) {
+      posts = posts.concat(friendProfiles[i].posts);
+    }
+    return posts;
+  };
+  
   return {
     storeUserProfile: storeUserProfile,
     getUserProfile: getUserProfile,
     storeFriendProfiles: storeFriendProfiles,
-    getFriendProfiles: getFriendProfiles
+    getFriendProfiles: getFriendProfiles,
+    getPosts: getPosts
   };
   
 });
