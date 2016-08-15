@@ -39,9 +39,6 @@ app.controller('mainController', function($scope, $http, dataService, dataStore)
     dataStore.storeUserProfile($scope.user);
 	});
   
-  
-  
-  
   dataStore.storeUserProfile($scope.user);
   dataStore.storeFriendProfiles($scope.friendProfiles);
   
