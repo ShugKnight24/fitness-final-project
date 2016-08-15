@@ -29,4 +29,36 @@ app.controller('beginnerController', ["$scope", function($scope) {
       "url":"http://www.ontheregimen.com/2013/10/15/how-to-count-your-macros-a-comprehensive-guide/"
     }
   ];
+  $scope.beginnerBooks = [
+    {
+      "author":"Mike Israetel",
+      "title":"“The Renanissance Diet”",
+      "url":"http://renaissanceperiodization.com/shop/the-renaissance-diet/",
+      "description":""
+    },
+    {
+      "author":"Mike Israetel",
+      "title":"“Scientific Principles Of Strength Training”",
+      "url":"",
+      "description":""
+    },
+    {
+      "author":"",
+      "title":"“Renaissance Woman”",
+      "url":"http://renaissanceperiodization.com/shop/renaissance-woman/",
+      "description":""
+    },
+    {
+      "author":"",
+      "title":"“”",
+      "url":"",
+      "description":""
+    },
+    {
+      "author":"",
+      "title":"“”",
+      "url":"",
+      "description":""
+    }
+  ];
 }]);
