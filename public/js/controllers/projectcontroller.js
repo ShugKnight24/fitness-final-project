@@ -1,10 +1,17 @@
+(function($){
+  $(function(){
+
+   $('.slider').slider();
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space 
 
 var app = angular.module('fitnessApp');
 
 app.controller('projectController', function($scope) {
 
 
-$scope.slides = [
+$scope.chirps = [
     {
         title: "Loving your fitbit?",
         content: "You can take it to the next level with FitKnit - an interactive app to increase your motivation to get and stay fit.",

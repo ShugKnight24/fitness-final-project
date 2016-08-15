@@ -1,20 +1,36 @@
-<div>
+<div class="row">
+  <div class="col s8 offset-s2">
 	<h2>About the Fitknit project</h2>
   <p>All you knit is Fitness</p>
+  </div>
 </div>
 
-<div class="row" ng-repeat="slide in slides">
- 	<div class="col s6 offset-s3">
-    	<h3 class="header">{{ slide.title }}</h3>
-    <div class="card horizontal">
-      <div class="card-image">
-        <img ng-src="{{ slide.image.path }}" alt="{{ slide.image.alt }}" >
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p class="flow-text">{{ slide.content1 }}<em>{{ slide.span1 }}</em>{{ slide.content }}</p>
-        </div>
-      </div>
-    </div>
+<div class="row">
+   <div class="slider" slider>
+    <ul class="slides">
+      <li>
+          <img src="images/two_step_grant.jpg" alt="Only two steps today? I better get moving! Grant Chirpus says." />
+          <div class="caption right-align">
+            <h3>Self-monitoring:</h3>
+            <h5 class="light grey-text text-darken-3 flow-text">viewing your activity</h5>
+          </div>
+      </li>
+      <li>
+          <img src="images/positivelyGrant.jpg" alt="Grant Chirpus says, My thighs are killing me from all those stairs yesterday. Let's do it again!" />
+            <div class="caption right-align">
+              <h3>Cognitive restructuring:</h3>
+              <h5 class="light grey-text text-darken-3 flow-text">positive self-talk</h5>
+            </div>
+      </li>
+    </ul>
+  </div>
 </div>
-</div>
+
+
+<!--         <li ng-repeat="chirp in chirps">
+            <img src="{{ chirp.image.path }}" alt="{{ chirp.image.alt }}" />
+            <div class="caption right-align">
+              <h3>{{ chirp.title }}</h3>
+              <h5 class="light grey-text text-darken-3 flow-text">{{ chirp.content1 }}<em>{{ chirp.span1 }}</em>{{ chirp.content }}</h5>
+            </div>
+        </li> -->
