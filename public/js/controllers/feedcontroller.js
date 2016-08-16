@@ -9,7 +9,6 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
     for (var i = 0; i < $scope.friendProfiles.length; i++) {
       $scope.posts = $scope.posts.concat($scope.friendProfiles[i].posts);
     }
-    console.log($scope.posts);
   };
     
   var Post = function(author, avatar, image, content, date) {

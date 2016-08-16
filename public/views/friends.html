@@ -1,16 +1,4 @@
 <h2>Friends</h2>
 <!-- here's the search box to search for friends -->
-<form ng-submit="findFriend">
-	<input type="text" name="search" ng-model="fullName" placeholder="find a friend..." />
-
-</form>
-<!-- repeat this div for each of the friend's information -->
-<div ng-repeat="friend in friendProfiles | filter:fullName" class="friends"><a class="delete" title="delete {{friend.displayName}}" ng-click="deleteFriend(friendProfiles, $index)"> x </a>
-	<!-- <a class="compare" ng-click="compare(friends, $index)">compare</a> -->
-	<!-- friend's name in uppercase -->
-	<h2>{{friend.fullName}}</h2>
-	<!-- friend's photo and information -->
-	<img ng-src="{{friend.data.user.avatar150}}" alt="{{friend.data.user.displayName}}" width="150" height="150"/>
-	<p>{{friend.data.user.displayName}}'s average daily steps: {{friend.data.user.averageDailySteps}}</p>
-
-</div>
+<input type="text" name="search" ng-model="fullName" placeholder="find a friend..." />
+<friend-card ng-repeat="friend in friendProfiles | filter:{fullName: fullName}"></friend-card>

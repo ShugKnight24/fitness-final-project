@@ -29,7 +29,7 @@ app.controller('mainController', function($scope, $http, dataService, dataStore)
         dataService.getSleep(function(response) {
           $scope.user.sleep = response.data;
         });
-        $scope.user.activities
+        // $scope.user.activities = response.data; FixME
       });
       recursiveRequest($scope.allUsers.length - 1);
     } else {
