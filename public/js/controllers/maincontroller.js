@@ -4,6 +4,7 @@ app.controller('mainController', function($scope, $http, dataService, dataStore)
   
   $scope.allUsers = ['4VKLDW', '220RAY', '323CHE', '444GRT', '565LAN', '656JOH', '767MRC', '888TRF'];
   $scope.friendProfiles = [];
+  $scope.user;
   
   function recursiveRequest(i) {
     if(i >= 0) {
@@ -13,12 +14,13 @@ app.controller('mainController', function($scope, $http, dataService, dataStore)
       });
     }
   }
-
+  
   dataService.getData(function(response) {
     $scope.mainResponse = response;
     if (fragment['user_id']) {
       $http.get('mock/' + fragment['user_id'] + '.json').then(function(response) {
         $scope.user = response.data;
+        console.log(response.data);
         $scope.user.data = $scope.mainResponse.data;
         dataService.getActivities(function(response) {
           $scope.user.activities = response.data;
