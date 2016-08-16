@@ -12,7 +12,7 @@ app.service('dataService', function($http) {
  
  var reqActivities = {
   method: 'GET',
-  url: 'https://api.fitbit.com/1/user/' + fragment['user_id'] + 'activities/date/today.json',
+  url: 'https://api.fitbit.com/1/user/' + fragment['user_id'] + '/activities/date/today.json',
   headers: {
  	 'Authorization': 'Bearer ' + fragment.access_token
   }
@@ -20,7 +20,7 @@ app.service('dataService', function($http) {
  
  var reqHeartRate = {
   method: 'GET',
-  url: 'https://api.fitbit.com/1/user/' + fragment['user_id'] + 'activities/heart/date/today/1d.json',
+  url: 'https://api.fitbit.com/1/user/' + fragment['user_id'] + '/activities/heart/date/today/1d.json',
   headers: {
  	 'Authorization': 'Bearer ' + fragment.access_token
   }
@@ -28,7 +28,7 @@ app.service('dataService', function($http) {
  
  var reqSleep = {
   method: 'GET',
-  url: 'https://api.fitbit.com/1/user/' + fragment['user_id'] + 'sleep/date/today.json',
+  url: 'https://api.fitbit.com/1/user/' + fragment['user_id'] + '/sleep/date/today.json',
   headers: {
  	 'Authorization': 'Bearer ' + fragment.access_token
   }

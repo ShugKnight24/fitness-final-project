@@ -1,12 +1,15 @@
-(function($){
-  $(function(){
-    
-    $('.slider').slider();
+$(document).ready(function() {
+	$('.slider').slider({ full_width: false });
+});
+// 	$('.slider').slider({
+//     	full_width: false,
+//     	interval: 5000,
+//     	transition: 500
+//     });
+//     // $('ul.tabs').tabs();
 
-    // $('ul.tabs').tabs();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space 
+//   }); // end of document ready
+// })(jQuery); // end of jQuery name space 
 
 var app = angular.module('fitnessApp');
 
