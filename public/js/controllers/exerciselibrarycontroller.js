@@ -291,4 +291,9 @@ app.controller("exerciseLibraryController",["$scope", function($scope){
       "exerciseGif":"images/exercisegifs/BBGluteBridge.gif"
     }
   ];
+  
+  //Materialize Accordion
+  $('.collapsible').collapsible({
+    accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+  });
 }]);
