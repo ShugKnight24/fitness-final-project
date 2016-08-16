@@ -1,0 +1,19 @@
+<ul>
+  <li><a href="#/beginner">Beginner</a></li>
+  <li><a href="#/bodymap">Bodymap</a></li>
+  <li><a href="#/exerciselibrary">Exercise Library</a></li>
+  <li><a href="#/intermediate">Intermediate</a></li>
+  <li><a href="#/routine">Routine</a></li>
+</ul>
+
+<h1>Your One Stop Shop For Exercise Needs</h1>
+
+	<label>Search by exercise name or body part: <input ng-model="exerciseDescription"></label>
+
+<div ng-repeat="exerciseDescription in exerciseDescriptions | filter:exerciseDescription | orderBy: 'exerciseDescription.bodypart'">
+  <p>{{exerciseDescription.bodypart}}</p>
+  <p>{{exerciseDescription.exerciseName}}</p>
+  <p>{{exerciseDescription.exerciseDescription}}</p>
+  <!-- <iframe ng-src="{{exerciseDescription.exerciseVideo}}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+  <img ng-src="{{exerciseDescription.exerciseGif}}" alt="{{exerciseDescription.exerciseName}}" />
+</div>

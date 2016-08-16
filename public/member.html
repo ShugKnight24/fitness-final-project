@@ -1,36 +1,49 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>{{user.name}}'s FitKnit</title>
+		<title>FitKnit</title>
 
 		<link type="text/css" rel="stylesheet" href="css/normalize.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
+
+
 	</head>
 
-	<body ng-app="fitnessApp">
+	<body ng-app="fitnessApp" ng-controller="mainController">
 
-		<input type="text" ng-model="searchText">
-		<nav class="main-nav">
-			<ul>
-				<li><a href="#/bodymap">Bodymap</a></li>
-				<li><a href="#/challenges">Challenges</a></li>
-				<li><a href="#/compare">Compare</a></li>
-				<li><a href="#/data">Data</a></li>
-				<li><a href="#/feed">Feed</a></li>
-				<li><a href="#/friends">Friends</a></li>
-				<li><a href="#/leaderboard">Leaderboard</a></li>
-				<li><a href="#/motivation">Motivation</a></li>
-				<li><a href="#/recommendations">Recommendations</a></li>
-				<li><a href="#/routine">Routine</a></li>
+		<!-- <input type="text" ng-model="searchText"> -->
+		<nav class="main-nav" ng-controller="navController">
+			<div class="nav-wrapper #f57c00 orange darken-2">
+				<a href="" class="brand-logo">FitKnit</a>
+			<ul id="nav-mobile" class="right">
+				<!-- <li><a href="#/challenges">Challenges</a></li> -->
+				<!-- <li><a href="#/compare">Compare</a></li> -->
+				<!-- <li><a href="#/data">Data</a></li> -->
+				<li ng-class="{active: isActive('/exercise')}"><a class="dropdown-button" href="#/exercise" data-activates="dropdown1">Exercise</a>
+  					<!-- Dropdown Structure -->
+  					<ul id='dropdown1' class='dropdown-content'>
+    					<li><a href="#/beginner">Beginner</a></li>
+    					<li><a href="#/bodymap">Bodymap</a></li>
+    					<li><a href="#/exerciselibrary">Exercise Library</a></li>
+    					<li><a href="#/intermediate">Intermediate</a></li>
+    					<li><a href="#/routine">Routine</a></li>
+  					</ul></li>
+				<li ng-class="{active: isActive('/feed')}"><a href="#/feed">Feed</a></li>
+				<li ng-class="{active: isActive('/friends')}"><a href="#/friends">Friends</a></li>
+				<!-- <li><a href="#/leaderboard">Leaderboard</a></li> -->
+				<li ng-class="{active: isActive('/motivation')}"><a href="#/motivation">Motivation</a></li>
+				<!-- <li><a href="#/recommendations">Recommendations</a></li> -->
 			</ul>
+			</div>
 		</nav>
 		<h1>
-		<!-- 	{{ user.name }}'s  -->
-			Fitbit Friend</h1>
+		<!-- 	{{ user.displayName }}'s  -->
+			FitKnit</h1>
 
-		<ng-view></ng-view>
+		<ng-view ng-controller="mainController"></ng-view>
 
 		<footer>
 <!-- 			<span>{{ randomQuote }}</span> -->
@@ -55,6 +68,8 @@
 		<!-- Lib JS files-->
 		<script src="libs/angular.min.js"></script>
 		<script src="libs/angular-route.js"></script>
+		<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 		<script src="libs/d3.min.js"></script>
 		<!-- App/Module JS files-->
 		<script src="js/app.js"></script>
@@ -62,23 +77,32 @@
 		<script src="js/appRoutes.js"></script>
 		<!-- service -->
 		<script src="js/services/dataservice.js"></script>
-
+		<script src="js/services/datastore.js"></script>
+		<script src="js/services/friendprofileservice.js"></script>
 		<!--Controller JS files-->
+		<script src="js/controllers/navcontroller.js"></script>
+		<script src="js/controllers/maincontroller.js"></script>
 		<script src="js/controllers/404controller.js"></script>
+		<script src="js/controllers/beginnercontroller.js"></script>
 		<script src="js/controllers/bodymapcontroller.js"></script>
 		<script src="js/controllers/motivationcontroller.js"></script>
 		<script src="js/controllers/challengescontroller.js"></script>
 		<script src="js/controllers/comparecontroller.js"></script>
 		<script src="js/controllers/datacontroller.js"></script>
+		<script src="js/controllers/exercisecontroller.js"></script>
+		<script src="js/controllers/exerciselibrarycontroller.js"></script>
 		<script src="js/controllers/feedcontroller.js"></script>
 		<script src="js/controllers/friendscontroller.js"></script>
+		<script src="js/controllers/intermediatecontroller.js"></script>
 		<script src="js/controllers/leaderboardcontroller.js"></script>
 		<script src="js/controllers/recommendationscontroller.js"></script>
 		<script src="js/controllers/routinecontroller.js"></script>
 		<script src="js/controllers/searchcontroller.js"></script>
 		<!--Directives JS files -->
 		<script src="js/directives/feeddirective.js"></script>
+		<script src="js/directives/friendsdirective.js"></script>
 		<script src="js/directives/youtubedirective.js"></script>
+
 
 	</body>
 

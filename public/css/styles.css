@@ -1,36 +1,22 @@
-.main-nav ul li {
-  display: inline-block;
-  margin-right: 25px;
-  float: left; }
+.karen {
+	font-family: 'Caveat', cursive;
+	text-shadow: black 2px 2px 5px;
+}
 
-a {
-  text-decoration: none; }
+.syed {
+	font-family: 'Indie Flower', cursive;
+	text-shadow: black 2px 2px 5px;
+}
 
-h1 {
-  text-align: center; }
+.shug {
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+	text-shadow: black 2px 2px 5px;
+}
 
-div.profile {
-  background-color: yellow;
-  display: inline-block;
-  margin: 20px;
-  padding: 10px;
-  vertical-align: top;
-  width: 25%;
-  height: 450px; }
+.fitbit {
+	float: left;
+}
 
-.dogeMotto {
-  font-style: italic; }
-
-h2.about {
-  text-align: center; }
-
-.delete {
-  float: right;
-  background-color: #ccc;
-  padding: 1px; }
-
-.friends {
-  border: 1px solid black;
-  width: 225px;
-  display: inline-block;
-  margin: 10px; }
+.active {
+	border-bottom: 3px solid white;
+}

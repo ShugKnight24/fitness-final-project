@@ -1,4 +1,40 @@
 {
+  "userID": "4TNYXG",
+  "fullName": "Shugmi Shumunov",
+  "displayName": "Shugmi",
+  "avatar": "https://static0.fitbit.com/images/profile/defaultProfile_100_male.gif",
+  "avatar150": "https://static0.fitbit.com/images/profile/defaultProfile_150_male.gif",
+  "friends": ["565LAN", "656JOH", "767MRC", "888TRF", "444GRT", "323CHE"],
+  "posts": [      
+      {
+        "dateUploaded": "2016-08-05T03:15:12.356Z",
+        "author": "wejlkjfoiew",
+        "image": "",
+        "content": "sdfadfiowueir",
+        "likes": "1",
+        "comments": "[{comment:'nope',author:'Adam'}, {comment:'This isn't really a likeable post, it's a sadface thing', author:'Gil'}]"
+      }, 
+      {
+        "dateUploaded": "2016-08-05T03:25:12.356Z",
+        "author": "kjir30",
+        "image": "",
+        "content": "I'm not walking anywhere til I find my fitbit",
+        "likes": "0",
+        "comments": "[{}]"
+      },       
+      {
+        "dateUploaded": "2016-08-05T03:55:12.356Z",
+        "author": "r90r39r0239",
+        "image": "",
+        "content": "Found miojfiwitbit!!!!!",
+        "likes": "27",
+        "comments": "[{comment:'grrreat', author:'Adam'}]"
+      }],
+  "challenges": {
+    "activeChallenges": [{}, {}, {}],
+    "inActiveChallenges": [{}, {}]
+  },
+  "data": {
     "user": {
         "age": 26,
         "avatar": "https://static0.fitbit.com/images/profile/defaultProfile_100_male.gif",
@@ -83,4 +119,6 @@
         "weight": 0,
         "weightUnit": "en_US"
     }
+  }
+    
 }

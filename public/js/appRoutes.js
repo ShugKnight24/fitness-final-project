@@ -27,6 +27,11 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/about.html',
 		controller: 'aboutController'
 	})
+	.when('/beginner',
+	{
+		templateUrl: 'views/beginner.html',
+		controller: 'beginnerController'
+	})
 	.when ('/challenges',
 	{
 		templateUrl: 'views/challenges.html',
@@ -42,15 +47,25 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/data.html',
 		controller: 'dataController'
 	})
-	.when ('/feed',
+	.when ('/exercise',
 	{
-		templateUrl: 'views/feed.html',
-		controller: 'feedController'
+		templateUrl: 'views/exercise.html',
+		controller: 'exerciseController'
+	})
+	.when ('/exerciselibrary',
+	{
+		templateUrl: 'views/exerciselibrary.html',
+		controller: 'exerciseLibraryController'
 	})
 	.when ('/friends',
 	{
 		templateUrl: 'views/friends.html',
 		controller: 'friendsController'
+	})
+	.when('/intermediate',
+	{
+		templateUrl: 'views/intermediate.html',
+		controller: 'intermediateController'
 	})
 	.when ('/leaderboard',
 	{
@@ -77,5 +92,5 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/routine.html',
 		controller: 'routineController'
 	})
-	.otherwise({ redirectTo: '/404'})
+	.otherwise({ redirectTo: '/'})
 });
