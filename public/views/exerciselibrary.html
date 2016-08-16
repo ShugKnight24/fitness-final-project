@@ -8,12 +8,13 @@
 
 <h1>Your One Stop Shop For Exercise Needs</h1>
 
-	<label>Search by exercise name or body part: <input ng-model="exerciseDescription"></label>
-
-<div ng-repeat="exerciseDescription in exerciseDescriptions | filter:exerciseDescription | orderBy: 'exerciseDescription.bodypart'">
-  <p>{{exerciseDescription.bodypart}}</p>
-  <p>{{exerciseDescription.exerciseName}}</p>
-  <p>{{exerciseDescription.exerciseDescription}}</p>
-  <!-- <iframe ng-src="{{exerciseDescription.exerciseVideo}}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-  <img ng-src="{{exerciseDescription.exerciseGif}}" alt="{{exerciseDescription.exerciseName}}" />
-</div>
+<input ng-model="exerciseDescription" placeholder="Search by exercise name or body part:">
+<ul class="collapsible popout" data-collapsible="accordion">
+    <li ng-repeat="exerciseDescription in exerciseDescriptions | filter:exerciseDescription | orderBy: 'exerciseDescription.bodypart'">
+      <div class="collapsible-header"><h4>&#x1F3CB {{exerciseDescription.exerciseName}}</h4></div>
+      <div class="collapsible-body"><p>Muscle Group: {{exerciseDescription.bodypart}}</p></div>
+      <div class="collapsible-body"><p>Description: {{exerciseDescription.exerciseDescription}}</p></div>
+      <!-- <div class="collapsible-body"><iframe  ng-src="{{exerciseDescription.exerciseVideo}}" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div> -->
+      <div class="collapsible-body"><img ng-src="{{exerciseDescription.exerciseGif}}" alt="{{exerciseDescription.exerciseName}}" /></div>
+  </li>
+</ul>

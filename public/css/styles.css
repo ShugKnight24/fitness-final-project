@@ -20,3 +20,16 @@
 .active {
 	border-bottom: 3px solid white;
 }
+
+/*input[type=range]::-webkit-slider-runnable-track {
+  background: white;
+  }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: white;
+}*/
+
+.slider .slides {
+  background-color: white;
+}
+
