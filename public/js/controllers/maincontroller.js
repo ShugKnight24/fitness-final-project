@@ -20,7 +20,6 @@ app.controller('mainController', function($scope, $http, dataService, dataStore)
     if (fragment['user_id']) {
       $http.get('mock/' + fragment['user_id'] + '.json').then(function(response) {
         $scope.user = response.data;
-        console.log(response.data);
         $scope.user.data = $scope.mainResponse.data;
         dataService.getActivities(function(response) {
           $scope.user.activities = response.data;
