@@ -43,7 +43,7 @@ app.controller('intermediateController', ["$scope", function($scope) {
     {
       "author":"Alex Viada",
       "title":"“Hybrid Athlete”",
-      "url":"http://store.jtsstrength.com/products/the-hybrid-athlete"
+      "url":"http://store.jtsstrength.com/products/the-hybrid-athlete",
       "description":""
     },
     {
