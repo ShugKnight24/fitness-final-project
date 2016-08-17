@@ -5,11 +5,11 @@
   "posts": [
       {
         "dateUploaded": "2016-08-05T03:15:12.356Z",
-        "author": "Shug",
+        "author": "Shugmi Shumunov",
         "image": "",
-        "content": "I feel like you're ignoring me",
+        "content": "I feel like I've been ignoring my muscles!",
         "likes": "1",
-        "comments": "[{comment:'nope',author:'Adam'}, {comment:'This isn't really a likeable post, it's a sadface thing', author:'Gil'}]"
+        "comments": "[{comment:'Nope',author:'John'}, {comment:'This isn't really a likeable post, it's a sadface thing', author:'Gil'}]"
       }],
   "challenges": {
     "activeChallenges": [{}, {}, {}],
