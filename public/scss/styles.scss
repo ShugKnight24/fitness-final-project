@@ -1,26 +1,33 @@
+@import 'friendlyStyles';
+
 .karen {
   font-family: 'Caveat', cursive;
-  text-shadow: black 2px 2px 5px; }
+  text-shadow: black 2px 2px 5px;
+}
 
 .syed {
   font-family: 'Indie Flower', cursive;
-  text-shadow: black 2px 2px 5px; }
+  text-shadow: black 2px 2px 5px;
+}
 
 .shug {
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  text-shadow: black 2px 2px 5px; }
+  text-shadow: black 2px 2px 5px;
+}
 
 /*fitbit icon on landing page*/
 .fitbit {
-  float: left; }
+  float: left;
+}
 
 .top {
   margin-top: -35px;
-  margin-right: 10px; }
+  margin-right: 10px;
+}
 
 #slide-out {
-  width: 200px; }
-
+  width: 200px;
+}
 /*turn name of active page orange on nav*/
 /*nav ul a {
   transition: background-color .3s;
@@ -39,7 +46,13 @@ nav ul a:hover {
   background-color: rgba(0, 0, 0, 0);
   color: #ff6f00;
 }*/
+
+
+
+
+
 /*preventing the slider from going grey.*/
+
 /*input[type=range]::-webkit-slider-runnable-track {
   background: white;
   }
@@ -47,16 +60,24 @@ nav ul a:hover {
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: white;
 }*/
+
 .slider .slides {
-  background-color: white; }
+  background-color: white;
+}
+
 
 /*offset content by width of side nav */
 footer {
-  padding-left: 275px; }
+  padding-left: 275px;
+}
 
 main {
-  padding-left: 215px; }
+  padding-left: 215px;
+}
 
-@media only screen and (max-width: 992px) {
-  main, footer {
-    padding-left: 215px; } }
+@media only screen and (max-width : 992px) {
+    main, footer {
+        padding-left: 215px;
+      }
+}
+
