@@ -9,7 +9,7 @@
         "image": "https://www.mountainproject.com/images/54/64/107035464_medium_ecd2b9.jpg",
         "content": "Norwick Ledge!",
         "likes": 7,
-        "comments": [{"comment":"wow", "comment":"that looks cold","author":"Bob"}]
+        "comments": [{"avatar":"https://static0.fitbit.com/images/profile/defaultProfile_150_male.gif", "comment":"That looks cold","author":"Shugmi Shumunov"}]
     },
     {
         "dateUploaded": "2016-06-23T10:15:12.356Z",
@@ -17,13 +17,13 @@
         "image": "",
         "content": "Who's up for a bike ride around Belle Isle this weekend?",
         "likes": 27,
-        "comments": [{"comment":"I'm in for Saturday", "author":"Bob"}, {"comment":"sounds good", "author": "Chelsea"}]
+        "comments": [{"avatar":"images/maurice_150.jpg","comment":"I'm in for Saturday", "author":"Maurice Tedder"}, {"avatar":"images/chelsea_miles_150.jpg","comment":"Sounds great!", "author": "Chelsea Miles"}]
     },
     {
         "dateUploaded": "2016-08-08T04:12:08.356Z",
         "author": "John Beckius",
         "image": "",
-        "content": "Slow roll on Aug 15 http://slowroll.bike",
+        "content": "I'm planning on going to Slow roll on Aug 15! You should definetely join me. Check it out. http://slowroll.bike",
         "likes": 2,
         "comments": []
     }],

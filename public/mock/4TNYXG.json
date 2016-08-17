@@ -6,10 +6,11 @@
       {
         "dateUploaded": "2016-08-05T03:15:12.356Z",
         "author": "Shugmi Shumunov",
+        "avatar":"images/shug_150.jpg",
         "image": "",
         "content": "I feel like I've been ignoring my muscles!",
         "likes": "1",
-        "comments": "[{comment:'Nope',author:'John'}, {comment:'This isn't really a likeable post, it's a sadface thing', author:'Gil'}]"
+        "comments": [{"avatar":"images/john_150.jpg", "comment":"Nope", "author":"John Beckius"}, {"avatar":"images/gil_150.jpg", "comment":"This isn't really a likeable post, it's a sadface thing", "author":"Gil Daniels"}]
       }],
   "challenges": {
     "activeChallenges": [{}, {}, {}],

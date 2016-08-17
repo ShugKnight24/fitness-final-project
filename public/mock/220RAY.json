@@ -9,7 +9,7 @@
         "image": "",
         "content": "Let's go people!",
         "likes": 12,
-        "comments": [{"comment":"where to?","author":"Grant Chirpus"}]
+        "comments": [{"avatar":"images/grant_150.jpg", "comment":"Where to?","author":"Grant Chirpus"}]
     }],
   "challenges": {
     "activeChallenges": [{}, {}, {}],

@@ -4,11 +4,11 @@
   "friends": ["888TRF", "656JOH", "565LAN", "444GRT", "220RAY"],
   "posts": [{
     "dateUploaded": "2016-08-05T03:15:12.356Z",
-    "author": "Shug",
+    "author": "Syed Rashid",
     "image": "",
-    "content": "I feel like you're ignoring me",
+    "content": "I feel like I'm being ignored",
     "likes": "1",
-    "comments": "[{comment:'nope',author:'Adam'}, {comment:'This isn't really a likeable post, it's a sadface thing', author:'Gil'}]"
+    "comments": [{"avatar":"images/chelsea_miles_150.jpg", "comment":"nope","author":"Chelsea Miles"}, {"avatar":"images/gil_150.jpg", "comment":"This isn't really a likeable post, it's a sadface thing", "author":"Gil Daniels"}]
   }],
   "challenges": {
     "activeChallenges": [{}, {}, {}],

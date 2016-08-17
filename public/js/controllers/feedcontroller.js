@@ -34,13 +34,12 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
       this.comments = [];
     };
 
-  var Comment = function(author, avatar, image, content, date) {
+  var Comment = function(author, avatar, image, comment, date) {
     this.dateUploaded = date;
     this.author = author;
     this.avatar = avatar;
     this.image = image;
-    this.content = content;
-    this.comments = [];
+    this.comment = comment;
   };
 
   $scope.addPost = function() {
