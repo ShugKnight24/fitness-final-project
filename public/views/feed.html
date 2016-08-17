@@ -2,9 +2,14 @@ feed
 <div>
 <div>
   <input type="text" name="new-post-content" value="" ng-model="newPostContent">
+  <div flow-init flow-name="uploader.flow"
+       flow-files-added="processFiles($files)">
+    <button flow-btn type="file">Upload Image</button>
+    <div ng-repeat="image in uploader.flow.files track by $index">
+      <img flow-img="image"/><br>
+    </div>
+  </div>
   <button type="button" name="button" ng-click="addPost()">Post</button>
-  <!-- //upload image option -->
 <div>
 <post ng-repeat="post in posts | orderBy:'dateUploaded':'reverse' track by $index" ></post> 
-<!-- track by $index necessary? -->
 </div>

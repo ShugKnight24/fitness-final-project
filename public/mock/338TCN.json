@@ -1,16 +1,15 @@
- /*--data structure for users--
-Activities GET request - https://api.fitbit.com/1/user/4TNYXG/activities/date/2016-08-10.json
-Heartrate GET request - https://api.fitbit.com/1/user/4TNYXG/activities/heart/date/2016-08-10/1d.json
-Sleep GET request - https://api.fitbit.com/1/user/4TNYXG/sleep/date/2016-08-10.json 
-*/
-
-
-
 {
   "userID": "338TCN",
   "fullName": "Syed Rashid",
   "friends": ["888TRF", "656JOH", "565LAN", "444GRT", "220RAY"],
-  "posts": [{}, {}, {}],
+  "posts": [{
+    "dateUploaded": "2016-08-05T03:15:12.356Z",
+    "author": "Syed Rashid",
+    "image": "",
+    "content": "I feel like I'm being ignored",
+    "likes": "1",
+    "comments": [{"avatar":"images/chelsea_miles_150.jpg", "comment":"nope","author":"Chelsea Miles"}, {"avatar":"images/gil_150.jpg", "comment":"This isn't really a likeable post, it's a sadface thing", "author":"Gil Daniels"}]
+  }],
   "challenges": {
     "activeChallenges": [{}, {}, {}],
     "inActiveChallenges": [{}, {}]

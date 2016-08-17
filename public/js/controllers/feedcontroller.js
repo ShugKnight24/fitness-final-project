@@ -1,7 +1,20 @@
 var app = angular.module('fitnessApp');
 
 app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "dataStore", function($scope, dataService, $http, $filter, dataStore) {
-  
+
+  $scope.imageStrings = [];
+  $scope.processFiles = function(files){
+    angular.forEach(files, function(flowFile, i){
+       var fileReader = new FileReader();
+          fileReader.onload = function (event) {
+            var uri = event.target.result;
+              $scope.imageStrings[i] = uri;
+          };
+          fileReader.readAsDataURL(flowFile.file);
+    });
+  };
+
+
   $scope.getPosts = function() {
     $scope.user = dataStore.getUserProfile();
     $scope.friendProfiles = dataStore.getFriendProfiles();
@@ -10,7 +23,7 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
       $scope.posts = $scope.posts.concat($scope.friendProfiles[i].posts);
     }
   };
-    
+
   var Post = function(author, avatar, image, content, date) {
       this.dateUploaded = date;
       this.author = author;
@@ -20,27 +33,25 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
       this.likes = 0;
       this.comments = [];
     };
-    
-  var Comment = function(author, avatar, image, content, date) {
-    this.dateUploaded = date;
+
+  var Comment = function(author, avatar, image, comment, date) {
     this.dateUploaded = date;
     this.author = author;
     this.avatar = avatar;
     this.image = image;
-    this.content = content;
-    this.comments = [];
+    this.comment = comment;
   };
-    
+
   $scope.addPost = function() {
     $scope.date = new Date();
     $scope.date = $filter('date')($scope.date, "mediumDate");
-    $scope.newPost = new Post($scope.user.fullName, $scope.user.data.user.avatar150 ,"", $scope.newPostContent, $scope.date);
+    $scope.newPost = new Post($scope.user.fullName, $scope.user.data.user.avatar150, $scope.imageStrings[0], $scope.newPostContent, $scope.date);
     $scope.user.posts.push($scope.newPost);
     $scope.newPostContent = ""; //clear
     dataStore.storeUserProfile($scope.user);
     $scope.getPosts();
   };
-  
+
   $scope.addComment = function(post) {
     $scope.date = new Date();
     $scope.date = $filter('date')($scope.date, "mediumDate");
@@ -60,9 +71,9 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
     }
     dataStore.storeUserProfile($scope.user);
     dataStore.storeFriendProfiles($scope.friendProfiles);
-    $scope.getPosts();  
+    $scope.getPosts();
   };
-  
+
   $scope.addLike = function(post) {
     for (var i = 0; i < $scope.user.posts.length; i++) {
       if (angular.equals(post, $scope.user.posts[i])) {
@@ -81,28 +92,28 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
     }
     dataStore.storeUserProfile($scope.user);
     dataStore.storeFriendProfiles($scope.friendProfiles);
-    $scope.getPosts();  
+    $scope.getPosts();
   };
 
 
   $scope.getPosts();
-  
+
   //add avatar150 to each post
-  
+
   //add avatar150 to each comment
   //add date string to each comment
   //author, avatar, content, date
-  
+
   //determine which post was commented on (how?)
   //find the corresponding post in the user profile or one of the friend profiles
   //update that post with the new comment
   //store the userprofile and friend profile in dataStore
   //run getPosts
-  
+
   //do the same with likes
-  
+
   //create an isolate or child scope in feeddirective?
-  
+
   //add likes to comments?
-  
+
 }]);

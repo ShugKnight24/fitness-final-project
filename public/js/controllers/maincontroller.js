@@ -4,6 +4,7 @@ app.controller('mainController', function($scope, $http, dataService, dataStore)
   
   $scope.allUsers = ['4VKLDW', '220RAY', '323CHE', '444GRT', '565LAN', '656JOH', '767MRC', '888TRF'];
   $scope.friendProfiles = [];
+  $scope.user;
   
   function recursiveRequest(i) {
     if(i >= 0) {
@@ -13,7 +14,7 @@ app.controller('mainController', function($scope, $http, dataService, dataStore)
       });
     }
   }
-
+  
   dataService.getData(function(response) {
     $scope.mainResponse = response;
     if (fragment['user_id']) {
@@ -29,7 +30,7 @@ app.controller('mainController', function($scope, $http, dataService, dataStore)
         dataService.getSleep(function(response) {
           $scope.user.sleep = response.data;
         });
-        // $scope.user.activities = response.data; FixME
+        // $scope.user.activities = response.data;
       });
       recursiveRequest($scope.allUsers.length - 1);
     } else {

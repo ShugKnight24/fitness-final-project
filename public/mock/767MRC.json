@@ -6,11 +6,10 @@
       {
         "dateUploaded": "2016-08-02T12:56:12.356Z",
         "author": "Maurice Tedder",
-        "image": "https://static.wixstatic.com/media/cae8a3_b9475ea0f211495b8b6cbfe7990943bf.jpg/v1/fill/w_677,h_506,al_c,q_90,usm_0.66_1.00_0.01/cae8a3_b9475ea0f211495b8b6cbfe7990943bf.jpg",
+        "image": "https://static.wixstatic.com/media/cae8a3_b9475ea0f211495b8b6cbfe7990943bf.jpg",
         "content": "Saddle up now available in yellow",
         "likes": 772,
-        "comments": [{"comment":"that looks like canary to me","author":"John"}, {"comment":"how much does one of these cost?", "author":"Ian"}, {"comment": "Will a 27‑inch iMac fit in there?", "author":"Tobias"}, {"comment":"I like the green better, but with the stripey flap. not being picky or anything", "author":"Karen"}]
-      }],
+        "comments": [{"avatar":"images/john_150.jpg","comment":"That looks more like canary to me.","author":"John Beckius"}, {"avatar":"images/ray_150.jpg","comment":"How much does one of these cost?", "author":"Raymond Walters"}, {"avatar":"images/john_150.jpg","comment": "Will a 27‑inch iMac fit in there?", "author":"John Beckius"}, {"avatar":"images/karen_150.jpg","comment":"I like the green better, but with the stripey flap. not being picky or anything", "author":"Karen Langner"}],
   "challenges": {
     "activeChallenges": [{}, {}, {}],
     "inActiveChallenges": [{}, {}]
@@ -1581,5 +1580,6 @@
           "totalSleepRecords": 1,
           "totalTimeInBed": 502
       }
-  }
+    }
+  }]
 }

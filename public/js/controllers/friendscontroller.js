@@ -13,7 +13,7 @@ app.controller('friendsController', function($scope, dataService, dataStore) {
 	
 	$scope.deleteFriend = function(friend) {
 		for (var i = 0; i < $scope.friendProfiles.length; i++) {
-			if (friend.user_id === $scope.friendProfiles[i].user_id) {
+			if (angular.equals(friend, $scope.friendProfiles[i])) {
 				$scope.friendProfiles.splice(i, 1);
 				break;
 			}

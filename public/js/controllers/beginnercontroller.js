@@ -4,6 +4,21 @@ app.controller('beginnerController', ["$scope", function($scope) {
 
   $scope.beginnerArticles = [
     {
+      "author":"Adam Ali",
+      "title":"“Daily Ritualz”",
+      "url":"http://physiqonomics.com/daily-ritualz/"
+    },
+    {
+      "author":"Alexander Cortes",
+      "title":"“Being God Awful Precedes Being Good”",
+      "url":"http://www.elitefts.com/education/being-god-awful-precedes-being-good/"
+    },
+    {
+      "author":"Alexander Cortes",
+      "title":"“On Failure”",
+      "url":"http://www.elitefts.com/education/training/on-failure/"
+    },
+    {
       "author":"Dick Talens",
       "title":"The Myth of Willpower and “Eat Less, Move More”",
       "url":"http://dicktalens.com/the-myth-of-willpower-and-eat-less-move-more/"
@@ -31,21 +46,15 @@ app.controller('beginnerController', ["$scope", function($scope) {
   ];
   $scope.beginnerBooks = [
     {
-      "author":"Mike Israetel",
+      "author":"Dr. Jen Case, Dr. James Hoffmann, Dr. Mike Israetel",
       "title":"“The Renanissance Diet”",
       "url":"http://renaissanceperiodization.com/shop/the-renaissance-diet/",
       "description":""
     },
     {
-      "author":"Mike Israetel",
-      "title":"“Scientific Principles Of Strength Training”",
-      "url":"",
-      "description":""
-    },
-    {
       "author":"",
-      "title":"“Renaissance Woman”",
-      "url":"http://renaissanceperiodization.com/shop/renaissance-woman/",
+      "title":"“”",
+      "url":"",
       "description":""
     },
     {
