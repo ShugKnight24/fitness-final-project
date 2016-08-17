@@ -2,7 +2,7 @@ var app = angular.module('fitnessApp');
 
 app.controller('mainController', function($scope, $http, dataService, dataStore) {
   
-  $scope.allUsers = ['4VKLDW', '220RAY', '323CHE', '444GRT', '565LAN', '656JOH', '767MRC', '888TRF'];
+  $scope.allUsers = ['220RAY', '323CHE', '444GRT', '565LAN', '656JOH', '767MRC', '888TRF'];
   $scope.friendProfiles = [];
   $scope.user;
   

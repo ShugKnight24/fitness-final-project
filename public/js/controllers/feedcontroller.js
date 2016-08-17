@@ -2,6 +2,19 @@ var app = angular.module('fitnessApp');
 
 app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "dataStore", function($scope, dataService, $http, $filter, dataStore) {
   
+  $scope.imageStrings = [];
+  $scope.processFiles = function(files){
+    angular.forEach(files, function(flowFile, i){
+       var fileReader = new FileReader();
+          fileReader.onload = function (event) {
+            var uri = event.target.result;
+              $scope.imageStrings[i] = uri;     
+          };
+          fileReader.readAsDataURL(flowFile.file);
+    });
+  };
+       
+  
   $scope.getPosts = function() {
     $scope.user = dataStore.getUserProfile();
     $scope.friendProfiles = dataStore.getFriendProfiles();
@@ -23,7 +36,6 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
     
   var Comment = function(author, avatar, image, content, date) {
     this.dateUploaded = date;
-    this.dateUploaded = date;
     this.author = author;
     this.avatar = avatar;
     this.image = image;
@@ -34,7 +46,7 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
   $scope.addPost = function() {
     $scope.date = new Date();
     $scope.date = $filter('date')($scope.date, "mediumDate");
-    $scope.newPost = new Post($scope.user.fullName, $scope.user.data.user.avatar150 ,"", $scope.newPostContent, $scope.date);
+    $scope.newPost = new Post($scope.user.fullName, $scope.user.data.user.avatar150 ,$scope.imageStrings, $scope.newPostContent, $scope.date);
     $scope.user.posts.push($scope.newPost);
     $scope.newPostContent = ""; //clear
     dataStore.storeUserProfile($scope.user);
