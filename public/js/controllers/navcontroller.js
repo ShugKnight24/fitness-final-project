@@ -15,7 +15,7 @@
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space 
-        
+
 var app = angular.module('fitnessApp');
 app.controller("navController",["$scope", "$location", function($scope, $location){
   $scope.isActive = function(destination){
