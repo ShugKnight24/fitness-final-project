@@ -46,7 +46,7 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
   $scope.addPost = function() {
     $scope.date = new Date();
     $scope.date = $filter('date')($scope.date, "mediumDate");
-    $scope.newPost = new Post($scope.user.fullName, $scope.user.data.user.avatar150 ,$scope.imageStrings, $scope.newPostContent, $scope.date);
+    $scope.newPost = new Post($scope.user.fullName, $scope.user.data.user.avatar150, $scope.imageStrings[0], $scope.newPostContent, $scope.date);
     $scope.user.posts.push($scope.newPost);
     $scope.newPostContent = ""; //clear
     dataStore.storeUserProfile($scope.user);
