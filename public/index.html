@@ -17,11 +17,11 @@
   		<nav ng-controller="navController" class="white">
       		<a href="#/project" class="right top"><h1><span class="black-text">Fit</span><span class="amber-text text-darken-4">Knit</span></h1></a>
       		<ul id="slide-out" class="side-nav fixed grey darken-4">
-						<li ng-class="{{active: isActive('/project')}}"><a href="#/project" class="white-text">About the project</a></li>
-						<li ng-class="{{active: isActive('/about')}}"><a href="#/about" class="white-text">About us</a></li>
-						<li ng-class="{{active: isActive('/thankyou')}}"><a href="#/thankyou" class="white-text">Thank You!</a></li>
+						<li ng-class="{active: isActive('/project')}"><a href="#/project" class="white-text">About the project</a></li>
+						<li ng-class="{active: isActive('/about')}"><a href="#/about" class="white-text">About us</a></li>
+						<li ng-class="{active: isActive('/thankyou')}"><a href="#/thankyou" class="white-text">Thank You!</a></li>
       		</ul>
-			<a href="#" data-activates="slide-out" class="button-collapse black"><i class="material-icons">menu</i></a>
+			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
   		</nav>
   		<main>
   		<a href="https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=227RL4&redirect_uri=http%3A%2F%2F127.0.0.1%3A8080%2Fmember.html&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=604800"><button class="waves-effect waves-light btn">Login</button></a>
