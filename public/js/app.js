@@ -1,1 +1,1 @@
-var app = angular.module('fitnessApp', ['ngRoute', 'flow']);
+var app = angular.module('fitnessApp', ['ngRoute', 'flow', 'chart.js']);
