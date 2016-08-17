@@ -16,7 +16,7 @@
 
 
 		<!-- <input type="text" ng-model="searchText"> -->
-	
+
 		<nav ng-controller="navController" class="white">
 			<a href="#/project" class="right top"><h1><span class="black-text">Fit</span><span class="amber-text text-darken-4">Knit</span></h1></a>
       		<ul id="slide-out" class="side-nav fixed grey darken-4">
@@ -38,13 +38,13 @@
 			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 		</nav>
-	
+
 		<main>
 			<h1>
 <!-- 			{{ user.displayName }}'s  -->
 			FitKnit</h1>
 
-			<ng-view></ng-view>
+			<ng-view ng-controller="mainController"></ng-view>
 		</main>
 
 		<footer class="page-footer white">&copy; 2016 Kreative Software Solutions</footer>
