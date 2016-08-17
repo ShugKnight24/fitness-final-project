@@ -1,16 +1,16 @@
 <div class="row">
-	<div class="col s12"
+	<div class="col s12 topFriend">
 	<h2>Friends</h2>
 	</div>
 </div>
 <div class="row">
-	<div class="col s4 offset-s4">
+	<div class="col s6 offset-s3">
 <!-- here's the search box to search for friends -->
-Search: <input type="text" name="search" ng-model="fullName" placeholder="find a friend..." />
+	<label>Search:<input type="text" name="search" ng-model="fullName" placeholder="find a friend..." /></label>
 	</div>
 </div>
 <div class="row">
 
-<friend-card ng-repeat="friend in friendProfiles | filter:{fullName: fullName}" class="card z-depth-3 col s4"></friend-card>
+	<friend-card ng-repeat="friend in friendProfiles | filter:{fullName: fullName}" class="friendly card z-depth-1 col s3"></friend-card>
 
 </div>

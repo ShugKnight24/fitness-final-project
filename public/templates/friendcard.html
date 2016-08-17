@@ -1,9 +1,14 @@
   <!-- repeat this div for each of the friend's information -->
-<div class="friends card-content">
+<div class="card-content">
 	<!-- friend's name in uppercase -->
-	<h2 class="card-title {{friend.displayName}}">{{friend.fullName}}</h2>
+	<h2 class="card-title">{{friend.fullName}}</h2>
 	<!-- friend's photo and information -->
-	<img ng-src="{{friend.data.user.avatar}}" alt="{{friend.data.user.displayName}}" width="100" height="100" class="circle responsive-img"/>
-	<p>{{friend.data.user.displayName}}'s average daily steps: {{friend.data.user.averageDailySteps}}</p>
-  <button class="delete" type="button" ng-click="deleteFriend(friend)">Unfriend</button>
+	<div class="row">
+			<img ng-src="{{friend.data.user.avatar}}" alt="{{friend.data.user.displayName}}" width="100" height="100" class="circle responsive-img col s6"/>
+
+			<p class="col s6">{{friend.data.user.displayName}}'s average daily steps: {{friend.data.user.averageDailySteps}}</p>
+	</div>
+
+	<button class="right btn blue-grey lighten-4" type="delete" ng-click="deleteFriend(friend)">Unfriend<i class="material-icons right">delete</i></button>
+
 </div>
