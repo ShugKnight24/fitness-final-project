@@ -55,13 +55,13 @@ app.controller('intermediateController', ["$scope", function($scope) {
     {
       "author":"",
       "title":"“”",
-      "url":""
+      "url":"",
       "description":""
     },
     {
       "author":"",
       "title":"“”",
-      "url":""
+      "url":"",
       "description":""
     }
   ];
