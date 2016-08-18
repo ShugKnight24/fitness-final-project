@@ -15,28 +15,26 @@
 	<body ng-app="fitnessApp" ng-controller="mainController">
 
 
-		<!-- <input type="text" ng-model="searchText"> -->
-
-		<nav ng-controller="navController" class="white">
-			<a href="#/project" class="right top"><h1><span class="black-text">Fit</span><span class="amber-text text-darken-4">Knit</span></h1></a>
-      		<ul id="slide-out" class="side-nav fixed grey darken-4">
-      			<li ng-class="{active: isActive('/motivation')}"><a href="#/motivation" class="white-text">Dashboard</a></li>
+		<nav ng-controller="navController" class="nav-wrapper grey darken-4">
+			<a href="#/project" class="brand-logo right"><h1><span class="white-text">Fit</span><span class="amber-text text-darken-4">Knit</span></h1></a>
+      		<ul id="nav-mobile" class="left hide-on-med-and-down">
+      			<li ng-class="{active: isActive('/motivation')}"><a href="#/motivation" class="amber-text text-darken-4">Dashboard</a></li>
 				<!-- <li><a href="#/challenges">Challenges</a></li> -->
-				<li ng-class="{active: isActive('/feed')}"><a href="#/feed" class="white-text">Feed</a></li>
-				<li ng-class="{active: isActive('/friends')}"><a href="#/friends" class="white-text">Friends</a></li>
-				<li><a href="#/compare" class="white-text">Match Up</a></li>
+				<li ng-class="{active: isActive('/feed')}"><a href="#/feed" class="amber-text text-darken-4">Feed</a></li>
+				<li ng-class="{active: isActive('/friends')}"><a href="#/friends" class="amber-text text-darken-4">Friends</a></li>
+				<li><a href="#/compare" class="amber-text text-darken-4">Match Up</a></li>
 				<!-- <li><a href="#/recommendations">Recommendations</a></li> -->
-				<li ng-class="{active: isActive('/exercise')}"><a class="dropdown-button white-text" href="#/exercise" data-activates="dropdown1">Exercise</a>
+				<li ng-class="{active: isActive('/exercise')}"><a class="dropdown-button amber-text text-darken-4" href="#/exercise" data-activates="dropdown1">Exercise</a>
   					<!-- Dropdown Structure -->
   					<ul id='dropdown1' class='dropdown-content grey darken-4'>
-    					<li><a href="#/beginner" class="white-text">Beginner</a></li>
-    					<li><a href="#/bodymap" class="white-text">Bodymap</a></li>
-    					<li><a href="#/exerciselibrary" class="white-text">Exercise Library</a></li>
-    					<li><a href="#/intermediate" class="white-text">Intermediate</a></li>
-    					<li><a href="#/routine" class="white-text">Routine</a></li>
+    					<li><a href="#/beginner" class="amber-text text-darken-4">Beginner</a></li>
+    					<li><a href="#/bodymap" class="amber-text text-darken-4">Bodymap</a></li>
+    					<li><a href="#/exerciselibrary" class="amber-text text-darken-4">Exercise Library</a></li>
+    					<li><a href="#/intermediate" class="amber-text text-darken-4">Intermediate</a></li>
+    					<li><a href="#/routine" class="amber-text text-darken-4">Routine</a></li>
   					</ul></li>
 			</ul>
-			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons black">menu</i></a>
+			<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons grey darken-4">menu</i></a>
 		</nav>
 
 		<main>
