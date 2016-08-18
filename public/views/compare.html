@@ -5,48 +5,18 @@
 </div>
 <div class="container">
 	<div ng-controller="barController">
+		<br/>
 		<h3>Average Daily Steps</h3>
 		<canvas id="bar" class="chart chart-bar" chart-data="adsData" chart-labels="labels" chart-series="adsSeries"></canvas>
+		<br/>
 		<h3>Steps</h3>
 		<canvas id="bar" class="chart chart-bar" chart-data="sData" chart-labels="labels" chart-series="sSeries"></canvas>
+		<br/>
 		<h3>Active Minutes</h3>
 		<canvas id="bar" class="chart chart-bar" chart-data="amData" chart-labels="labels" chart-series="amSeries"></canvas>
+		<br/>
 		<h3>Resting Heart Rate</h3>
 		<canvas id="bar" class="chart chart-bar" chart-data="rhrData" chart-labels="labels" chart-series="rhrSeries"></canvas>
-	</div>
-</div>
-
-<div class="container">
-	<div class="row">
-	<p class="col s4 offset-s2">{{user.fullName}} vs.</p>
-	<input class="col s4" type="text" name="name" value="" placeholder="friend's name"ng-model="friendName">
-	</div>
-	<div class="row">
-		<div class="card col s5">
-			<img ng-src="{{user.data.user.avatar}}" alt="{{user.data.user.displayName}}">
-		<!-- 	sleep, food & water logs, heart rate, weight, activity and exercise -->
-			<h3>{{user.fullName}}</h3>
-		<!-- reorderable and deletable -->
-			
-			<p>Average Daily Steps: {{user.data.user.averageDailySteps}}</p> 
-			<p>Today's Steps: {{user.activities.summary.steps}}</p> 
-			<p>Active Minutes: {{user.activities.summary.fairlyActiveMinutes + user.activities.summary.lightlyActiveMinutes + user.activities.summary.veryActiveMinutes}}</p>
-			<p>Resting Heart Rate: {{user.heartrate["activities-heart"]["0"].value.restingHeartRate}}</p>
-			<!-- <p>{{user.activities.activities.length}}</p> //number of workouts -->
-		</div>
-
-		<!-- <div class="card" ng-repeat="friend in friendProfiles | filter:{fullName: fullName}">
-			<img ng-src="{{friend.data.user.avatar}}" alt="{{friend.data.user.displayName}}">
-			<p>{{friend.fullName}}</p>
-		</div> -->
-
-		<div class="card col s5" ng-repeat="friend in friendProfiles | orderBy:fullName | filter:{fullName: friendName}">
-			<img ng-src="{{friend.data.user.avatar}}" alt="{{friend.data.user.displayName}}">
-			<h3>{{friend.fullName}}</h3>
-			<p>Average Daily Steps: {{friend.data.user.averageDailySteps}}</p> 
-			<p>Today's Steps: {{friend.activities.summary.steps}}</p> 
-			<p>Active Minutes: {{friend.activities.summary.fairlyActiveMinutes + user.activities.summary.lightlyActiveMinutes + user.activities.summary.veryActiveMinutes}}</p>
-			<p>Resting Heart Rate: {{friend.heartrate["activities-heart"]["0"].value.restingHeartRate}}</p>
-		</div>
+		<br/>
 	</div>
 </div>
