@@ -4,6 +4,10 @@
 .topFriend {
   border-bottom: 2px solid black; }
 
+.post-btn {
+  margin-top: 1em;
+}
+
 .container {
   width: 85%; }
 

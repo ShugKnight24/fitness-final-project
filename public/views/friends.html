@@ -3,12 +3,18 @@
 	<h2>Friends</h2>
 	</div>
 </div>
-<div class="row">
-	<div class="col s6 offset-s3">
-<!-- here's the search box to search for friends -->
-	<label>Search:<input type="text" name="search" ng-model="fullName" placeholder="find a friend..." /></label>
+<div class="container">
+	<div class="row">
+		<div class="col s6 offset-s3">
+	<!-- here's the search box to search for friends -->
+		<input type="text" name="search" ng-model="fullName" placeholder="search" />
+		</div>
 	</div>
-</div>
-<div class="row">
-	<friend-card ng-repeat="friend in friendProfiles | filter:{fullName: fullName}"></friend-card>
+	<div class="row">
+	<div class="valign wrapper">
+		<div class="valign">
+			<friend-card ng-repeat="friend in friendProfiles | filter:{fullName: fullName}"></friend-card>
+		</div>
+	</div>
+	</div>
 </div>
