@@ -3,41 +3,42 @@
   <h2>{{ user.fullName }}'s New Routine</h2>
   </div>
 </div>
-<div class="row">
-<div class="col s10 offset-s1">
-  <div class="flow-text">
-    <p>Stay accountable by keeping track of the exercises you want to complete. Enter an exercise you want to do, or choose from our exercise library. You can sort the list by exercise or body part.</p>
-    <p>If you want to learn more about a particular exercise, head over to our <a href="#/exerciselibrary">exercise library</a> for a more detailed description of how to perform the exercise.</p>
-  </div>
+<div class="container">
+  <div class="row">
+  <div class="col s10 offset-s1">
+    <div class="flow-text">
+      <p>Stay accountable by keeping track of the exercises you want to complete. Enter an exercise you want to do, or choose from our exercise library. You can sort the list by exercise or body part.</p>
+      <p>If you want to learn more about a particular exercise, head over to our <a href="#/exerciselibrary">exercise library</a> for a more detailed description of how to perform the exercise.</p>
+    </div>
 
-    <div class="input-field col s6">
-    <form class="form" name="exerciseForm" ng-submit="addNewExercise()">
+      <div class="input-field col s6">
+      <form class="form" name="exerciseForm" ng-submit="addNewExercise()">
 
-      <input type="text" name="newExercise" ng-model="newExercise" placeholder="New Excercise" required>
-      <button ng-disabled="exerciseForm.$invalid" class="waves-effect waves-light btn">Add Exercise</button>
-     <!--  <input type="text" ng-model="searchExercises" placeholder="Search Different Exercises"> -->
-    </form>
+        <input type="text" name="newExercise" ng-model="newExercise" placeholder="New Excercise" required>
+        <button ng-disabled="exerciseForm.$invalid" class="waves-effect waves-light btn">Add Exercise</button>
+       <!--  <input type="text" ng-model="searchExercises" placeholder="Search Different Exercises"> -->
+      </form>
 
-    <button ng-click="addSelected()" class="waves-effect waves-light btn">Add to routine</button>
-      <form action="#">
-          <ul>
-            <li ng-repeat="exercise in exercises">
-              <input type="checkbox" id="{{exercise.exerciseName}}" ng-model="exercise.selected">
-              <label for="{{exercise.exerciseName}}" ng-class="{'selected':exercise.selected}">{{exercise.exerciseName}}</label>
-            </li>
-          </ul>
-        </form>
-      </div>
-          <div class="completedExerciseList input-field col s6">
-            <h3>Your Customized Exercise Routine!</h3>
-            <p>Filter your routine to make sure you have all the exercises you want!</p>
-            <input type="text" ng-model="searchSelectedExercises" placeholder="Filter your selected exercises">
-            <p>Do 4 sets of 8 to 12 reps of your exercises</p>
+      <button ng-click="addSelected()" class="waves-effect waves-light btn">Add to routine</button>
+        <form action="#">
             <ul>
-              <li class="selectedExercises" ng-repeat="exercise in selectedExercises | filter:searchSelectedExercises | orderBy:'exerciseName'">
-                <span class="weightlifter">&#x1F3CB</span>{{exercise.exerciseName}}
+              <li ng-repeat="exercise in exercises">
+                <input type="checkbox" id="{{exercise.exerciseName}}" ng-model="exercise.selected">
+                <label for="{{exercise.exerciseName}}" ng-class="{'selected':exercise.selected}">{{exercise.exerciseName}}</label>
               </li>
+            </ul>
+          </form>
+        </div>
+            <div class="completedExerciseList input-field col s6">
+              <h3>Your Customized Exercise Routine!</h3>
+              <p>Filter your routine to make sure you have all the exercises you want!</p>
+              <input type="text" ng-model="searchSelectedExercises" placeholder="Filter your selected exercises">
+              <p>Do 4 sets of 8 to 12 reps of your exercises</p>
+              <ul>
+                <li class="selectedExercises" ng-repeat="exercise in selectedExercises | filter:searchSelectedExercises | orderBy:'exerciseName'">
+                  <span class="weightlifter">&#x1F3CB</span>{{exercise.exerciseName}}
+                </li>
             </div>
           </div>
-
-</div> <!-- closing row -->
+      </div> <!-- closing row -->
+    </div> <!-- closing container -->
