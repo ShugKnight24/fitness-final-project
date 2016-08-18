@@ -15,12 +15,12 @@
         </div>
         <div flow-init flow-name="uploader.flow"
              flow-files-added="processFiles($files)">
-          <button flow-btn type="file" class="btn waves-effect waves-light" type="button"><i class="material-icons">add_a_photo</i></button>
+          <button flow-btn type="file" class="btn waves-effect waves-light photo-btn" type="button"><i class="material-icons">add_a_photo</i></button>
           <div ng-repeat="image in uploader.flow.files track by $index">
             <img flow-img="image"/><br>
           </div>
         </div>
-        <button class="btn waves-effect waves-light" type="button" ng-click="addPost()">Post</button>
+        <button class="btn waves-effect waves-light post-btn" type="button" ng-click="addPost()">Post</button>
       </div>
     </form>
   </div>
