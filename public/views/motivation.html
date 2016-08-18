@@ -3,27 +3,24 @@
 	<h2>Get motivated, {{user.displayName}}!</h2>
 	</div>
 </div>
+<div class="container">
 <div class="row">
-    <div class="card col s3">
-      <h3 ng-bind="user.fullName" class="header"></h3>
-      <div class="card-image">
-        <img ng-src="{{user.avatar}}" alt="{{user.displayName}}'s photo">
-
-      </div>
-      <div class="card-content flow-text">
-        <p>Your average daily steps: <span ng-bind="user.averageDailySteps"></span><br />
-<!--         Your active minutes: <span ng-bind="user.averageDailySteps"></span><br />
-        Your resting heart rate: <span ng-bind="user.averageDailySteps"></span></p> -->
+    <div class="col s4">
+        <img ng-src="{{user.avatar150}}" alt="{{user.displayName}}'s photo">
+      <div class="flow-text">
+        <p>Your steps today: {{user.activities.summary.steps}}<br /> 
+      Your active minutes: {{user.activities.summary.fairlyActiveMinutes + user.activities.summary.lightlyActiveMinutes + user.activities.summary.veryActiveMinutes}}<br />
+      Your resting heart rate: {{friend.heartrate["activities-heart"]["0"].value.restingHeartRate}}</p>
       </div>
     </div> <!-- close card -->
 
-	<div class="col s8 offset-s1">
-  		<youtube></youtube>
+	<div class="col s7 offset-s1">
+  		<div class="video-container"><youtube></youtube>
+      </div>
+      <div>
+        <h4>{{randomMotivationalQuote}}</h4>
+      </div>
 	</div>
-</div>
 
-<div class="row">
-  <div class="col s12">
-  	<h4>{{randomMotivationalQuote}}</h4>
-  </div>
+</div>
 </div>
