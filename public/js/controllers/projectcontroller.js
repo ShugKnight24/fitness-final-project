@@ -1,16 +1,3 @@
-$(document).ready(function() {
-	$('.slider').slider({ full_width: false });
-});
-// 	$('.slider').slider({
-//     	full_width: false,
-//     	interval: 5000,
-//     	transition: 500
-//     });
-//     // $('ul.tabs').tabs();
-
-//   }); // end of document ready
-// })(jQuery); // end of jQuery name space 
-
 var app = angular.module('fitnessApp');
 
 app.controller('projectController', function($scope) {
@@ -29,7 +16,7 @@ app.controller('projectController', function($scope) {
 //     {
 //         title: "How it Works",
 //         content1: "FitKnit knits together your fitbit statistics and motivational psychology.",
-//         span1: "", 
+//         span1: "",
 //         content: "",
 //         image: {
 //             path: "",
@@ -39,7 +26,7 @@ app.controller('projectController', function($scope) {
 //     {
 //         title: "",
 //         content1: "",
-//         span1: "Self-monitoring: ", 
+//         span1: "Self-monitoring: ",
 //         content:"viewing your activity",
 //         image: {
 //             path: "images/two_step_grant.jpg",

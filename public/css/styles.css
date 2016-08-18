@@ -4,6 +4,10 @@
 .topFriend {
   border-bottom: 2px solid black; }
 
+.post-btn {
+  margin-top: 1em;
+}
+
 .container {
   width: 85%; }
 
@@ -14,6 +18,10 @@
 .exercisers {
   display: inline-block;
   margin-right: 10px; }
+
+.grantpics{
+  border-radius: 25px;
+}
 
 .exercisers a {
   color: #212121; }
