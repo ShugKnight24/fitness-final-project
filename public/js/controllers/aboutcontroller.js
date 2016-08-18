@@ -41,7 +41,7 @@ app.controller('aboutController',["$scope", function($scope) {
 			{
 				name: "Syed Rashid",
 				style: "syed",
-				motto: "Aspiring developer with a mathematics background.",
+				motto: "Aspiring developer with a mathematics background. ",
 				image: {
 					path: "http://www.grandcircus.co/perch/resources/img9593.jpg",
 					altText: "Syed at Grand Circus"
