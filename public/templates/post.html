@@ -1,21 +1,40 @@
 <div>
-  <p>{{post.dateUploaded | date : 'mediumDate'}}</p>
+  <!-- <p>{{post.dateUploaded | date : 'mediumDate'}}</p>
   <h3>{{post.author}}</h3>
-  <!-- <img ng-src="{{post.image}}" alt="{{post.image}}" ng-show="{{post.image}}"> -->
-  <div>
+  <!<img ng-src="{{post.image}}" alt="{{post.image}}" ng-show="{{post.image}}"> -->
+  <!-- <div>
     <img ng-src="{{post.image}}" alt="" ng-show="post.image">
     <p>{{post.content}}</p> 
   </div>
   <p>{{post.likes}}</p>
-  <button type="button" name="like-btn" ng-click="addLike(post)">Like</button>
+  <button type="button" name="like-btn" ng-click="addLike(post)">Like</button> -->
   <!-- <input type="text" name="name" value="" ng-model="newCommentContent">
   <button type="button" name="comment-btn" ng-click="addComment(post)">Comment</button> -->
-  
   <!-- <ul>
     <li ng-repeat="comment in post.comments">{{comment}}</li>
   </ul> -->
   <!-- <input> 
-  <button>e -->
+  <button> -->
+  <div class="col s12 m7">
+    <h2 class="header">{{post.author}}</h2>
+    <p>{{post.dateUploaded | date : 'mediumDate'}}</p>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img ng-src="{{post.avatar}}" alt="{{post.author}}">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>{{post.content}}</p>
+        </div>
+        <div class="card-action">
+          <span>{{post.likes}} Likes </span><a class="waves-effect waves-teal btn-flat" ng-click="addLike(post)"><i class="material-icons teal-text">thumb_up</i></a>
+          <!-- <button class="btn waves-effect waves-light" type="button" ng-click="addLike(post)">Like<i class="material-icons right">thumb_up</i></button> -->
+        
+          <!-- <button type="button" name="like-btn" ng-click="addLike(post)">Like</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- //Text field for entering post
