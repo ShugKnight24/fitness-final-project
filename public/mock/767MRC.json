@@ -9,7 +9,7 @@
         "image": "https://static.wixstatic.com/media/cae8a3_b9475ea0f211495b8b6cbfe7990943bf.jpg",
         "content": "Saddle up now available in yellow",
         "likes": 772,
-        "comments": [{"avatar":"images/john_150.jpg","comment":"That looks more like canary to me.","author":"John Beckius"}, {"avatar":"images/ray_150.jpg","comment":"How much does one of these cost?", "author":"Raymond Walters"}, {"avatar":"images/john_150.jpg","comment": "Will a 27‑inch iMac fit in there?", "author":"John Beckius"}, {"avatar":"images/karen_150.jpg","comment":"I like the green better, but with the stripey flap. not being picky or anything", "author":"Karen Langner"}],
+        "comments": [{"avatar":"images/john_150.jpg","comment":"That looks more like canary to me.","author":"John Beckius"},{"avatar":"images/ray_150.jpg","comment":"How much does one of these cost?","author":"Raymond Walters"},{"avatar":"images/john_150.jpg","comment":"Will a 27‑inch iMac fit in there?","author":"John Beckius"},{"avatar":"images/karen_150.jpg","comment":"I like the green better, but with the stripey flap. Not trying to be picky or anything","author":"Karen Langner"}],
   "challenges": {
     "activeChallenges": [{}, {}, {}],
     "inActiveChallenges": [{}, {}]
@@ -19,7 +19,7 @@
           "age": 30,
           "avatar": "images/maurice_100.jpg",
           "avatar150": "images/maurice_150.jpg",
-          "averageDailySteps": 6565,
+          "averageDailySteps": 6515,
           "city": "Detroit",
           "clockTimeDisplayFormat": "12hour",
           "corporate": false,
