@@ -41,12 +41,10 @@
   cursor: pointer;
 }
 
-nav ul li.active {
-  background-color: rgba(0, 0, 0, 0);
+nav ul li .active {
   color: #ff6f00;
 }
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0);
   color: #ff6f00;
 }*/
 /*preventing the slider from going grey.*/
