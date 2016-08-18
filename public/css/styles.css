@@ -4,6 +4,9 @@
 .topFriend {
   border-bottom: 2px solid black; }
 
+.container {
+  width: 85%; }
+
 .brand-logo {
   margin-top: -35px;
   margin-right: 10px; }
