@@ -3,6 +3,7 @@
 	<h2>Friends</h2>
 	</div>
 </div>
+<div class="container">
 <div class="row">
 	<div class="col s6 offset-s3">
 <!-- here's the search box to search for friends -->
@@ -10,7 +11,6 @@
 	</div>
 </div>
 <div class="row">
-
-	<friend-card ng-repeat="friend in friendProfiles | filter:{fullName: fullName}" class="friendly card z-depth-1 col s4 offset-s1"></friend-card>
-
+	<friend-card ng-repeat="friend in friendProfiles | filter:{fullName: fullName}"  ng-class="{'clear-li': ($index % 3 === 0)}"></friend-card>
+</div>
 </div>
