@@ -1,15 +1,23 @@
-<ul>
-  <li><a href="#/beginner">Beginner</a></li>
-  <li><a href="#/bodymap">Bodymap</a></li>
-  <li><a href="#/exerciselibrary">Exercise Library</a></li>
-  <li><a href="#/intermediate">Intermediate</a></li>
-  <li><a href="#/routine">Routine</a></li>
-</ul>
-
-<div>
-  <p>Want to hit a certain muscle group, but don't know what exercises to do? We can help! Click on a bodypart you want to train to add the exercises for that muscle group to your routine. Then choose the exercises you want, and create a workout around those muscle groups.</p>
+<div class="row">
+  <div class="col s10 offset-s2">
+    <ul>
+      <li class="exercisers"><a href="#/beginner">Beginner</a></li>
+      <li class="exercisers"><a href="#/bodymap">Bodymap</a></li>
+      <li class="exercisers"><a href="#/exerciselibrary">Exercise Library</a></li>
+      <li class="exercisers"><a href="#/intermediate">Intermediate</a></li>
+      <li class="exercisers"><a href="#/routine">Routine</a></li>
+    </ul>
+  </div>
 </div>
-<img id="Image-Maps-Com-image-maps-2016-08-09-142124" src="http://www.image-maps.com/m/private/0/d3lsp6thlvgorv7o33l9nsg9v7_muscle_anatomy.jpg" border="0" width="600" height="510" orgWidth="600" orgHeight="510" usemap="#image-maps-2016-08-09-142124" alt=""/>
+
+<div class="row">
+    <div class="col s6">
+        <div class="card">
+          <div class="card-content">
+              <p>Want to hit a certain muscle group, but don't know what exercises to do? We can help! Click on a bodypart you want to train to add the exercises for that muscle group to your routine. Then choose the exercises you want, and create a workout around those muscle groups.</p>
+          </div> 
+          <div class="card-image">
+              <img id="Image-Maps-Com-image-maps-2016-08-09-142124" src="http://www.image-maps.com/m/private/0/d3lsp6thlvgorv7o33l9nsg9v7_muscle_anatomy.jpg" border="0" width="600" height="510" orgWidth="600" orgHeight="510" usemap="#image-maps-2016-08-09-142124" alt=""/>
 <map name="image-maps-2016-08-09-142124" id="ImageMapsCom-image-maps-2016-08-09-142124">
 <area shape="rect" coords="598,508,600,510" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0"/>
 <area id="chest" alt="" title="Chest" shape="poly" coords="100,101,120,95,164,94,184,108,188,149,126,146,104,151" style="outline:none;" target="_self" ng-click="addChest()"/>
@@ -40,7 +48,9 @@
 <area id="leftcalf" alt="" title="Left Calf" shape="poly" coords="419,360,409,361,399,401,408,419,421,415,434,427,431,383,432,371" style="outline:none;" target="_self" ng-click="addCalves()"/>
 </map>
 
-<div class="bodyMapWorkout">
+  </form>
+</div>  <!-- close card image -->
+<div class="bodyMapWorkout card-action">
   <form action="#">
     <ul>
       <li ng-repeat="bodyMapExercise in bodyMapExercises track by $index">
@@ -49,17 +59,28 @@
       </li>
     </ul>
   </form>
-    <button ng-click="addBodyMap()" class="waves-effect waves-light btn">Add Exercises</button>
-    <div class="completedBodyMapList">
-      <h1>Your Customized Exercise Routine!</h1>
+  <button ng-click="addBodyMap()" class="waves-effect waves-light btn top-right">Add Exercises</button>
+</div>  <!-- close card -->
+</div> <!-- close left side -->
+</div>
+<div class="completedBodyMapList col s6">
+  <h3 class="header">{{user.displayName}}'s Routine!</h3>
+  <div class="card">
+    <div class="card-content"> 
       <p>Search through your routine to make sure you have all the exercises you want!</p>
       <input type="text" ng-model="searchSelectedBodyMapExercises" placeholder="Filter your selected exercises">
       <p>Do 3-4 sets of 8 to 12 reps of each exercises</p>
-    </div>
+
+
     <div class="selectedBodyMapExercises" ng-repeat="selectedBodyMapExercise in selectedBodyMapExercises | filter:searchSelectedBodyMapExercises | orderBy:'exerciseName' track by $index">
       <ul>
-        <li>
-          <span class="weightlifter">&#x1F3CB</span>{{selectedBodyMapExercise.exerciseName}}
-        </li>
+        <li><h4>
+          <span class="weightlifter">&#x1F3CB</span> {{selectedBodyMapExercise.exerciseName}}
+        </h4></li>
       </ul>
     </div>
+</div> <!-- close card content -->
+
+</div> <!-- close card -->
+</div> <!-- close list -->
+</div> <!-- close whole row -->
