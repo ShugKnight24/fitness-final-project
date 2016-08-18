@@ -72,6 +72,11 @@ footer {
 main {
   padding-left: 215px; }
 
+/* Exercise Nav Bar*/
+.exerciseNav li {
+  display:inline;
+}
+
 @media only screen and (max-width: 992px) {
   main, footer {
     padding-left: 215px; } }
