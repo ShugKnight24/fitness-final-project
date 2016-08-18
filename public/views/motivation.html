@@ -1,6 +1,25 @@
 
 <h1 ng-bind="user.fullName"></h1>
 <img ng-src="{{user.avatar}}" alt="{{user.displayName}}'s photo">
+
+<div ng-controller="doughnutController">
+  <canvas id="doughnut" class="chart chart-doughnut"
+    chart-data="stepsData" chart-labels="stepsLabels">
+  </canvas> 
+
+  <canvas id="doughnut" class="chart chart-doughnut"
+    chart-data="activeMinutesData" chart-labels="activeMinutesLabels">
+  </canvas> 
+
+  <canvas id="doughnut" class="chart chart-doughnut"
+    chart-data="caloriesData" chart-labels="caloriesLabels">
+  </canvas> 
+
+  <canvas id="doughnut" class="chart chart-doughnut"
+    chart-data="sleepData" chart-labels="sleepLabels">
+  </canvas>
+</div>
+
 <p>Your average daily steps: <span ng-bind="user.averageDailySteps"></span></p>
 
 <h3>{{randomMotivationalQuote}}</h3>
