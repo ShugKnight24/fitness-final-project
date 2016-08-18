@@ -1,20 +1,25 @@
 <div>
   <p>{{post.dateUploaded | date : 'mediumDate'}}</p>
   <h3>{{post.author}}</h3>
-  <!-- <img ng-src="{{post.image}}" alt="{{post.image}}" ng-show="{{post.image}}"> -->
+  <img ng-src="{{post.avatar}}" alt="{{post.author}}">
   <div>
-    <img ng-src="{{post.image}}" alt="" ng-show="{{post.image}}">
-    <p>{{post.content}}</p> 
+    <img ng-src="{{post.image}}" alt="" ng-show="post.image">
+    <p>{{post.content}}</p>
   </div>
   <p>{{post.likes}}</p>
   <button type="button" name="like-btn" ng-click="addLike(post)">Like</button>
-  <!-- <input type="text" name="name" value="" ng-model="newCommentContent">
-  <button type="button" name="comment-btn" ng-click="addComment(post)">Comment</button> -->
-  
-  <!-- <ul>
-    <li ng-repeat="comment in post.comments">{{comment}}</li>
-  </ul> -->
-  <!-- <input> 
+  <div ng-repeat="comment in post.comments track by $index">
+    <img ng-src="{{comment.avatar}}" alt="{{comment.author}}"/>
+    <p>{{comment.author}}</p>
+    <ul>
+      <li>{{comment.comment}}</li>
+    </ul>
+  </div>
+  <input type="text" name="name" value="" ng-model="newCommentContent" placeholder="Type your comment here!">
+  <button type="button" name="comment-btn" ng-click="addComment(post)">Comment</button>
+
+
+  <!-- <input>
   <button> -->
 </div>
 
@@ -40,10 +45,10 @@
 /* data structure for post
 
 {
-  dateUploaded: 
+  dateUploaded:
   author:
   image:
-  content: 
+  content:
   likes:
   comments: [{}, {}, {}]
 }
@@ -51,7 +56,7 @@
   /* data structure for comment
     {
       content:
-      author: 
+      author:
       date:
     }
   */

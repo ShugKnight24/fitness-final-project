@@ -34,19 +34,18 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
       this.comments = [];
     };
 
-  var Comment = function(author, avatar, image, content, date) {
+  var Comment = function(author, avatar, image, comment, date) {
     this.dateUploaded = date;
     this.author = author;
     this.avatar = avatar;
     this.image = image;
-    this.content = content;
-    this.comments = [];
+    this.comment = comment;
   };
 
   $scope.addPost = function() {
     $scope.date = new Date();
     $scope.date = $filter('date')($scope.date, "mediumDate");
-    $scope.newPost = new Post($scope.user.fullName, $scope.user.data.user.avatar150 ,$scope.imageStrings, $scope.newPostContent, $scope.date);
+    $scope.newPost = new Post($scope.user.fullName, $scope.user.data.user.avatar150, $scope.imageStrings[0], $scope.newPostContent, $scope.date);
     $scope.user.posts.push($scope.newPost);
     $scope.newPostContent = ""; //clear
     dataStore.storeUserProfile($scope.user);

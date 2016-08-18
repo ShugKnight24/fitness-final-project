@@ -20,7 +20,7 @@
           "age": 26,
           "avatar": "images/chelsea_miles_100.jpg",
           "avatar150": "images/chelsea_miles_150.jpg",
-          "averageDailySteps": 5974,
+          "averageDailySteps": 6934,
           "city": "Detroit",
           "clockTimeDisplayFormat": "12hour",
           "corporate": false,
@@ -208,7 +208,7 @@
           "lightlyActiveMinutes": 212,
           "marginalCalories": 1675,
           "sedentaryMinutes": 797,
-          "steps": 10000,
+          "steps": 6607,
           "veryActiveMinutes": 78
       }
   },
