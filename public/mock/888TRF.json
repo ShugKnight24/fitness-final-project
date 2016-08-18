@@ -9,13 +9,13 @@
         "image": "",
         "content": "Lost my fitbit. Anybody see it on the 4th floor?",
         "likes": 1,
-        "comments": [{"comment":"nope", "author":"Adam"}, {"comment":"This isn't really a likeable post, it's a sadface thing", "author":"Gil"}]
+        "comments": [{"avatar":"images/ray_150.jpg", "comment":"That's a shame man.", "author":"Ray Walters"}]
       },
       {
         "dateUploaded": "2016-07-05T03:25:12.356Z",
         "author": "Gil Daniels",
         "image": "",
-        "content": "I'm not walking anywhere til I find my fitbit",
+        "content": "I'm not walking anywhere until I find my FitBit!",
         "likes": 0,
         "comments": []
       },
@@ -23,9 +23,9 @@
         "dateUploaded": "2016-08-06T03:55:12.356Z",
         "author": "Gil Daniels",
         "image": "",
-        "content": "Found my fitbit!!!!!",
+        "content": "I found my fitbit!!!!! YESSSSSSSSSSS!!!!!!!",
         "likes": 27,
-        "comments": [{"comment":"grrreat", "author":"Adam"}]
+        "comments": [{"avatar":"images/ray_150.jpg", "comment":"Where was it hiding?", "author":"Ray Walters"}]
       }],
   "challenges": {
     "activeChallenges": [{}, {}, {}],
@@ -181,7 +181,7 @@
           "caloriesOut": 3000,
           "distance": 15,
           "floors": 0,
-          "steps": 12000
+          "steps": 8643
       },
       "summary": {
           "activeScore": -1,

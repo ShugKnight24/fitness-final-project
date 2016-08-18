@@ -12,7 +12,7 @@
           "age": 25,
           "avatar": "images/karen_100.jpg",
           "avatar150": "images/karen_150.jpg",
-          "averageDailySteps": 6400,
+          "averageDailySteps": 6409,
           "city": "Commerce",
           "clockTimeDisplayFormat": "12hour",
           "corporate": false,
@@ -200,7 +200,7 @@
           "lightlyActiveMinutes": 262,
           "marginalCalories": 1675,
           "sedentaryMinutes": 797,
-          "steps": 12714,
+          "steps": 4714,
           "veryActiveMinutes": 18
       }
   },

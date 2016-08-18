@@ -32,31 +32,36 @@
   width: 200px; }
 
 /*turn name of active page orange on nav*/
-/*nav ul a {
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  font-family: Tahoma;
+}
+
+nav ul a {
   transition: background-color .3s;
-  font-size: 2rem;
+  font-size: 2em;
   color: white;
   display: block;
   padding: 0 15px;
   cursor: pointer;
 }
 
-nav ul li.active {
-  background-color: rgba(0, 0, 0, 0);
+nav ul li a.active {
   color: #ff6f00;
 }
-nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0);
+nav ul li:hover {
   color: #ff6f00;
-}*/
+}
 /*preventing the slider from going grey.*/
-/*input[type=range]::-webkit-slider-runnable-track {
+input[type=range]::-webkit-slider-runnable-track {
   background: white;
   }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: white;
-}*/
+}
+
 .slider .slides {
   background-color: white; }
 
@@ -66,6 +71,11 @@ footer {
 
 main {
   padding-left: 215px; }
+
+/* Exercise Nav Bar*/
+.exerciseNav li {
+  display:inline;
+}
 
 @media only screen and (max-width: 992px) {
   main, footer {
