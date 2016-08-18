@@ -1,17 +1,12 @@
-<ul>
-  <li><a href="#/beginner">Beginner</a></li>
-  <li><a href="#/bodymap">Bodymap</a></li>
-  <li><a href="#/exerciselibrary">Exercise Library</a></li>
-  <li><a href="#/intermediate">Intermediate</a></li>
-  <li><a href="#/routine">Routine</a></li>
-</ul>
+
 <div class="row">
   <div class="col s12 topFriend">
   <h2>5 x 5</h2>
   </div>
 </div>
 
-<section>
+<div class="row">
+<div class="col s10 offset-s1 flow-text">
   <div>
     <p>A great starter routine for those new to fitness is a 5 x 5 routine. It will allow you to learn and get accustomed to most exercises while making fairly linear progress. Through this program, you will lay a solid foundation that you will be able to build upon in the future.</p>
     <p>The way you would approach this routine is to find weights that you feel comfortable completing 5 repititions for 5 sets. This may mean starting a bit lighter than you normally would, which will help ensure that you are able to complete all of your sets. Each workout, you will add 5lbs to the 5x5 exercises. If you feel comfortable increasing by more, go ahead, but be careful. For accessory exercises, increase weight as you feel comfortable.</p>
@@ -54,13 +49,15 @@
     </ul>
     <p>Don't know how to perform some of the above exercises? Check out our <a href="#/exerciselibrary">Exercise Library</a>. You'll find all of the exercises listed above with a brief description on how they should be performed.</p>
   </div>
-</section>
-<h1>Resources</h1>
-<section>
+
+
+
+<div>
+  <h3>Resources</h3>
   <p>Below are some articles we think are a great place to start!</p>
   <div ng-repeat="beginnerArticle in beginnerArticles">
-    <h3>Author: {{beginnerArticle.author}}</h3>
-    <a href="{{beginnerArticle.url}}"><h4>Title: {{beginnerArticle.title}}</h4></a>
+    <p>Author: {{beginnerArticle.author}}</p>
+    <a href="{{beginnerArticle.url}}"><p>Title: {{beginnerArticle.title}}</p></a>
   </div>
   <div>
     <p>An exquisite <a href="https://www.youtube.com/watch?v=Szzo5Uy5aQU&list=PLyqKj7LwU2RsCOzQeDUPYRJ0E_yys3eDe">video series</a> that breaks down the basics of nutrition in a clear and understandable manner. Presented by Dr. Mike Israetel of Renaissance Periodization</p>
@@ -79,4 +76,5 @@
       </ul>
     </p>
   </div>
-</section>
+</div>
+
