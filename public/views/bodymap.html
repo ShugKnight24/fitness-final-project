@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col s6">
         <div class="card">
-          <div class="card-content">
+          <div class="card-content flow-text">
               <p>Want to hit a certain muscle group, but don't know what exercises to do? We can help! Click on a bodypart you want to train to add the exercises for that muscle group to your routine. Then choose the exercises you want, and create a workout around those muscle groups.</p>
           </div> 
           <div class="card-image">
@@ -36,8 +36,14 @@
 <area id="leftcalf" alt="" title="Left Calf" shape="poly" coords="419,360,409,361,399,401,408,419,421,415,434,427,431,383,432,371" style="outline:none;" target="_self" ng-click="addCalves()"/>
 </map>
 
-  </form>
 </div>  <!-- close card image -->
+
+</div>  <!-- close card -->
+</div> <!-- close left side -->
+
+<div class="completedBodyMapList col s6">
+
+
 <div class="bodyMapWorkout card-action">
   <form action="#">
     <ul>
@@ -48,10 +54,6 @@
     </ul>
   </form>
   <button ng-click="addBodyMap()" class="waves-effect waves-light btn top-right">Add Exercises</button>
-</div>  <!-- close card -->
-</div> <!-- close left side -->
-</div>
-<div class="completedBodyMapList col s6">
   <h3 class="header">{{user.displayName}}'s Routine!</h3>
   <div class="card">
     <div class="card-content"> 
