@@ -1,27 +1,29 @@
 <div class="row">
 	<div class="col s12 topFriend">
-	<h2>Dashboard</h2>
+	<h2>Get motivated, {{user.displayName}}!</h2>
 	</div>
 </div>
 <div class="row">
-  <div class="col s2 offset-s2">
-    <div class="card">
+    <div class="card col s3">
+      <h3 ng-bind="user.fullName" class="header"></h3>
       <div class="card-image">
         <img ng-src="{{user.avatar}}" alt="{{user.displayName}}'s photo">
-        <span class="card-title"><h1 ng-bind="user.fullName" class="text-black"></h1></span>
+
       </div>
-      <div class="card-content">
-        <p>Your average daily steps: <span ng-bind="user.averageDailySteps"></span></p>
+      <div class="card-content flow-text">
+        <p>Your average daily steps: <span ng-bind="user.averageDailySteps"></span><br />
+<!--         Your active minutes: <span ng-bind="user.averageDailySteps"></span><br />
+        Your resting heart rate: <span ng-bind="user.averageDailySteps"></span></p> -->
       </div>
-    </div>
-  </div>
-	<div class="col s7 offset-s1">
+    </div> <!-- close card -->
+
+	<div class="col s8 offset-s1">
   		<youtube></youtube>
 	</div>
 </div>
 
 <div class="row">
-  <div class="col s10 offset-s1">
-  	<h3>{{randomMotivationalQuote}}</h3>
+  <div class="col s12">
+  	<h4>{{randomMotivationalQuote}}</h4>
   </div>
 </div>
