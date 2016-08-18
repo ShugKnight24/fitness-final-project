@@ -7,11 +7,6 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/motivation.html',
 		controller: 'motivationController'
 	})
-	.when ('/404',
-	{
-		templateUrl: 'views/404.html',
-		controller: '404Controller'
-	})
 	.when('/bodymap',
 	{
 		templateUrl: 'views/bodymap.html',
@@ -42,11 +37,6 @@ app.config(function($routeProvider) {
 		templateUrl: 'views/compare.html',
 		controller: 'compareController'
 	})
-	.when ('/data',
-	{
-		templateUrl: 'views/data.html',
-		controller: 'dataController'
-	})
 	.when ('/exercise',
 	{
 		templateUrl: 'views/exercise.html',
@@ -66,11 +56,6 @@ app.config(function($routeProvider) {
 	{
 		templateUrl: 'views/intermediate.html',
 		controller: 'intermediateController'
-	})
-	.when ('/leaderboard',
-	{
-		templateUrl: 'views/leaderboard.html',
-		controller: 'leaderboardController'
 	})
 	.when('/motivation',
 	{
