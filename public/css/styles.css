@@ -23,6 +23,10 @@
   border-radius: 25px;
 }
 
+.devname{
+  text-align: center;
+}
+
 .exercisers a {
   color: #212121; }
 

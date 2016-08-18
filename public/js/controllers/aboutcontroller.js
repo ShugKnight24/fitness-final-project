@@ -5,7 +5,7 @@ app.controller('aboutController',["$scope", function($scope) {
 			{
 				name: "Shugmi Shumunov",
 				style: "shug",
-				motto: "Life long learner, aspiring web developer. Interested in all things VR.",
+				motto: "Life long learner, who loves VR!",
 				image: {
 					path: "http://www.grandcircus.co/perch/resources/shugsphoto.jpg",
 					altText: "Shug at Grand Circus"
