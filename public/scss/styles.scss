@@ -1,7 +1,23 @@
 @import 'friendlyStyles';
 
+.post-btn {
+  margin-top: 1em;
+}
+
+.grantpics {
+  margin-top: 5%;
+}
+
+.thanksAdam {
+  float: right;
+}
+
+.devname {
+  text-align: center;
+}
+
 .container {
-  width: 80%;  
+  width: 85%;  
 }
 
 .brand-logo {
@@ -19,7 +35,17 @@
 }
 
 footer {
-  padding-left: 100px;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  }
+
+main {
+flex: 1 0 auto;
 }
 
 /*turn name of active page orange on nav*/
