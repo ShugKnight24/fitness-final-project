@@ -9,9 +9,11 @@
         <img ng-src="{{user.data.user.avatar150}}" alt="{{user.data.user.displayName}}'s photo">
       <div class="flow-text">
 				<ul class="collection">
-					<li class="collection-item"><span class="steps">&#x1f463; </span><span class="unicode" ng-bind="user.activities.summary.steps"></span><span> Steps</span></li>
-					<li class="collection-item"><span class="fire orange-text">&#x1f525; </span><span class="unicode" ng-bind="user.activities.summary.fairlyActiveMinutes + user.activities.summary.lightlyActiveMinutes + user.activities.summary.veryActiveMinutes"></span><span> Minutes Active</span></li>
-					<li class="collection-item"><span class="heart red-text">&#9829; </span><span class="unicode" ng-bind="user.heartrate['activities-heart']['0'].value.restingHeartRate"></span><span> Beats Per Minute</span></li>
+					<li class="collection-item"><span class="steps">&#x1f463; </span><span class="unicode" ng-bind="user.activities.summary.steps | number"></span><span> Steps</span></li>
+					<li class="collection-item"><span class="fire green-text">&#x1f3c3; </span><span class="unicode" ng-bind="user.activities.summary.fairlyActiveMinutes + user.activities.summary.lightlyActiveMinutes + user.activities.summary.veryActiveMinutes | number"></span><span> Minutes Active</span></li>
+					<li class="collection-item"><span class="heart orange-text">&#x1f525; </span><span class="unicode" ng-bind="user.activities.summary.activityCalories | number"></span><span> Activity Calories</span></li>
+					<li class="collection-item"><span class="heart red-text">&#9829; </span><span class="unicode" ng-bind="user.heartrate['activities-heart']['0'].value.restingHeartRate | number"></span><span> Beats Per Minute</span></li>
+					<li class="collection-item"><span class="heart yellow-text">&#x1f319; </span><span class="unicode" ng-bind="user.sleep.summary.totalMinutesAsleep/60 | number:1"></span><span> Hours Slept</span></li>
 				</ul>
       </div>
     </div> <!-- close card -->
