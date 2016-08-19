@@ -6,14 +6,16 @@
     {
         "dateUploaded": "2016-02-27T02:15:12.356Z",
         "author": "John Beckius",
+        "avatar": "images/john_150.jpg",
         "image": "https://www.mountainproject.com/images/54/64/107035464_medium_ecd2b9.jpg",
-        "content": "Norwick Ledge!",
+        "content": "Norwick Ledge! Absolutely beautiful. Tad cold though.",
         "likes": 7,
         "comments": [{"comment":"wow", "comment":"that looks cold","author":"Bob"}]
     },
     {
         "dateUploaded": "2016-06-23T10:15:12.356Z",
         "author": "John Beckius",
+        "avatar": "images/john_150.jpg",
         "image": "",
         "content": "Who's up for a bike ride around Belle Isle this weekend?",
         "likes": 27,
@@ -22,8 +24,9 @@
     {
         "dateUploaded": "2016-08-08T04:12:08.356Z",
         "author": "John Beckius",
+        "avatar": "images/john_150.jpg",
         "image": "",
-        "content": "Slow roll on Aug 15 http://slowroll.bike",
+        "content": "Slow roll on Aug 15 http://slowroll.bike. Someone should definetely come join me!",
         "likes": 2,
         "comments": []
     }],
@@ -224,7 +227,7 @@
           "lightlyActiveMinutes": 160,
           "marginalCalories": 1675,
           "sedentaryMinutes": 797,
-          "steps": 12714,
+          "steps": 9862,
           "veryActiveMinutes": 108
       }
   },

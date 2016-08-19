@@ -5,11 +5,12 @@
   "posts": [
       {
         "dateUploaded": "2016-08-05T03:15:12.356Z",
-        "author": "Shug",
+        "author": "Shugmi Shumunov",
+        "avatar": "images/shug_150.jpg",
         "image": "",
-        "content": "I feel like you're ignoring me",
+        "content": "I feel like I've been ignoring my muscles! Thank goodness for FitKnit! It inspires me to stay active!",
         "likes": "1",
-        "comments": "[{comment:'nope',author:'Adam'}, {comment:'This isn't really a likeable post, it's a sadface thing', author:'Gil'}]"
+        "comments": [{"comment":"nope","author":"Adam"}, {"comment":"This isn't really a likeable post, it's a sadface thing", "author":"Gil"}]
       }],
   "challenges": {
     "activeChallenges": [{}, {}, {}],

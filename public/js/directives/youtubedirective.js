@@ -39,9 +39,11 @@ app.directive('youtube', function($sce) {
        "bAwXAFz6cmA"
      ];
 
-    scope.randomVideo = scope.videos[Math.floor(Math.random()*scope.videos.length)];
+    // Randomize
+    // scope.randomVideo = scope.videos[Math.floor(Math.random()*scope.videos.length)];
 
-    scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/" + scope.randomVideo);
+    // Hard coded a video to play for Demo purposes
+    scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/g-jwWYX7Jlo");
     }
   };
 });

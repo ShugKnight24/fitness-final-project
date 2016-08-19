@@ -6,16 +6,18 @@
     {
         "dateUploaded": "2016-02-27T02:15:12.356Z",
         "author": "Grant Chirpus",
-        "image": "../images/foam_roller.jpg",
-        "content": "This is really painful. I want to go back to looking out the window. Someone please carry me.",
+        "avatar": "images/grant_150.jpg",
+        "image": "images/foam_roller.jpg",
+        "content": "This is really painful. I want to go back to looking out the window. Someone please carry me. Shug, I'm looking at you!",
         "likes": 0,
         "comments": [{"comment":"You can do it Grant!","author":"Selena"}, {"comment":"nope, I really can't.","author":"Grant Chirpus"}]
     },
     {
         "dateUploaded": "2016-02-27T02:15:12.356Z",
         "author": "Grant Chirpus",
+        "avatar": "images/grant_150.jpg",
         "image": "",
-        "content": "Massages this week. Boy, do I need one.",
+        "content": "Massages this week at Grand Circus! Boy, do I need one.",
         "likes": 21,
         "comments": []
     }],
