@@ -17,6 +17,9 @@ app.controller('feedController', ["$scope", "dataService", "$http", "$filter", "
 
   $scope.getPosts = function() {
     $scope.user = dataStore.getUserProfile();
+    if (!$scope.user) {
+      $scope.$parent.user;
+    };
     $scope.friendProfiles = dataStore.getFriendProfiles();
     $scope.posts = $scope.user.posts;
     for (var i = 0; i < $scope.friendProfiles.length; i++) {
