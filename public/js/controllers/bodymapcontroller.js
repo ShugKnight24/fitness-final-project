@@ -24,7 +24,7 @@ $scope.chestExercises =[
   },
   {
     "bodypart":"Chest",
-    "exerciseName":"Cable Crossover",
+    "exerciseName":"Standing Cable Flies",
     "selected":false
   }
 ];

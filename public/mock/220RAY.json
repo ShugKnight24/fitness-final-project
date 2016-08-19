@@ -1,12 +1,12 @@
 {
   "userID": "220RAY",
-  "fullName": "Raymond Leo Walters",
+  "fullName": "Ray Walters",
   "friends": ["565LAN", "888TRF", "444GRT"],
   "posts": [
     {
         "dateUploaded": "2016-04-01T02:15:12.356Z",
         "avatar": "images/ray_150.jpg",
-        "author": "Raymond Leo Walters",
+        "author": "Ray Walters",
         "image": "",
         "content": "Let's go people! You better get excited for Entertain.Me!",
         "likes": 12,
@@ -35,7 +35,7 @@
               "exerciseGoal": true
           },
           "foodsLocale": "en_US",
-          "fullName": "Raymond Leo Walters",
+          "fullName": "Ray Walters",
           "gender": "MALE",
           "glucoseUnit": "en_US",
           "height": 170,
