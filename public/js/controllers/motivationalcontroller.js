@@ -1,6 +1,6 @@
 var app = angular.module('fitnessApp');
 
-app.controller('motivationController', function($scope, dataService) {
+app.controller('motivationController', function($scope, dataService, dataStore) {
 
 	$scope.quotes = [
 	" 'Physical fitness is not only one of the most important keys to a healthy body, it is the basis of dynamic and creative intellectual activity.' - John F. Kennedy",
@@ -31,7 +31,6 @@ app.controller('motivationController', function($scope, dataService) {
 	];
 
   $scope.randomMotivationalQuote = $scope.quotes[Math.floor(Math.random()*$scope.quotes.length)];
-	dataService.getData(function(response) {
-		$scope.user = response.data.user;
-	});
+
+	
 });
